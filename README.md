@@ -9,7 +9,15 @@ uv sync
 uv run python build_relay_list.py --limit 20 --verbose
 ```
 
-Artifacts are written to `build/mullvad_relays.json`, `build/mullvad_relays.txt`, and `build/mullvad_relays.pac` by default.
+Artifacts are written to `build/mullvad_relays.json`, `build/mullvad_relays.txt`, and `build/mullvad_relays.pac` by default. Add `--emit-canonical-json` when you also want `build/mullvad_relays_canonical.json`, a validated-but-unenriched Mullvad payload that downstream tooling can reshape into other formats.
+
+The text artifact is a newline-delimited list of bare `host:port` SOCKS5 endpoints that can be fed directly into tools such as [Mubeng](https://github.com/mubeng/mubeng):
+
+```bash
+mubeng run --proxy-file build/mullvad_relays.txt --address https://api.binance.com/api/v3/ping
+```
+
+The PAC artifact embeds the same endpoint list for browser automation.
 
 ### Filtering examples
 
@@ -26,7 +34,7 @@ Use the verifier to confirm SOCKS5 endpoints against custom targets (e.g., Binan
 uv run python scripts/verify_proxies.py --json build/mullvad_relays.json --limit 3 --http-url https://api.binance.com/api/v3/ping
 ```
 
-Set `--ws-url` when you need to exercise an alternate WebSocket endpoint.
+Set `--ws-url` when you need to exercise an alternate WebSocket endpoint. Binance's WebSocket API expects JSON subscription payloads, so stick with the default echo server or implement a custom checker message before relying on WebSocket success ratios for Binance targets.
 
 ### Proxy Scraper Checker Integration
 
