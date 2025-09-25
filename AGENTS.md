@@ -20,7 +20,10 @@ Use 4-space indentation, type hints, and dataclasses when they clarify payloads.
 Add pytest modules as `test_<module>.py`; store fixtures in `tests/data/`. Seed RNG helpers, prefer parametrized cases, and run `uv run pytest` before any push or PR.
 
 ## Commit & Pull Request Guidelines
-Write imperative, scope-prefixed subjects (e.g., `transform: handle owned relays`) ≤72 characters, with optional detail in the body. Reference spec sections or tickets when behavior shifts. PR descriptions should list validation commands (build + `uv run pytest`), summarize artifact diffs, and include logs/screens when CLI output changes.
+Follow Conventional Commits: `type(scope): imperative summary` ≤72 characters (e.g., `feat(pipeline): add proxy checker subprocess support`). Valid types include `feat`, `fix`, `refactor`, `docs`, `test`, `build`, `chore`, and `perf`; use scopes that match repository modules (e.g., `transform`, `verifier`, `docs`). Reference spec sections or tickets when behavior shifts. PR descriptions should list validation commands (build + `uv run pytest`), summarize artifact diffs, and include logs/screens when CLI output changes.
+
+## Semantic Log
+Maintain a semantic log entry for every merged change in `docs/semantic-log.md` using the format `YYYY-MM-DD | type | scope | summary | validation`. Align the `type` column with Conventional Commit types, keep `scope` consistent with module names, and capture the exact validation command(s) executed. This log feeds release notes, so ensure each entry clearly communicates the user-visible impact.
 
 ## Security & Configuration Tips
 Keep `build/`, `.cache/`, and raw API dumps out of version control; clean them before sharing. Use `--no-cache` for release verification. Document new env vars or dependencies in both `README.md` and this guide.

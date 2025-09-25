@@ -28,6 +28,73 @@ uv run python scripts/verify_proxies.py --json build/mullvad_relays.json --limit
 
 Set `--ws-url` when you need to exercise an alternate WebSocket endpoint.
 
+### Proxy Scraper Checker Integration
+
+The pipeline supports enrichment via [Proxy Scraper Checker](https://github.com/monosans/proxy-scraper-checker) to validate and augment relay metadata with latency and availability information.
+
+#### Installation
+
+Install the proxy-scraper-checker binary using mise:
+
+```bash
+mise install --from git+https://github.com/monosans/proxy-scraper-checker.git --language=rust proxy-scraper-checker
+```
+
+#### Usage
+
+After installation, the enricher can process JSON exports from proxy-scraper-checker to enhance relay metadata:
+
+```python
+from mullvad.proxy_checker import ProxyScraperChecker
+from mullvad.enrich import enrich_relays
+
+# Load proxy-scraper-checker results
+checker = ProxyScraperChecker(Path("proxy_checker_results.json"))
+result = enrich_relays(relays, proxy_checker=checker)
+```
+
+#### Expected JSON Schema
+
+The ProxyScraperChecker supports various JSON output formats from proxy-scraper-checker:
+
+**Direct format** (array of proxy objects):
+```json
+[
+  {
+    "socks5_endpoint": "relay.example.com:1080",
+    "availability": "up",
+    "latency_ms": 45,
+    "country": "Sweden",
+    "city": "Stockholm",
+    "source": "proxy-scraper-checker",
+    "protocol": "socks5"
+  }
+]
+```
+
+**Wrapped format** (proxies under key):
+```json
+{
+  "proxies": [
+    {
+      "endpoint": "relay.example.com:1080",
+      "status": "up",
+      "latency": 89,
+      "country": "Netherlands",
+      "protocol": "socks5"
+    }
+  ]
+}
+```
+
+**Alternative field mappings**:
+- Endpoint: `socks5_endpoint`, `endpoint`, `proxy`, or `host`+`port`
+- Availability: `availability`, `status`, or `alive`
+- Latency: `latency_ms`, `latency`, or `ping`
+- Protocol detection: `protocol` or `type` (must be "socks5")
+
+The enricher automatically maps these field variations to a consistent internal format.
+
 ## Tests
 
 ```bash

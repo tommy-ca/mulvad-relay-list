@@ -20,27 +20,25 @@ def write_json(relays: Iterable[Relay], destination: Path) -> None:
     """Write relays to a JSON file."""
     items = _ensure_sequence(relays)
     try:
-        data = [relay.to_dict() for relay in items]
+        data = []
+        for relay in items:
+            if hasattr(relay, "to_dict"):
+                data.append(relay.to_dict())
+            elif isinstance(relay, Relay):
+                data.append(relay.to_dict())
+            else:
+                data.append(relay)
         destination.write_text(json.dumps(data, indent=2) + "\n")
     except OSError as exc:  # pragma: no cover - disk error safeguard
         raise RelayBuildError(f"Failed to write JSON to {destination}: {exc}") from exc
 
 
 def write_text(relays: Iterable[Relay], destination: Path) -> None:
-    """Write relays in a pipe-delimited text format."""
+    """Write relays as bare SOCKS5 host:port pairs suitable for Mubeng input."""
+
     items = _ensure_sequence(relays)
     try:
-        lines = [
-            "|".join(
-                [
-                    relay.socks5_endpoint,
-                    relay.city,
-                    relay.country,
-                    relay.ipv4,
-                ]
-            )
-            for relay in items
-        ]
+        lines = [relay.socks5_endpoint for relay in items]
         destination.write_text("\n".join(lines) + ("\n" if lines else ""))
     except OSError as exc:  # pragma: no cover - disk error safeguard
         raise RelayBuildError(f"Failed to write text to {destination}: {exc}") from exc

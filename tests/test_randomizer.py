@@ -31,6 +31,7 @@ def _make_relay(hostname: str, weight: int) -> Relay:
         owned=False,
         active=True,
         include_in_country=True,
+        source="test",
     )
 
 
