@@ -1,0 +1,20 @@
+[project]
+name = "mullvad-relay-list"
+version = "0.1.0"
+description = "Utilities for building Mullvad SOCKS5 relay lists and derived artifacts."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "requests>=2.31.0",
+    "websocket-client>=1.8.0",
+    "pysocks>=1.7.0",
+    "python-socks>=2.5.0",
+]
+
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0.0",
+    "websockets>=12.0",
+    "trustme>=0.10.1",
+]

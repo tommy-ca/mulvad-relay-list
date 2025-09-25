@@ -1,0 +1,80 @@
+{
+  "wireguard": {
+    "relays": [
+      {
+        "hostname": "al-tia-wg-003",
+        "location": "al-tia",
+        "active": true,
+        "owned": false,
+        "provider": "iRegister",
+        "ipv4_addr_in": "103.204.123.130",
+        "include_in_country": true,
+        "weight": 100,
+        "public_key": "rWiQxq5lAWD8v/bws9ITSAvThyZW8cR2x+Ins9ZvvRo=",
+        "ipv6_addr_in": "2a04:27c0:0:c::f001"
+      },
+      {
+        "hostname": "al-tia-wg-004",
+        "location": "al-tia",
+        "active": true,
+        "owned": false,
+        "provider": "iRegister",
+        "ipv4_addr_in": "103.204.123.191",
+        "include_in_country": true,
+        "weight": 100,
+        "public_key": "x62J1c4gfHu/bF3DSjwIjC0qOE3azRG03i/YW6bOEGY=",
+        "ipv6_addr_in": "2a04:27c0:0:d::f001"
+      },
+      {
+        "hostname": "at-vie-wg-001",
+        "location": "at-vie",
+        "active": true,
+        "owned": false,
+        "provider": "M247",
+        "ipv4_addr_in": "146.70.116.98",
+        "include_in_country": true,
+        "weight": 100,
+        "public_key": "TNrdH73p6h2EfeXxUiLOCOWHcjmjoslLxZptZpIPQXU=",
+        "ipv6_addr_in": "2001:ac8:29:84::a01f"
+      },
+      {
+        "hostname": "at-vie-wg-002",
+        "location": "at-vie",
+        "active": true,
+        "owned": false,
+        "provider": "M247",
+        "ipv4_addr_in": "146.70.116.130",
+        "include_in_country": true,
+        "weight": 100,
+        "public_key": "ehXBc726YX1N6Dm7fDAVMG5cIaYAFqCA4Lbpl4VWcWE=",
+        "ipv6_addr_in": "2001:ac8:29:85::a02f"
+      },
+      {
+        "hostname": "at-vie-wg-003",
+        "location": "at-vie",
+        "active": true,
+        "owned": false,
+        "provider": "M247",
+        "ipv4_addr_in": "146.70.116.162",
+        "include_in_country": true,
+        "weight": 100,
+        "public_key": "ddllelPu2ndjSX4lHhd/kdCStaSJOQixs9z551qN6B8=",
+        "ipv6_addr_in": "2001:ac8:29:86::a03f"
+      }
+    ]
+  },
+  "locations": {
+    "at-vie": {
+      "country": "Austria",
+      "city": "Vienna",
+      "latitude": 48.210033,
+      "longitude": 16.363449
+    },
+    "al-tia": {
+      "country": "Albania",
+      "city": "Tirana",
+      "latitude": 41.327953,
+      "longitude": 19.819025
+    }
+  }
+}
