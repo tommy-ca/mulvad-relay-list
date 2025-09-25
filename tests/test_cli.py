@@ -50,7 +50,7 @@ def test_build_relay_list_end_to_end(monkeypatch, tmp_path, sample_payload, caps
     assert all(relay["socks5_endpoint"].endswith(".relays.mullvad.net:1080") for relay in relays)
 
     text_lines = [line for line in text_path.read_text().splitlines() if line]
-    assert text_lines == [entry["socks5_endpoint"] for entry in relays]
+    assert text_lines == [f"socks5://{entry['socks5_endpoint']}" for entry in relays]
 
     canonical_payload = json.loads(canonical_path.read_text())
     assert len(canonical_payload) == len(relays)

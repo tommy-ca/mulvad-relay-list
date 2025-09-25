@@ -11,7 +11,7 @@ uv run python build_relay_list.py --limit 20 --verbose
 
 Artifacts are written to `build/mullvad_relays.json`, `build/mullvad_relays.txt`, and `build/mullvad_relays.pac` by default. Add `--emit-canonical-json` when you also want `build/mullvad_relays_canonical.json`, a validated-but-unenriched Mullvad payload that downstream tooling can reshape into other formats.
 
-The text artifact is a newline-delimited list of bare `host:port` SOCKS5 endpoints that can be fed directly into tools such as [Mubeng](https://github.com/mubeng/mubeng):
+The text artifact is a newline-delimited list of `socks5://host:port` URLs that can be fed directly into tools such as [Mubeng](https://github.com/mubeng/mubeng) without any additional transformation:
 
 ```bash
 mubeng run --proxy-file build/mullvad_relays.txt --address https://api.binance.com/api/v3/ping

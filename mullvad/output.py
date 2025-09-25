@@ -34,11 +34,11 @@ def write_json(relays: Iterable[Relay], destination: Path) -> None:
 
 
 def write_text(relays: Iterable[Relay], destination: Path) -> None:
-    """Write relays as bare SOCKS5 host:port pairs suitable for Mubeng input."""
+    """Write relays as SOCKS5 URLs suitable for Mubeng and similar tools."""
 
     items = _ensure_sequence(relays)
     try:
-        lines = [relay.socks5_endpoint for relay in items]
+        lines = [f"socks5://{relay.socks5_endpoint}" for relay in items]
         destination.write_text("\n".join(lines) + ("\n" if lines else ""))
     except OSError as exc:  # pragma: no cover - disk error safeguard
         raise RelayBuildError(f"Failed to write text to {destination}: {exc}") from exc

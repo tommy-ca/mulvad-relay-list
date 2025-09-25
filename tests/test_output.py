@@ -54,6 +54,6 @@ def test_write_text_outputs_host_port_pairs(tmp_path: Path) -> None:
 
     lines = destination.read_text().splitlines()
     assert lines == [
-        "relay-001-socks5.relays.mullvad.net:1080",
-        "relay-002-socks5.relays.mullvad.net:1080",
+        "socks5://relay-001-socks5.relays.mullvad.net:1080",
+        "socks5://relay-002-socks5.relays.mullvad.net:1080",
     ]
