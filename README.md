@@ -6,15 +6,23 @@ A small Python utility that fetches Mullvad's public WireGuard relay inventory, 
 
 ```bash
 uv sync
-uv run python build_relay_list.py --limit 20 --verbose
+uv run python build_relay_list.py --limit 20 --emit-canonical-json --verbose
 ```
 
-Artifacts are written to `build/mullvad_relays.json`, `build/mullvad_relays.txt`, and `build/mullvad_relays.pac` by default. Add `--emit-canonical-json` when you also want `build/mullvad_relays_canonical.json`, a validated-but-unenriched Mullvad payload that downstream tooling can reshape into other formats.
+Artifacts are written to `build/mullvad_relays.json`, `build/mullvad_relays.txt`, and `build/mullvad_relays.pac` by default. Including `--emit-canonical-json` also produces `build/mullvad_relays_canonical.json`, a validated-but-unenriched Mullvad payload that downstream tooling can reshape into other formats.
 
 The text artifact is a newline-delimited list of `socks5://host:port` URLs that can be fed directly into tools such as [Mubeng](https://github.com/mubeng/mubeng) without any additional transformation:
 
 ```bash
-mubeng run --proxy-file build/mullvad_relays.txt --address https://api.binance.com/api/v3/ping
+# fetch a fresh list (canonical + enriched artifacts)
+uv run python build_relay_list.py --emit-canonical-json --no-cache --verbose
+
+# sample the first 20 proxies and verify them with mubeng
+head -n 20 build/mullvad_relays.txt > build/mullvad_relays_subset.txt
+mubeng -f build/mullvad_relays_subset.txt --check --timeout 8s --goroutine 10 --output build/mubeng_checked.txt
+
+# inspect results
+cat build/mubeng_checked.txt
 ```
 
 The PAC artifact embeds the same endpoint list for browser automation.
