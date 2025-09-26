@@ -83,6 +83,11 @@ jobs:
       - name: Run relay pipeline
         run: uv run python build_relay_list.py ${{ steps.resolve.outputs.args }}
 
+      - name: Run verification probes
+        if: steps.resolve.outputs.verify == 'true'
+        run: |
+          uv run python scripts/verify_proxies.py --json build/mullvad_relays.json --limit 5
+
       - name: Export CSV artifact
         run: uv run python scripts/export_relays_csv.py build/mullvad_relays.json build/mullvad_relays.csv
 
@@ -149,19 +154,49 @@ jobs:
           retention-days: 7
 
       - name: Summarise run
+        env:
+          PIPELINE_TRIGGER: ${{ github.event_name }}
+          RUN_URL: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          ARTIFACT_URL: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}#artifacts
+          VERIFY_FLAG: ${{ steps.resolve.outputs.verify }}
+          INPUT_COUNTRIES: ${{ github.event.inputs.countries }}
+          INPUT_PROVIDERS_ALLOW: ${{ github.event.inputs.providers_allow }}
+          INPUT_LIMIT: ${{ github.event.inputs.limit }}
         shell: bash
         run: |
-          cat >> "$GITHUB_STEP_SUMMARY" <<'MARKDOWN'
-          ### Proxy Pipeline Summary
-          - Trigger: `${{ github.event_name }}`
-          - Relay count: $(jq 'length' build/mullvad_relays.json)
-          - Artifacts: JSON, TXT, PAC, CSV, manifest
-          MARKDOWN
+          relay_count=$(jq 'length' build/mullvad_relays.json)
+          {
+            echo "### Proxy Pipeline Summary"
+            echo "- Trigger: \\`$PIPELINE_TRIGGER\\`"
+            echo "- Relay count: $relay_count"
+            if [[ -n "$INPUT_COUNTRIES" || -n "$INPUT_PROVIDERS_ALLOW" || -n "$INPUT_LIMIT" ]]; then
+              echo "- Filter overrides:"
+              [[ -n "$INPUT_COUNTRIES" ]] && echo "  - Countries: $INPUT_COUNTRIES"
+              [[ -n "$INPUT_PROVIDERS_ALLOW" ]] && echo "  - Providers allow: $INPUT_PROVIDERS_ALLOW"
+              [[ -n "$INPUT_LIMIT" ]] && echo "  - Limit: $INPUT_LIMIT"
+            fi
+            if [[ "$VERIFY_FLAG" == "true" ]]; then
+              echo "- Verification: enabled (see workflow logs for results)"
+            else
+              echo "- Verification: disabled"
+            fi
+            echo "- Artifact bundle: [View artifacts]($ARTIFACT_URL)"
+            echo "- Workflow run: [View run]($RUN_URL)"
+          } >> "$GITHUB_STEP_SUMMARY"
   publish-artifacts:
     needs: proxy-pipeline
     if: github.ref == 'refs/heads/main' && needs.proxy-pipeline.result == 'success'
     runs-on: ubuntu-latest
     steps:
+      - name: Guard publication credentials
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if [[ -z "$GITHUB_TOKEN" ]]; then
+            echo "GITHUB_TOKEN is required for publication" >&2
+            exit 1
+          fi
+
       - name: Checkout repository
         uses: actions/checkout@v4
         with:

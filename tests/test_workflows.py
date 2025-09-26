@@ -47,3 +47,18 @@ def test_workflow_exposes_manual_inputs_with_defaults() -> None:
     emit_input = inputs.get("emit_canonical", {})
     assert emit_input.get("default") is False
     assert emit_input.get("type") == "boolean"
+
+
+def test_workflow_runs_verification_when_requested() -> None:
+    data = load_workflow()
+    steps = data["jobs"]["proxy-pipeline"]["steps"]
+    verification_step = next(step for step in steps if step.get("name") == "Run verification probes")
+    assert verification_step.get("if") == "steps.resolve.outputs.verify == 'true'"
+    assert "scripts/verify_proxies.py" in verification_step.get("run", "")
+
+
+def test_publish_job_guards_credentials() -> None:
+    data = load_workflow()
+    steps = data["jobs"]["publish-artifacts"]["steps"]
+    guard_step = next(step for step in steps if step.get("name") == "Guard publication credentials")
+    assert "GITHUB_TOKEN" in guard_step.get("run", "")
