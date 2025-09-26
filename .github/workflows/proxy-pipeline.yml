@@ -180,6 +180,7 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
 
       - name: Prepare publication branch
+        id: publish
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: ${{ github.repository }}
@@ -201,18 +202,20 @@ jobs:
           cp "$artifact_dir/mullvad_relays.csv" relays.csv
           cp "$artifact_dir/manifest.json" manifest.json
           git add relays.json relays.txt relays.pac relays.csv manifest.json
-          git commit -m "chore(publish): update relay artifacts" || echo "No changes to publish"
+          if git diff --cached --quiet; then
+            echo "No artifact updates detected" >> "$GITHUB_STEP_SUMMARY"
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            git commit -m "chore(publish): update relay artifacts"
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
 
       - name: Push publication branch
+        if: steps.publish.outputs.changed == 'true'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: ${{ github.repository }}
           GITHUB_ACTOR: ${{ github.actor }}
         run: |
-          if git diff --cached --quiet; then
-            echo "No artifact changes detected" >> "$GITHUB_STEP_SUMMARY"
-            exit 0
-          fi
-
           git push --force-with-lease https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY.git HEAD:proxy-artifacts
           echo "Published artifacts to proxy-artifacts branch" >> "$GITHUB_STEP_SUMMARY"
