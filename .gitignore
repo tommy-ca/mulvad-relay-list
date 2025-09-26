@@ -3,6 +3,5 @@
 .pytest_cache/
 .benchmarks/
 build/
-.kiro/
 __pycache__/
 *.pyc
