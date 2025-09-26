@@ -204,6 +204,7 @@ jobs:
           persist-credentials: false
 
       - name: Download artifacts
+        id: artifacts
         uses: actions/download-artifact@v4
         with:
           name: mullvad-relay-artifacts
@@ -267,17 +268,21 @@ jobs:
           git checkout proxy-artifacts
           target_commit=$(git rev-parse HEAD)
 
-          artifact_id=""
-          for attempt in {1..12}; do
-            artifact_id=$(curl -s \
-              -H "Authorization: Bearer $GITHUB_TOKEN" \
-              -H "Accept: application/vnd.github+json" \
-              "https://api.github.com/repos/$GITHUB_REPOSITORY/actions/runs/${{ github.run_id }}/artifacts" \
-              | jq -r '((.artifacts // []) | map(select(.name=="mullvad-relay-artifacts") | .id) | first) // empty')
-            [[ -n "$artifact_id" ]] && break
-            echo "Artifact ID not available yet (attempt $attempt)" >&2
-            sleep 5
-          done
+          artifact_id="${{ steps.artifacts.outputs.artifact-id }}"
+
+          if [[ -z "$artifact_id" ]]; then
+            echo "Download step did not expose artifact id; falling back to API lookup" >&2
+            for attempt in {1..12}; do
+              artifact_id=$(curl -s \
+                -H "Authorization: Bearer $GITHUB_TOKEN" \
+                -H "Accept: application/vnd.github+json" \
+                "https://api.github.com/repos/$GITHUB_REPOSITORY/actions/runs/${{ github.run_id }}/artifacts" \
+                | jq -r '((.artifacts // []) | map(select(.name=="mullvad-relay-artifacts") | .id) | first) // empty')
+              [[ -n "$artifact_id" ]] && break
+              echo "Artifact ID not available yet (attempt $attempt)" >&2
+              sleep 5
+            done
+          fi
 
           if [[ -z "$artifact_id" ]]; then
             echo "Unable to resolve artifact ID for release" >&2
