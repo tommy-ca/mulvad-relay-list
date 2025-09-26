@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-09-26T17:18:35.076584+00:00",
+  "generated_at": "2025-09-26T18:02:29.628680+00:00",
   "relay_count": 397,
   "filters": {},
   "verification": {
@@ -28,15 +28,8 @@
     }
   },
   "metadata": {
-    "trigger": "workflow_dispatch",
-    "run_id": "18044627256",
-    "run_number": "14",
-    "inputs": {
-      "countries": "",
-      "providers_allow": "",
-      "limit": "",
-      "verify": "false",
-      "emit_canonical": "false"
-    }
+    "trigger": "schedule",
+    "run_id": "18045551807",
+    "run_number": "15"
   }
 }
