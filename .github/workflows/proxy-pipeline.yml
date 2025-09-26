@@ -180,15 +180,26 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
 
       - name: Prepare publication branch
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          GITHUB_ACTOR: ${{ github.actor }}
         run: |
+          git remote set-url origin https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY.git
           git fetch origin proxy-artifacts:proxy-artifacts || git branch proxy-artifacts
           git checkout proxy-artifacts || git checkout -b proxy-artifacts
           rm -f relays.json relays.txt relays.pac relays.csv manifest.json
-          cp publish/build/mullvad_relays.json relays.json
-          cp publish/build/mullvad_relays.txt relays.txt
-          cp publish/build/mullvad_relays.pac relays.pac
-          cp publish/build/mullvad_relays.csv relays.csv
-          cp publish/build/manifest.json manifest.json
+
+          artifact_dir=$(find publish -type f -name 'mullvad_relays.json' -printf '%h' -quit)
+          if [[ -z "$artifact_dir" ]]; then
+            echo "Artifact files not found after download" >&2
+            exit 1
+          fi
+          cp "$artifact_dir/mullvad_relays.json" relays.json
+          cp "$artifact_dir/mullvad_relays.txt" relays.txt
+          cp "$artifact_dir/mullvad_relays.pac" relays.pac
+          cp "$artifact_dir/mullvad_relays.csv" relays.csv
+          cp "$artifact_dir/manifest.json" manifest.json
           git add relays.json relays.txt relays.pac relays.csv manifest.json
           git commit -m "chore(publish): update relay artifacts" || echo "No changes to publish"
 
