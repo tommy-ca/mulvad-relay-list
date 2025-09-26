@@ -16,6 +16,7 @@ Kiro-style Spec Driven Development implementation using claude code slash comman
 
 ### Active Specifications
 - `pipelines-proxy-enrichment` — pipelines to build proxy list by fetching list from sources, transform, validate and enrich, then output a list
+- `github-workflows-proxy-outputs` — GitHub Actions workflows that run proxy pipelines and publish multiple formatted proxy lists
 - Check `.kiro/specs/` for active specifications
 - Use `/kiro:spec-status [feature-name]` to check progress
 
