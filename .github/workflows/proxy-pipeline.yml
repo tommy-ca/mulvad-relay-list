@@ -1,0 +1,210 @@
+name: Proxy Pipeline
+
+'on':
+  schedule:
+    - cron: '0 * * * *'
+  workflow_dispatch:
+    inputs:
+      countries:
+        description: 'Whitespace-separated country filters (optional)'
+        required: false
+      providers_allow:
+        description: 'Comma-separated provider allow-list (optional)'
+        required: false
+      limit:
+        description: 'Relay limit override (optional)'
+        required: false
+      verify:
+        description: 'Run proxy verification after pipeline'
+        required: false
+        default: false
+        type: boolean
+      emit_canonical:
+        description: 'Emit canonical Mullvad JSON artifact'
+        required: false
+        default: false
+        type: boolean
+
+jobs:
+  proxy-pipeline:
+    concurrency:
+      group: mullvad-relay-pipeline
+      cancel-in-progress: false
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up uv
+        uses: astral-sh/setup-uv@v2
+
+      - name: Install dependencies
+        run: uv sync
+
+      - name: Resolve pipeline arguments
+        id: resolve
+        shell: bash
+        run: |
+          args=("--no-cache" "--output-dir" "build" "--verbose")
+
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
+            if [[ -n "${{ github.event.inputs.countries }}" ]]; then
+              args+=("--countries" "${{ github.event.inputs.countries }}")
+            fi
+            if [[ -n "${{ github.event.inputs.providers_allow }}" ]]; then
+              args+=("--providers-allow" "${{ github.event.inputs.providers_allow }}")
+            fi
+            if [[ -n "${{ github.event.inputs.limit }}" ]]; then
+              args+=("--limit" "${{ github.event.inputs.limit }}")
+            fi
+            if [[ '${{ github.event.inputs.emit_canonical }}' == 'true' ]]; then
+              args+=("--emit-canonical-json")
+            fi
+          fi
+
+          printf 'args=%s\n' "${args[*]}" >> "$GITHUB_OUTPUT"
+          printf 'Pipeline arguments: %s\n' "${args[*]}"
+
+          verify="false"
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" && '${{ github.event.inputs.verify }}' == 'true' ]]; then
+            verify="true"
+          fi
+          printf 'verify=%s\n' "$verify" >> "$GITHUB_OUTPUT"
+
+          if [[ -n "$GITHUB_RUN_ATTEMPT" && "$GITHUB_RUN_ATTEMPT" -gt 1 ]]; then
+            echo "Run attempt $GITHUB_RUN_ATTEMPT waiting for prior execution to finish" >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Run relay pipeline
+        run: uv run python build_relay_list.py ${{ steps.resolve.outputs.args }}
+
+      - name: Export CSV artifact
+        run: uv run python scripts/export_relays_csv.py build/mullvad_relays.json build/mullvad_relays.csv
+
+      - name: Generate manifest
+        env:
+          PIPELINE_TRIGGER: ${{ github.event_name }}
+          PIPELINE_RUN_ID: ${{ github.run_id }}
+          PIPELINE_RUN_NUMBER: ${{ github.run_number }}
+          INPUT_COUNTRIES: ${{ github.event.inputs.countries }}
+          INPUT_PROVIDERS_ALLOW: ${{ github.event.inputs.providers_allow }}
+          INPUT_LIMIT: ${{ github.event.inputs.limit }}
+          INPUT_VERIFY: ${{ github.event.inputs.verify }}
+          INPUT_EMIT_CANONICAL: ${{ github.event.inputs.emit_canonical }}
+          VERIFY_ENABLED: ${{ steps.resolve.outputs.verify }}
+        run: |
+          uv run python - <<'PY'
+          from pathlib import Path
+          import json
+          import os
+          from mullvad.output import write_manifest
+
+          relays_path = Path("build/mullvad_relays.json")
+          relays = json.loads(relays_path.read_text(encoding="utf-8"))
+
+          metadata = {
+              "trigger": os.environ.get("PIPELINE_TRIGGER", "unknown"),
+              "run_id": os.environ.get("PIPELINE_RUN_ID"),
+              "run_number": os.environ.get("PIPELINE_RUN_NUMBER"),
+          }
+          if metadata["trigger"] == "workflow_dispatch":
+              metadata["inputs"] = {
+                  "countries": os.environ.get("INPUT_COUNTRIES", ""),
+                  "providers_allow": os.environ.get("INPUT_PROVIDERS_ALLOW", ""),
+                  "limit": os.environ.get("INPUT_LIMIT", ""),
+                  "verify": os.environ.get("INPUT_VERIFY", ""),
+                  "emit_canonical": os.environ.get("INPUT_EMIT_CANONICAL", ""),
+              }
+
+          write_manifest(
+              relays,
+              Path("build/manifest.json"),
+              filters={},
+              verification={"enabled": os.environ.get("VERIFY_ENABLED", "false") == "true"},
+              artifacts={
+                  "json": relays_path,
+                  "text": Path("build/mullvad_relays.txt"),
+                  "pac": Path("build/mullvad_relays.pac"),
+                  "csv": Path("build/mullvad_relays.csv"),
+              },
+              metadata=metadata,
+          )
+          PY
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: mullvad-relay-artifacts
+          path: |
+            build/mullvad_relays.json
+            build/mullvad_relays.txt
+            build/mullvad_relays.pac
+            build/mullvad_relays.csv
+            build/manifest.json
+          retention-days: 7
+
+      - name: Summarise run
+        shell: bash
+        run: |
+          cat >> "$GITHUB_STEP_SUMMARY" <<'MARKDOWN'
+          ### Proxy Pipeline Summary
+          - Trigger: `${{ github.event_name }}`
+          - Relay count: $(jq 'length' build/mullvad_relays.json)
+          - Artifacts: JSON, TXT, PAC, CSV, manifest
+          MARKDOWN
+  publish-artifacts:
+    needs: proxy-pipeline
+    if: github.ref == 'refs/heads/main' && needs.proxy-pipeline.result == 'success'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Download artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: mullvad-relay-artifacts
+          path: publish
+
+      - name: Configure git
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+
+      - name: Prepare publication branch
+        env:
+          GH_PUBLISH_TOKEN: ${{ secrets.GH_PUBLISH_TOKEN }}
+        run: |
+          if [[ -z "$GH_PUBLISH_TOKEN" ]]; then
+            echo "Publication skipped: GH_PUBLISH_TOKEN not configured" >> "$GITHUB_STEP_SUMMARY"
+            exit 1
+          fi
+
+          git fetch origin proxy-artifacts:proxy-artifacts || git branch proxy-artifacts
+          git checkout proxy-artifacts || git checkout -b proxy-artifacts
+          rm -f relays.json relays.txt relays.pac relays.csv manifest.json
+          cp publish/build/mullvad_relays.json relays.json
+          cp publish/build/mullvad_relays.txt relays.txt
+          cp publish/build/mullvad_relays.pac relays.pac
+          cp publish/build/mullvad_relays.csv relays.csv
+          cp publish/build/manifest.json manifest.json
+          git add relays.json relays.txt relays.pac relays.csv manifest.json
+          git commit -m "chore(publish): update relay artifacts" || echo "No changes to publish"
+
+      - name: Push publication branch
+        env:
+          GH_PUBLISH_TOKEN: ${{ secrets.GH_PUBLISH_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: |
+          if git diff --cached --quiet; then
+            echo "No artifact changes detected" >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+
+          git push --force-with-lease https://x-access-token:$GH_PUBLISH_TOKEN@github.com/$GITHUB_REPOSITORY.git HEAD:proxy-artifacts
+          echo "Published artifacts to proxy-artifacts branch" >> "$GITHUB_STEP_SUMMARY"
