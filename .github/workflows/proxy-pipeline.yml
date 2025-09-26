@@ -254,3 +254,50 @@ jobs:
         run: |
           git push --force-with-lease origin HEAD:proxy-artifacts
           echo "Published artifacts to proxy-artifacts branch" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Update hourly release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          RUN_URL: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          ARTIFACT_URL: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}#artifacts
+        run: |
+          set -eo pipefail
+
+          git fetch origin proxy-artifacts
+          git checkout proxy-artifacts
+          target_commit=$(git rev-parse HEAD)
+
+          body=$(cat <<'EOF'
+          ### Hourly Proxy Pipeline
+          - Workflow run: RUN_URL
+          - Artifact bundle: ARTIFACT_URL
+          EOF
+          )
+          body=${body/RUN_URL/$RUN_URL}
+          body=${body/ARTIFACT_URL/$ARTIFACT_URL}
+
+          api_base="https://api.github.com/repos/$GITHUB_REPOSITORY"
+          release_tag="hourly-latest"
+
+          existing_status=$(curl -s -o release.json -w "%{http_code}" \
+            -H "Authorization: Bearer $GITHUB_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            "$api_base/releases/tags/$release_tag" || true)
+
+          if [[ "$existing_status" == "200" ]]; then
+            release_id=$(jq -r '.id' release.json)
+            curl -s -X PATCH \
+              -H "Authorization: Bearer $GITHUB_TOKEN" \
+              -H "Accept: application/vnd.github+json" \
+              "$api_base/releases/$release_id" \
+              -d @<(jq -n --arg tag "$release_tag" --arg target "$target_commit" --arg body "$body" '{tag_name:$tag,target_commitish:$target,name:$tag,body:$body}') >/dev/null
+          else
+            curl -s -X POST \
+              -H "Authorization: Bearer $GITHUB_TOKEN" \
+              -H "Accept: application/vnd.github+json" \
+              "$api_base/releases" \
+              -d @<(jq -n --arg tag "$release_tag" --arg target "$target_commit" --arg body "$body" '{tag_name:$tag,target_commitish:$target,name:$tag,body:$body,draft:false,prerelease:false}') >/dev/null
+          fi
+
+          echo "hourly-latest release updated" >> "$GITHUB_STEP_SUMMARY"

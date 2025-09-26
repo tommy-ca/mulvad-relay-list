@@ -45,6 +45,12 @@
   - Announce raw file URLs and commit identifiers in the publication step summary for downstream consumption.
   - _Requirements: R3.2, R3.3, R4.3_
 
+- [ ] 3.3 Maintain hourly release tag
+  - Create or update a `hourly-latest` GitHub release that points to the publication branch tip after each successful run.
+  - Populate release notes with links to the originating workflow run and artifact bundle URLs.
+  - Fail the workflow when the release API call does not succeed so operators can intervene.
+  - _Requirements: R3.2_
+
 - [ ] 4. Strengthen observability and guardrails
 - [x] 4.1 Enhance run logging and summaries
   - Emit grouped logs around fetch, transform, verification, and publication stages with precise timestamps.

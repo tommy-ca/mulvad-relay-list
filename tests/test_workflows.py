@@ -62,3 +62,10 @@ def test_publish_job_guards_credentials() -> None:
     steps = data["jobs"]["publish-artifacts"]["steps"]
     guard_step = next(step for step in steps if step.get("name") == "Guard publication credentials")
     assert "GITHUB_TOKEN" in guard_step.get("run", "")
+
+
+def test_publish_job_updates_release() -> None:
+    data = load_workflow()
+    steps = data["jobs"]["publish-artifacts"]["steps"]
+    release_step = next(step for step in steps if step.get("name") == "Update hourly release")
+    assert "hourly-latest" in release_step.get("run", "")
