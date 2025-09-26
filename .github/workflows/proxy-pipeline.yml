@@ -271,7 +271,12 @@ jobs:
             -H "Authorization: Bearer $GITHUB_TOKEN" \
             -H "Accept: application/vnd.github+json" \
             "https://api.github.com/repos/$GITHUB_REPOSITORY/actions/runs/${{ github.run_id }}/artifacts" \
-            | jq -r '.artifacts[0].id')
+            | jq -r '.artifacts[0].id // empty')
+
+          if [[ -z "$artifact_id" ]]; then
+            echo "Unable to resolve artifact ID for release" >&2
+            exit 1
+          fi
 
           artifact_url="https://github.com/$GITHUB_REPOSITORY/actions/runs/${{ github.run_id }}/artifacts/$artifact_id"
 
