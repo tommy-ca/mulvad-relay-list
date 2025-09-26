@@ -27,6 +27,7 @@ name: Proxy Pipeline
 
 permissions:
   contents: write
+  actions: read
 
 jobs:
   proxy-pipeline:
