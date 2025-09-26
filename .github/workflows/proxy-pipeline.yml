@@ -268,7 +268,7 @@ jobs:
           target_commit=$(git rev-parse HEAD)
 
           artifact_id=""
-          for attempt in {1..5}; do
+          for attempt in {1..12}; do
             artifact_id=$(curl -s \
               -H "Authorization: Bearer $GITHUB_TOKEN" \
               -H "Accept: application/vnd.github+json" \
