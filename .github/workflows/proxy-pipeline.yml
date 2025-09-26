@@ -181,14 +181,7 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
 
       - name: Prepare publication branch
-        env:
-          GH_PUBLISH_TOKEN: ${{ secrets.GH_PUBLISH_TOKEN }}
         run: |
-          if [[ -z "$GH_PUBLISH_TOKEN" ]]; then
-            echo "Publication skipped: GH_PUBLISH_TOKEN not configured" >> "$GITHUB_STEP_SUMMARY"
-            exit 1
-          fi
-
           git fetch origin proxy-artifacts:proxy-artifacts || git branch proxy-artifacts
           git checkout proxy-artifacts || git checkout -b proxy-artifacts
           rm -f relays.json relays.txt relays.pac relays.csv manifest.json
@@ -202,13 +195,14 @@ jobs:
 
       - name: Push publication branch
         env:
-          GH_PUBLISH_TOKEN: ${{ secrets.GH_PUBLISH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: ${{ github.repository }}
+          GITHUB_ACTOR: ${{ github.actor }}
         run: |
           if git diff --cached --quiet; then
             echo "No artifact changes detected" >> "$GITHUB_STEP_SUMMARY"
             exit 0
           fi
 
-          git push --force-with-lease https://x-access-token:$GH_PUBLISH_TOKEN@github.com/$GITHUB_REPOSITORY.git HEAD:proxy-artifacts
+          git push --force-with-lease https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY.git HEAD:proxy-artifacts
           echo "Published artifacts to proxy-artifacts branch" >> "$GITHUB_STEP_SUMMARY"
