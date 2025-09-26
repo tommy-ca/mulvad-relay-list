@@ -25,10 +25,11 @@ name: Proxy Pipeline
         default: false
         type: boolean
 
+permissions:
+  contents: write
+
 jobs:
   proxy-pipeline:
-    permissions:
-      contents: write
     concurrency:
       group: mullvad-relay-pipeline
       cancel-in-progress: false
@@ -159,8 +160,6 @@ jobs:
   publish-artifacts:
     needs: proxy-pipeline
     if: github.ref == 'refs/heads/main' && needs.proxy-pipeline.result == 'success'
-    permissions:
-      contents: write
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
