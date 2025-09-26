@@ -1,0 +1,42 @@
+{
+  "generated_at": "2025-09-26T16:37:50.719823+00:00",
+  "relay_count": 397,
+  "filters": {},
+  "verification": {
+    "enabled": false
+  },
+  "artifacts": {
+    "json": {
+      "path": "build/mullvad_relays.json",
+      "sha256": "d3d87b70a57439960e3569943c4636184fd84a273db6dad4315a0654a62fd264",
+      "size_bytes": 197928
+    },
+    "text": {
+      "path": "build/mullvad_relays.txt",
+      "sha256": "0c57281a8f72d34bfab9d7fd7a17f9ff2b3350999bb897b687294d633466f3f7",
+      "size_bytes": 21438
+    },
+    "pac": {
+      "path": "build/mullvad_relays.pac",
+      "sha256": "c4d9aeae94061f3d8a3465fd693d7504e9104caf785d70675ac8ab96ddc319ed",
+      "size_bytes": 25272
+    },
+    "csv": {
+      "path": "build/mullvad_relays.csv",
+      "sha256": "b09d5d9a081882ddc431cf5eb68ece0bc0115ddfd62bf724896681701d14133a",
+      "size_bytes": 56720
+    }
+  },
+  "metadata": {
+    "trigger": "workflow_dispatch",
+    "run_id": "18043728898",
+    "run_number": "10",
+    "inputs": {
+      "countries": "",
+      "providers_allow": "",
+      "limit": "",
+      "verify": "false",
+      "emit_canonical": "false"
+    }
+  }
+}
