@@ -252,5 +252,5 @@ jobs:
           GITHUB_REPOSITORY: ${{ github.repository }}
           GITHUB_ACTOR: ${{ github.actor }}
         run: |
-          git push --force-with-lease https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY.git HEAD:proxy-artifacts
+          git push --force-with-lease origin HEAD:proxy-artifacts
           echo "Published artifacts to proxy-artifacts branch" >> "$GITHUB_STEP_SUMMARY"
