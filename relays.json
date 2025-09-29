@@ -799,23 +799,6 @@
     "display_label": "Toronto, Canada (DataPacket)"
   },
   {
-    "hostname": "ca-tor-wg-201",
-    "socks5_hostname": "ca-tor-wg-socks5-201",
-    "socks5_endpoint": "ca-tor-wg-socks5-201.relays.mullvad.net:1080",
-    "location_id": "ca-tor",
-    "city": "Toronto",
-    "country": "Canada",
-    "provider": "Tzulo",
-    "ipv4": "23.234.84.2",
-    "ipv6": "2607:9000:600:31::f001",
-    "weight": 100,
-    "owned": false,
-    "active": true,
-    "include_in_country": true,
-    "source": "mullvad",
-    "display_label": "Toronto, Canada (Tzulo)"
-  },
-  {
     "hostname": "ca-tor-wg-202",
     "socks5_hostname": "ca-tor-wg-socks5-202",
     "socks5_endpoint": "ca-tor-wg-socks5-202.relays.mullvad.net:1080",
