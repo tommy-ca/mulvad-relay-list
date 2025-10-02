@@ -213,6 +213,7 @@ gb-lon-wg-202,gb-lon-wg-socks5-202,gb-lon-wg-socks5-202.relays.mullvad.net:1080,
 gb-lon-wg-203,gb-lon-wg-socks5-203,gb-lon-wg-socks5-203.relays.mullvad.net:1080,London,UK,xtom,185.248.85.33,2a0b:89c1:3::a35f
 gb-lon-wg-204,gb-lon-wg-socks5-204,gb-lon-wg-socks5-204.relays.mullvad.net:1080,London,UK,xtom,185.248.85.48,2a0b:89c1:3::a36f
 gb-lon-wg-301,gb-lon-wg-socks5-301,gb-lon-wg-socks5-301.relays.mullvad.net:1080,London,UK,M247,146.70.119.66,2001:ac8:31:f007::a39f
+gb-lon-wg-302,gb-lon-wg-socks5-302,gb-lon-wg-socks5-302.relays.mullvad.net:1080,London,UK,M247,146.70.119.2,2001:ac8:31:f005::a37f
 gb-lon-wg-304,gb-lon-wg-socks5-304,gb-lon-wg-socks5-304.relays.mullvad.net:1080,London,UK,M247,146.70.119.162,2001:ac8:31:f00a::f001
 gb-mnc-wg-008,gb-mnc-wg-socks5-008,gb-mnc-wg-socks5-008.relays.mullvad.net:1080,Manchester,UK,M247,146.70.133.66,2001:ac8:8b:2c::f001
 gb-mnc-wg-009,gb-mnc-wg-socks5-009,gb-mnc-wg-socks5-009.relays.mullvad.net:1080,Manchester,UK,M247,146.70.132.98,2001:ac8:8b:25::f001
