@@ -1,6 +1,6 @@
 hostname,socks5_hostname,socks5_endpoint,city,country,provider,ipv4,ipv6
 al-tia-wg-003,al-tia-wg-socks5-003,al-tia-wg-socks5-003.relays.mullvad.net:1080,Tirana,Albania,iRegister,103.124.165.130,2a04:27c0:0:c::f001
-al-tia-wg-004,al-tia-wg-socks5-004,al-tia-wg-socks5-004.relays.mullvad.net:1080,Tirana,Albania,iRegister,103.204.123.191,2a04:27c0:0:d::f001
+al-tia-wg-004,al-tia-wg-socks5-004,al-tia-wg-socks5-004.relays.mullvad.net:1080,Tirana,Albania,iRegister,103.124.165.191,2a04:27c0:0:d::f001
 au-adl-wg-301,au-adl-wg-socks5-301,au-adl-wg-socks5-301.relays.mullvad.net:1080,Adelaide,Australia,hostuniversal,103.214.20.50,2404:f780:0:deb::c1f
 au-adl-wg-302,au-adl-wg-socks5-302,au-adl-wg-socks5-302.relays.mullvad.net:1080,Adelaide,Australia,hostuniversal,103.214.20.130,2404:f780:0:dec::c2f
 au-bne-wg-301,au-bne-wg-socks5-301,au-bne-wg-socks5-301.relays.mullvad.net:1080,Brisbane,Australia,hostuniversal,103.216.220.18,2404:f780:4:deb::f001
