@@ -1,3 +1,4 @@
+socks5://al-tia-wg-socks5-003.relays.mullvad.net:1080
 socks5://al-tia-wg-socks5-004.relays.mullvad.net:1080
 socks5://au-adl-wg-socks5-301.relays.mullvad.net:1080
 socks5://au-adl-wg-socks5-302.relays.mullvad.net:1080
