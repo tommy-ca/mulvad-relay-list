@@ -22,6 +22,8 @@ au-syd-wg-304,au-syd-wg-socks5-304,au-syd-wg-socks5-304.relays.mullvad.net:1080,
 at-vie-wg-001,at-vie-wg-socks5-001,at-vie-wg-socks5-001.relays.mullvad.net:1080,Vienna,Austria,M247,146.70.116.98,2001:ac8:29:84::a01f
 at-vie-wg-002,at-vie-wg-socks5-002,at-vie-wg-socks5-002.relays.mullvad.net:1080,Vienna,Austria,M247,146.70.116.130,2001:ac8:29:85::a02f
 at-vie-wg-003,at-vie-wg-socks5-003,at-vie-wg-socks5-003.relays.mullvad.net:1080,Vienna,Austria,M247,146.70.116.162,2001:ac8:29:86::a03f
+at-vie-wg-101,at-vie-wg-socks5-101,at-vie-wg-socks5-101.relays.mullvad.net:1080,Vienna,Austria,DataPacket,185.24.11.130,2a02:6ea0:cb1b:1::f001
+at-vie-wg-102,at-vie-wg-socks5-102,at-vie-wg-socks5-102.relays.mullvad.net:1080,Vienna,Austria,DataPacket,185.24.11.159,2a02:6ea0:cb1b:2::f001
 be-bru-wg-101,be-bru-wg-socks5-101,be-bru-wg-socks5-101.relays.mullvad.net:1080,Brussels,Belgium,M247,91.90.123.2,2001:ac8:27:88::a01f
 be-bru-wg-102,be-bru-wg-socks5-102,be-bru-wg-socks5-102.relays.mullvad.net:1080,Brussels,Belgium,M247,194.110.115.34,2001:ac8:27:89::a02f
 be-bru-wg-103,be-bru-wg-socks5-103,be-bru-wg-socks5-103.relays.mullvad.net:1080,Brussels,Belgium,M247,194.110.115.2,2001:ac8:27:92::a03f
