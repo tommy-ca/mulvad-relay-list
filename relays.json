@@ -34,23 +34,6 @@
     "display_label": "Tirana, Albania (iRegister)"
   },
   {
-    "hostname": "au-adl-wg-301",
-    "socks5_hostname": "au-adl-wg-socks5-301",
-    "socks5_endpoint": "au-adl-wg-socks5-301.relays.mullvad.net:1080",
-    "location_id": "au-adl",
-    "city": "Adelaide",
-    "country": "Australia",
-    "provider": "hostuniversal",
-    "ipv4": "103.214.20.50",
-    "ipv6": "2404:f780:0:deb::c1f",
-    "weight": 100,
-    "owned": false,
-    "active": true,
-    "include_in_country": true,
-    "source": "mullvad",
-    "display_label": "Adelaide, Australia (hostuniversal)"
-  },
-  {
     "hostname": "au-adl-wg-302",
     "socks5_hostname": "au-adl-wg-socks5-302",
     "socks5_endpoint": "au-adl-wg-socks5-302.relays.mullvad.net:1080",
