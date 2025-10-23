@@ -3740,6 +3740,23 @@
     "display_label": "Ashburn, VA, USA (DataPacket)"
   },
   {
+    "hostname": "us-qas-wg-102",
+    "socks5_hostname": "us-qas-wg-socks5-102",
+    "socks5_endpoint": "us-qas-wg-socks5-102.relays.mullvad.net:1080",
+    "location_id": "us-qas",
+    "city": "Ashburn, VA",
+    "country": "USA",
+    "provider": "DataPacket",
+    "ipv4": "185.156.46.143",
+    "ipv6": "2a02:6ea0:e206:2::a02f",
+    "weight": 100,
+    "owned": false,
+    "active": true,
+    "include_in_country": true,
+    "source": "mullvad",
+    "display_label": "Ashburn, VA, USA (DataPacket)"
+  },
+  {
     "hostname": "us-qas-wg-103",
     "socks5_hostname": "us-qas-wg-socks5-103",
     "socks5_endpoint": "us-qas-wg-socks5-103.relays.mullvad.net:1080",

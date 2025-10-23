@@ -219,6 +219,7 @@ gb-mnc-wg-009,gb-mnc-wg-socks5-009,gb-mnc-wg-socks5-009.relays.mullvad.net:1080,
 ua-iev-wg-001,ua-iev-wg-socks5-001,ua-iev-wg-socks5-001.relays.mullvad.net:1080,Kyiv,Ukraine,DataPacket,149.102.240.79,2a02:6ea0:e109:2::a01f
 ua-iev-wg-002,ua-iev-wg-socks5-002,ua-iev-wg-socks5-002.relays.mullvad.net:1080,Kyiv,Ukraine,DataPacket,149.102.240.66,2a02:6ea0:e109:1::a02f
 us-qas-wg-101,us-qas-wg-socks5-101,us-qas-wg-socks5-101.relays.mullvad.net:1080,"Ashburn, VA",USA,DataPacket,185.156.46.130,2a02:6ea0:e206:1::a01f
+us-qas-wg-102,us-qas-wg-socks5-102,us-qas-wg-socks5-102.relays.mullvad.net:1080,"Ashburn, VA",USA,DataPacket,185.156.46.143,2a02:6ea0:e206:2::a02f
 us-qas-wg-103,us-qas-wg-socks5-103,us-qas-wg-socks5-103.relays.mullvad.net:1080,"Ashburn, VA",USA,DataPacket,185.156.46.156,2a02:6ea0:e206:3::a03f
 us-qas-wg-201,us-qas-wg-socks5-201,us-qas-wg-socks5-201.relays.mullvad.net:1080,"Ashburn, VA",USA,HostRoyale,103.81.230.3,2a01:4740:1::f001
 us-qas-wg-202,us-qas-wg-socks5-202,us-qas-wg-socks5-202.relays.mullvad.net:1080,"Ashburn, VA",USA,HostRoyale,103.81.230.127,2a01:4740:1::f101
