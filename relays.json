@@ -6103,23 +6103,6 @@
     "display_label": "Raleigh, NC, USA (Tzulo)"
   },
   {
-    "hostname": "us-rag-wg-208",
-    "socks5_hostname": "us-rag-wg-socks5-208",
-    "socks5_endpoint": "us-rag-wg-socks5-208.relays.mullvad.net:1080",
-    "location_id": "us-rag",
-    "city": "Raleigh, NC",
-    "country": "USA",
-    "provider": "Tzulo",
-    "ipv4": "23.234.79.127",
-    "ipv6": "2607:9000:4000:38::f001",
-    "weight": 100,
-    "owned": false,
-    "active": true,
-    "include_in_country": true,
-    "source": "mullvad",
-    "display_label": "Raleigh, NC, USA (Tzulo)"
-  },
-  {
     "hostname": "us-slc-wg-201",
     "socks5_hostname": "us-slc-wg-socks5-201",
     "socks5_endpoint": "us-slc-wg-socks5-201.relays.mullvad.net:1080",
