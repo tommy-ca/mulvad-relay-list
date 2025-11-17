@@ -129,6 +129,7 @@ jp-osa-wg-004,jp-osa-wg-socks5-004,jp-osa-wg-socks5-004.relays.mullvad.net:1080,
 jp-tyo-wg-001,jp-tyo-wg-socks5-001,jp-tyo-wg-socks5-001.relays.mullvad.net:1080,Tokyo,Japan,DataPacket,138.199.21.239,2a02:6ea0:d31c::a15f
 jp-tyo-wg-002,jp-tyo-wg-socks5-002,jp-tyo-wg-socks5-002.relays.mullvad.net:1080,Tokyo,Japan,DataPacket,138.199.21.226,2a02:6ea0:d31b::a14f
 jp-tyo-wg-201,jp-tyo-wg-socks5-201,jp-tyo-wg-socks5-201.relays.mullvad.net:1080,Tokyo,Japan,M247,146.70.138.194,2001:ac8:40:11::b01f
+jp-tyo-wg-202,jp-tyo-wg-socks5-202,jp-tyo-wg-socks5-202.relays.mullvad.net:1080,Tokyo,Japan,M247,146.70.201.2,2001:ac8:40:13::b02f
 jp-tyo-wg-203,jp-tyo-wg-socks5-203,jp-tyo-wg-socks5-203.relays.mullvad.net:1080,Tokyo,Japan,M247,146.70.201.66,2001:ac8:40:14::b03f
 my-kul-wg-001,my-kul-wg-socks5-001,my-kul-wg-socks5-001.relays.mullvad.net:1080,Kuala Lumpur,Malaysia,Zenlayer,98.98.47.130,2602:ffe4:c20:112::f001
 my-kul-wg-002,my-kul-wg-socks5-002,my-kul-wg-socks5-002.relays.mullvad.net:1080,Kuala Lumpur,Malaysia,Zenlayer,162.128.129.98,2602:ffe4:c20:112::f101
