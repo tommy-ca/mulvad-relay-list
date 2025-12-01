@@ -95,6 +95,9 @@ de-fra-wg-301,de-fra-wg-socks5-301,de-fra-wg-socks5-301.relays.mullvad.net:1080,
 de-fra-wg-302,de-fra-wg-socks5-302,de-fra-wg-socks5-302.relays.mullvad.net:1080,Frankfurt,Germany,xtom,194.36.25.18,2a07:fe00:1::a24f
 de-fra-wg-303,de-fra-wg-socks5-303,de-fra-wg-socks5-303.relays.mullvad.net:1080,Frankfurt,Germany,xtom,194.36.25.33,2a07:fe00:1::a25f
 de-fra-wg-304,de-fra-wg-socks5-304,de-fra-wg-socks5-304.relays.mullvad.net:1080,Frankfurt,Germany,xtom,194.36.25.48,2a07:fe00:1::a26f
+de-fra-wg-401,de-fra-wg-socks5-401,de-fra-wg-socks5-401.relays.mullvad.net:1080,Frankfurt,Germany,DataPacket,169.150.201.2,2a02:6ea0:c762:1::a35f
+de-fra-wg-402,de-fra-wg-socks5-402,de-fra-wg-socks5-402.relays.mullvad.net:1080,Frankfurt,Germany,DataPacket,169.150.201.15,2a02:6ea0:c762:2::a36f
+de-fra-wg-403,de-fra-wg-socks5-403,de-fra-wg-socks5-403.relays.mullvad.net:1080,Frankfurt,Germany,DataPacket,169.150.201.28,2a02:6ea0:c762:3::a37f
 gr-ath-wg-101,gr-ath-wg-socks5-101,gr-ath-wg-socks5-101.relays.mullvad.net:1080,Athens,Greece,DataPacket,149.102.246.2,2a02:6ea0:f501:2::f001
 gr-ath-wg-102,gr-ath-wg-socks5-102,gr-ath-wg-socks5-102.relays.mullvad.net:1080,Athens,Greece,DataPacket,149.102.246.15,2a02:6ea0:f501:3::f001
 hk-hkg-wg-201,hk-hkg-wg-socks5-201,hk-hkg-wg-socks5-201.relays.mullvad.net:1080,Hong Kong,Hong Kong,xtom,103.125.233.18,2403:2c81:1000::a06f
