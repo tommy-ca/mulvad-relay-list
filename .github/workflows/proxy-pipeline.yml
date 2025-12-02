@@ -244,27 +244,6 @@ jobs:
           fetch-depth: 0
           persist-credentials: false
 
-      - name: Recency guard
-        id: guard
-        env:
-          CURR_RUN: ${{ github.run_number }}
-          CURR_ATTEMPT: ${{ github.run_attempt }}
-        run: |
-          set -euo pipefail
-          marker=run_info.json
-          prev_run=0
-          prev_attempt=0
-          if [[ -f "$marker" ]]; then
-            prev_run=$(jq -r '.run_number // 0' "$marker")
-            prev_attempt=$(jq -r '.run_attempt // 0' "$marker")
-          fi
-          if (( CURR_RUN < prev_run )) || { (( CURR_RUN == prev_run )) && (( CURR_ATTEMPT <= prev_attempt )); }; then
-            echo "Stale run: previous ${prev_run}/${prev_attempt} newer or equal to ${CURR_RUN}/${CURR_ATTEMPT}; skipping publish" | tee -a "$GITHUB_STEP_SUMMARY"
-            echo "proceed=false" >> "$GITHUB_OUTPUT"
-            exit 0
-          fi
-          echo "proceed=true" >> "$GITHUB_OUTPUT"
-
       - name: Download artifacts
         id: artifacts
         uses: actions/download-artifact@v4
@@ -276,6 +255,27 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+
+      - name: Recency guard
+        id: guard
+        env:
+          CURR_RUN: ${{ github.run_number }}
+          CURR_ATTEMPT: ${{ github.run_attempt }}
+        run: |
+          set -euo pipefail
+          git fetch origin proxy-artifacts:proxy-artifacts || true
+          prev_run=0
+          prev_attempt=0
+          if git show proxy-artifacts:run_info.json > /tmp/prev_run_info.json 2>/dev/null; then
+            prev_run=$(jq -r '.run_number // 0' /tmp/prev_run_info.json)
+            prev_attempt=$(jq -r '.run_attempt // 0' /tmp/prev_run_info.json)
+          fi
+          if (( CURR_RUN < prev_run )) || { (( CURR_RUN == prev_run )) && (( CURR_ATTEMPT <= prev_attempt )); }; then
+            echo "Stale run: previous ${prev_run}/${prev_attempt} newer or equal to ${CURR_RUN}/${CURR_ATTEMPT}; skipping publish" | tee -a "$GITHUB_STEP_SUMMARY"
+            echo "proceed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          echo "proceed=true" >> "$GITHUB_OUTPUT"
 
       - name: Prepare publication branch
         id: publish
