@@ -28,6 +28,9 @@ name: Proxy Pipeline
 permissions:
   contents: write
   actions: read
+  packages: write
+  pages: write
+  id-token: write
 
 jobs:
   proxy-pipeline:
@@ -72,10 +75,16 @@ jobs:
           printf 'Pipeline arguments: %s\n' "${args[*]}"
 
           verify="false"
-          if [[ "${{ github.event_name }}" == "workflow_dispatch" && '${{ github.event.inputs.verify }}' == 'true' ]]; then
+          if [[ "${{ github.event_name }}" == "schedule" ]]; then
+            verify="true"
+          elif [[ "${{ github.event_name }}" == "workflow_dispatch" && '${{ github.event.inputs.verify }}' == 'true' ]]; then
             verify="true"
           fi
           printf 'verify=%s\n' "$verify" >> "$GITHUB_OUTPUT"
+
+          # carry verification sample size (default 5 for scheduled runs)
+          verify_limit=5
+          printf 'verify_limit=%s\n' "$verify_limit" >> "$GITHUB_OUTPUT"
 
           if [[ -n "$GITHUB_RUN_ATTEMPT" && "$GITHUB_RUN_ATTEMPT" -gt 1 ]]; then
             echo "Run attempt $GITHUB_RUN_ATTEMPT waiting for prior execution to finish" >> "$GITHUB_STEP_SUMMARY"
@@ -87,7 +96,7 @@ jobs:
       - name: Run verification probes
         if: steps.resolve.outputs.verify == 'true'
         run: |
-          uv run python scripts/verify_proxies.py --json build/mullvad_relays.json --limit 5
+          uv run python scripts/verify_proxies.py --json build/mullvad_relays.json --limit ${{ steps.resolve.outputs.verify_limit }}
 
       - name: Export CSV artifact
         run: uv run python scripts/export_relays_csv.py build/mullvad_relays.json build/mullvad_relays.csv
@@ -103,6 +112,7 @@ jobs:
           INPUT_VERIFY: ${{ github.event.inputs.verify }}
           INPUT_EMIT_CANONICAL: ${{ github.event.inputs.emit_canonical }}
           VERIFY_ENABLED: ${{ steps.resolve.outputs.verify }}
+          VERIFY_LIMIT: ${{ steps.resolve.outputs.verify_limit }}
         run: |
           uv run python - <<'PY'
           from pathlib import Path
@@ -126,12 +136,25 @@ jobs:
                   "verify": os.environ.get("INPUT_VERIFY", ""),
                   "emit_canonical": os.environ.get("INPUT_EMIT_CANONICAL", ""),
               }
+          else:
+              metadata["inputs"] = {}
+
+          filters = {}
+          if os.environ.get("INPUT_COUNTRIES"):
+              filters["countries"] = os.environ.get("INPUT_COUNTRIES")
+          if os.environ.get("INPUT_PROVIDERS_ALLOW"):
+              filters["providers_allow"] = os.environ.get("INPUT_PROVIDERS_ALLOW")
+          if os.environ.get("INPUT_LIMIT"):
+              filters["limit"] = os.environ.get("INPUT_LIMIT")
 
           write_manifest(
               relays,
               Path("build/manifest.json"),
-              filters={},
-              verification={"enabled": os.environ.get("VERIFY_ENABLED", "false") == "true"},
+              filters=filters,
+              verification={
+                  "enabled": os.environ.get("VERIFY_ENABLED", "false") == "true",
+                  "limit": int(os.environ.get("VERIFY_LIMIT", "0") or 0),
+              },
               artifacts={
                   "json": relays_path,
                   "text": Path("build/mullvad_relays.txt"),
@@ -141,6 +164,17 @@ jobs:
               metadata=metadata,
           )
           PY
+
+      - name: Generate checksums
+        working-directory: build
+        run: |
+          set -euo pipefail
+          sha256sum mullvad_relays.json mullvad_relays.txt mullvad_relays.pac mullvad_relays.csv manifest.json > SHA256SUMS
+          sha256sum -c SHA256SUMS
+
+      - name: Package OCI bundle
+        run: |
+          tar -czf build/relay-artifacts.tar.gz -C build mullvad_relays.json mullvad_relays.txt mullvad_relays.pac mullvad_relays.csv manifest.json SHA256SUMS
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
@@ -152,6 +186,8 @@ jobs:
             build/mullvad_relays.pac
             build/mullvad_relays.csv
             build/manifest.json
+            build/SHA256SUMS
+            build/relay-artifacts.tar.gz
           retention-days: 7
 
       - name: Summarise run
@@ -188,6 +224,10 @@ jobs:
     needs: proxy-pipeline
     if: github.ref == 'refs/heads/main' && needs.proxy-pipeline.result == 'success'
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+    strategy:
+      max-parallel: 1
     steps:
       - name: Guard publication credentials
         env:
@@ -204,6 +244,27 @@ jobs:
           fetch-depth: 0
           persist-credentials: false
 
+      - name: Recency guard
+        id: guard
+        env:
+          CURR_RUN: ${{ github.run_number }}
+          CURR_ATTEMPT: ${{ github.run_attempt }}
+        run: |
+          set -euo pipefail
+          marker=run_info.json
+          prev_run=0
+          prev_attempt=0
+          if [[ -f "$marker" ]]; then
+            prev_run=$(jq -r '.run_number // 0' "$marker")
+            prev_attempt=$(jq -r '.run_attempt // 0' "$marker")
+          fi
+          if (( CURR_RUN < prev_run )) || { (( CURR_RUN == prev_run )) && (( CURR_ATTEMPT <= prev_attempt )); }; then
+            echo "Stale run: previous ${prev_run}/${prev_attempt} newer or equal to ${CURR_RUN}/${CURR_ATTEMPT}; skipping publish" | tee -a "$GITHUB_STEP_SUMMARY"
+            echo "proceed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          echo "proceed=true" >> "$GITHUB_OUTPUT"
+
       - name: Download artifacts
         id: artifacts
         uses: actions/download-artifact@v4
@@ -218,6 +279,7 @@ jobs:
 
       - name: Prepare publication branch
         id: publish
+        if: steps.guard.outputs.proceed == 'true'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: ${{ github.repository }}
@@ -226,7 +288,7 @@ jobs:
           git remote set-url origin https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY.git
           git fetch origin proxy-artifacts:proxy-artifacts || git branch proxy-artifacts
           git checkout proxy-artifacts || git checkout -b proxy-artifacts
-          rm -f relays.json relays.txt relays.pac relays.csv manifest.json
+          rm -f relays.json relays.txt relays.pac relays.csv manifest.json SHA256SUMS relay-artifacts.tar.gz run_info.json
 
           artifact_dir=$(find publish -type f -name 'mullvad_relays.json' -printf '%h' -quit)
           if [[ -z "$artifact_dir" ]]; then
@@ -238,8 +300,14 @@ jobs:
           cp "$artifact_dir/mullvad_relays.pac" relays.pac
           cp "$artifact_dir/mullvad_relays.csv" relays.csv
           cp "$artifact_dir/manifest.json" manifest.json
-          git add relays.json relays.txt relays.pac relays.csv manifest.json
+          cp "$artifact_dir/SHA256SUMS" SHA256SUMS
+          cp "$artifact_dir/relay-artifacts.tar.gz" relay-artifacts.tar.gz
 
+          sha256sum -c SHA256SUMS
+
+          jq -n --arg rn "${{ github.run_number }}" --arg ra "${{ github.run_attempt }}" --arg rid "${{ github.run_id }}" --arg ts "$(date -u +%FT%TZ)" '{run_number: ($rn|tonumber), run_attempt: ($ra|tonumber), run_id: $rid, published_at: $ts}' > run_info.json
+          git add relays.json relays.txt relays.pac relays.csv manifest.json
+          git add SHA256SUMS relay-artifacts.tar.gz run_info.json
           # Only commit when proxy list outputs change; ignore manifest-only deltas
           if git diff --cached --quiet -- relays.json relays.txt relays.pac relays.csv; then
             echo "No proxy list changes detected; skipping publication commit" >> "$GITHUB_STEP_SUMMARY"
@@ -250,7 +318,7 @@ jobs:
           fi
 
       - name: Push publication branch
-        if: steps.publish.outputs.changed == 'true'
+        if: steps.guard.outputs.proceed == 'true' && steps.publish.outputs.changed == 'true'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: ${{ github.repository }}
@@ -259,71 +327,77 @@ jobs:
           git push --force-with-lease origin HEAD:proxy-artifacts
           echo "Published artifacts to proxy-artifacts branch" >> "$GITHUB_STEP_SUMMARY"
 
-      - name: Update hourly release
+      - name: Upload Pages artifact
+        if: steps.guard.outputs.proceed == 'true' && steps.publish.outputs.changed == 'true'
+        run: |
+          mkdir -p pages
+          cp relays.json relays.txt relays.pac relays.csv manifest.json SHA256SUMS pages/
+          cp relay-artifacts.tar.gz pages/
+
+      - name: Upload Pages
+        if: steps.guard.outputs.proceed == 'true' && steps.publish.outputs.changed == 'true'
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: pages
+
+      - name: Deploy Pages
+        if: steps.guard.outputs.proceed == 'true' && steps.publish.outputs.changed == 'true'
+        uses: actions/deploy-pages@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup ORAS
+        if: steps.guard.outputs.proceed == 'true' && steps.publish.outputs.changed == 'true'
+        uses: oras-project/setup-oras@v1
+
+      - name: Push OCI artifact to ghcr
+        id: oci
+        if: steps.guard.outputs.proceed == 'true' && steps.publish.outputs.changed == 'true'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_ACTOR: ${{ github.actor }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          oras version
+          echo "$GITHUB_TOKEN" | oras login ghcr.io -u "$GITHUB_ACTOR" --password-stdin
+          tag="ghcr.io/${GITHUB_REPOSITORY}/mullvad-relays:run-${{ github.run_number }}-${{ github.run_attempt }}"
+          oras push "$tag" relay-artifacts.tar.gz:application/gzip
+          echo "tag=$tag" >> "$GITHUB_OUTPUT"
+
+      - name: Update hourly release with assets
+        if: steps.guard.outputs.proceed == 'true' && steps.publish.outputs.changed == 'true'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: ${{ github.repository }}
           RUN_URL: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
         run: |
-          set -eo pipefail
+          set -euo pipefail
 
-          git fetch origin proxy-artifacts
-          git checkout proxy-artifacts
           target_commit=$(git rev-parse HEAD)
-
-          artifact_id="${{ steps.artifacts.outputs.artifact-id }}"
-
-          if [[ -z "$artifact_id" ]]; then
-            echo "Download step did not expose artifact id; falling back to API lookup" >&2
-            for attempt in {1..12}; do
-              artifact_id=$(curl -s \
-                -H "Authorization: Bearer $GITHUB_TOKEN" \
-                -H "Accept: application/vnd.github+json" \
-                "https://api.github.com/repos/$GITHUB_REPOSITORY/actions/runs/${{ github.run_id }}/artifacts" \
-                | jq -r '((.artifacts // []) | map(select(.name=="mullvad-relay-artifacts") | .id) | first) // empty')
-              [[ -n "$artifact_id" ]] && break
-              echo "Artifact ID not available yet (attempt $attempt)" >&2
-              sleep 5
-            done
-          fi
-
-          if [[ -z "$artifact_id" ]]; then
-            echo "Unable to resolve artifact ID for release" >&2
-            exit 1
-          fi
-
-          artifact_url="https://github.com/$GITHUB_REPOSITORY/actions/runs/${{ github.run_id }}/artifacts/$artifact_id"
-
+          release_tag="hourly-latest"
+          repo_name=${GITHUB_REPOSITORY#*/}
+          pages_url="https://${GITHUB_REPOSITORY_OWNER}.github.io/${repo_name}/"
+          oci_tag="${{ steps.oci.outputs.tag }}"
+          verify_status=$(jq -r '.verification.enabled' manifest.json)
           body=$(cat <<'EOF'
           ### Hourly Proxy Pipeline
           - Workflow run: RUN_URL
-          - Artifact bundle: ARTIFACT_URL
+          - Pages bundle: PAGES_URL
+          - OCI artifact: OCI_TAG
+          - Verification: VERIFY_STATUS
           EOF
           )
           body=${body/RUN_URL/$RUN_URL}
-          body=${body/ARTIFACT_URL/$artifact_url}
+          body=${body/PAGES_URL/$pages_url}
+          body=${body/OCI_TAG/${oci_tag:-n/a}}
+          body=${body/VERIFY_STATUS/$verify_status}
 
-          api_base="https://api.github.com/repos/$GITHUB_REPOSITORY"
-          release_tag="hourly-latest"
-
-          existing_status=$(curl -s -o release.json -w "%{http_code}" \
-            -H "Authorization: Bearer $GITHUB_TOKEN" \
-            -H "Accept: application/vnd.github+json" \
-            "$api_base/releases/tags/$release_tag" || true)
-
-          if [[ "$existing_status" == "200" ]]; then
-            release_id=$(jq -r '.id' release.json)
-            curl -s -X PATCH \
-              -H "Authorization: Bearer $GITHUB_TOKEN" \
-              -H "Accept: application/vnd.github+json" \
-              "$api_base/releases/$release_id" \
-              -d @<(jq -n --arg tag "$release_tag" --arg target "$target_commit" --arg body "$body" '{tag_name:$tag,target_commitish:$target,name:$tag,body:$body}') >/dev/null
+          if gh release view "$release_tag" >/dev/null 2>&1; then
+            gh release upload "$release_tag" relays.json relays.txt relays.pac relays.csv manifest.json SHA256SUMS relay-artifacts.tar.gz --clobber
+            gh release edit "$release_tag" --target "$target_commit" --notes "$body"
           else
-            curl -s -X POST \
-              -H "Authorization: Bearer $GITHUB_TOKEN" \
-              -H "Accept: application/vnd.github+json" \
-              "$api_base/releases" \
-              -d @<(jq -n --arg tag "$release_tag" --arg target "$target_commit" --arg body "$body" '{tag_name:$tag,target_commitish:$target,name:$tag,body:$body,draft:false,prerelease:false}') >/dev/null
+            gh release create "$release_tag" relays.json relays.txt relays.pac relays.csv manifest.json SHA256SUMS relay-artifacts.tar.gz --target "$target_commit" --notes "$body" --title "$release_tag"
           fi
 
-          echo "hourly-latest release updated" >> "$GITHUB_STEP_SUMMARY"
+          echo "hourly-latest release updated with assets" >> "$GITHUB_STEP_SUMMARY"

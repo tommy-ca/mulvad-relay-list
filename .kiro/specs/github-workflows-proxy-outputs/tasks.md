@@ -51,6 +51,24 @@
   - Fail the workflow when the release API call does not succeed so operators can intervene.
   - _Requirements: R3.2_
 
+- [ ] 3.4 Attach release assets with integrity bundle
+  - Upload JSON, text, PAC, CSV, manifest, and checksum files as assets on the rolling `hourly-latest` release so downloads persist past artifact TTLs.
+  - Ensure checksum file covers every asset and is uploaded alongside the artifacts.
+  - Verify asset upload success and fail publication when any asset is missing.
+  - _Requirements: R3.2, R5.1, R5.2_
+
+- [ ] 3.5 Publish via GitHub Pages CDN
+  - Package artifacts and checksum bundle into a Pages artifact and deploy with `actions/deploy-pages` to expose HTTPS URLs suitable for PAC/text consumption.
+  - Set short cache-control headers to reflect hourly freshness while leveraging CDN delivery.
+  - Document the Pages base URL in the release body and workflow summary.
+  - _Requirements: R3.2, R5.4_
+
+- [ ] 3.6 Publish OCI artifact to ghcr
+  - Bundle artifacts + manifest + checksums into an OCI artifact and push to `ghcr.io/<org>/mullvad-relays:<tag>` using ORAS.
+  - Emit image digest and tag in the summary and release body to enable digest-pinned consumption.
+  - Prepare for future signing (notation) by storing config for signature keys.
+  - _Requirements: R5.4_
+
 - [ ] 4. Strengthen observability and guardrails
 - [x] 4.1 Enhance run logging and summaries
   - Emit grouped logs around fetch, transform, verification, and publication stages with precise timestamps.
@@ -63,6 +81,12 @@
   - Record which secret check failed to give maintainers actionable remediation steps.
   - Prevent downstream jobs from running when guardrails fail, preserving consistent artifact states.
   - _Requirements: R4.2, R3.3_
+
+- [ ] 4.3 Add recency guard and branch protection
+  - Record latest published run identifiers (run number/attempt) on the publication branch or release metadata and abort publication when the current run is older.
+  - Set publish job `max-parallel: 1` and retain build-job concurrency group to avoid simultaneous branch writes.
+  - Propose branch protection for `proxy-artifacts` limiting pushes to the workflow bot and requiring the pipeline status check.
+  - _Requirements: R1.3, R5.3_
 
 - [ ] 5. Validate verification coverage and tests
 - [x] 5.1 Integrate optional verification switch
@@ -82,3 +106,9 @@
   - Validate publication job behavior using a temporary target branch to avoid overwriting real artifacts.
   - Capture logs and summaries from rehearsal runs as evidence before turning on the cron schedule.
   - _Requirements: R1.1, R3.2, R4.1_
+
+- [ ] 5.4 Enforce default verification on scheduled runs
+  - Enable verification by default for cron-triggered runs with a bounded sample size; allow manual override only via dispatch input.
+  - Fail the build when any sampled proxy fails checks and surface results in summaries and release notes.
+  - Ensure manifest records verification status and target endpoints for traceability.
+  - _Requirements: R2.2, R2.3, R5.2_
