@@ -239,8 +239,10 @@ jobs:
           cp "$artifact_dir/mullvad_relays.csv" relays.csv
           cp "$artifact_dir/manifest.json" manifest.json
           git add relays.json relays.txt relays.pac relays.csv manifest.json
-          if git diff --cached --quiet; then
-            echo "No artifact updates detected" >> "$GITHUB_STEP_SUMMARY"
+
+          # Only commit when proxy list outputs change; ignore manifest-only deltas
+          if git diff --cached --quiet -- relays.json relays.txt relays.pac relays.csv; then
+            echo "No proxy list changes detected; skipping publication commit" >> "$GITHUB_STEP_SUMMARY"
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
             git commit -m "chore(publish): update relay artifacts"
