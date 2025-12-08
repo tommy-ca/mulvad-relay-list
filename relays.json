@@ -1139,6 +1139,23 @@
     "display_label": "Nicosia, Cyprus (HostRoyale)"
   },
   {
+    "hostname": "cz-prg-wg-101",
+    "socks5_hostname": "cz-prg-wg-socks5-101",
+    "socks5_endpoint": "cz-prg-wg-socks5-101.relays.mullvad.net:1080",
+    "location_id": "cz-prg",
+    "city": "Prague",
+    "country": "Czech Republic",
+    "provider": "M247",
+    "ipv4": "146.70.129.98",
+    "ipv6": "2001:ac8:33:c::a01f",
+    "weight": 100,
+    "owned": false,
+    "active": true,
+    "include_in_country": true,
+    "source": "mullvad",
+    "display_label": "Prague, Czech Republic (M247)"
+  },
+  {
     "hostname": "cz-prg-wg-102",
     "socks5_hostname": "cz-prg-wg-socks5-102",
     "socks5_endpoint": "cz-prg-wg-socks5-102.relays.mullvad.net:1080",
