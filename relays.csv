@@ -244,6 +244,8 @@ us-atl-wg-406,us-atl-wg-socks5-406,us-atl-wg-socks5-406.relays.mullvad.net:1080,
 us-atl-wg-407,us-atl-wg-socks5-407,us-atl-wg-socks5-407.relays.mullvad.net:1080,"Atlanta, GA",USA,Tzulo,23.234.111.3,2607:9000:c00:37::f001
 us-atl-wg-408,us-atl-wg-socks5-408,us-atl-wg-socks5-408.relays.mullvad.net:1080,"Atlanta, GA",USA,Tzulo,23.234.111.127,2607:9000:c00:38::f001
 us-bos-wg-001,us-bos-wg-socks5-001,us-bos-wg-socks5-001.relays.mullvad.net:1080,"Boston, MA",USA,HostRoyale,43.225.189.131,2a06:3040:12:610::a01f
+us-bos-wg-101,us-bos-wg-socks5-101,us-bos-wg-socks5-101.relays.mullvad.net:1080,"Boston, MA",USA,DataPacket,149.40.50.98,2a02:6ea0:f901::a01f
+us-bos-wg-102,us-bos-wg-socks5-102,us-bos-wg-socks5-102.relays.mullvad.net:1080,"Boston, MA",USA,DataPacket,149.40.50.112,2a02:6ea0:f901:1::a02f
 us-chi-wg-201,us-chi-wg-socks5-201,us-chi-wg-socks5-201.relays.mullvad.net:1080,"Chicago, IL",USA,DataPacket,87.249.134.1,2a02:6ea0:c61f::b63f
 us-chi-wg-203,us-chi-wg-socks5-203,us-chi-wg-socks5-203.relays.mullvad.net:1080,"Chicago, IL",USA,DataPacket,87.249.134.27,2a02:6ea0:c61f:2::f001
 us-chi-wg-301,us-chi-wg-socks5-301,us-chi-wg-socks5-301.relays.mullvad.net:1080,"Chicago, IL",USA,Tzulo,68.235.46.2,2607:9000:0:101::f001
