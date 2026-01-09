@@ -1734,6 +1734,23 @@
     "display_label": "Athens, Greece (DataPacket)"
   },
   {
+    "hostname": "hk-hkg-wg-201",
+    "socks5_hostname": "hk-hkg-wg-socks5-201",
+    "socks5_endpoint": "hk-hkg-wg-socks5-201.relays.mullvad.net:1080",
+    "location_id": "hk-hkg",
+    "city": "Hong Kong",
+    "country": "Hong Kong",
+    "provider": "xtom",
+    "ipv4": "103.125.233.18",
+    "ipv6": "2403:2c81:1000::a06f",
+    "weight": 100,
+    "owned": false,
+    "active": true,
+    "include_in_country": true,
+    "source": "mullvad",
+    "display_label": "Hong Kong, Hong Kong (xtom)"
+  },
+  {
     "hostname": "hk-hkg-wg-301",
     "socks5_hostname": "hk-hkg-wg-socks5-301",
     "socks5_endpoint": "hk-hkg-wg-socks5-301.relays.mullvad.net:1080",
