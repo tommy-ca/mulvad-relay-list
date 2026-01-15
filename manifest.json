@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-01-09T16:08:27.434314+00:00",
-  "relay_count": 397,
+  "generated_at": "2026-01-15T12:12:48.401826+00:00",
+  "relay_count": 413,
   "filters": {},
   "verification": {
     "enabled": false
@@ -8,28 +8,28 @@
   "artifacts": {
     "json": {
       "path": "build/mullvad_relays.json",
-      "sha256": "97a9196db7cb75c9fca62f2e10fed4754ffebf8d73fb971cde69ced12b3b4136",
-      "size_bytes": 197884
+      "sha256": "a30e5044cb2c68b76fa4c3f18052c0a091bde1ebe0c29fd3825b0e670b3566c5",
+      "size_bytes": 205785
     },
     "text": {
       "path": "build/mullvad_relays.txt",
-      "sha256": "f11640ab46cddb39d5ff1163ab3c9b554973180f61c87757f551a6464a728882",
-      "size_bytes": 21438
+      "sha256": "54d2593536583d471b7e4b506dd8a8c1a3225e6ccff513d19ae426b5b9d8b71b",
+      "size_bytes": 22302
     },
     "pac": {
       "path": "build/mullvad_relays.pac",
-      "sha256": "ed3f2659a8012719193d95cc63c02bd1f85476121d9a054d0b696c78888f3129",
-      "size_bytes": 25272
+      "sha256": "231066e821b3b9e6f1577ebc69a747d3742d7086a968d8f767128944080d6be0",
+      "size_bytes": 26280
     },
     "csv": {
       "path": "build/mullvad_relays.csv",
-      "sha256": "857c973f66b1f6317a24afd393239d6aba8daac3a0cc4d3ace68900d1f56381e",
-      "size_bytes": 56684
+      "sha256": "2222b2cac9f7f2455da94855adae646a6ee0a7addd7562f26165b5c98870f5cd",
+      "size_bytes": 58953
     }
   },
   "metadata": {
     "trigger": "schedule",
-    "run_id": "20857887300",
-    "run_number": "2538"
+    "run_id": "21030868455",
+    "run_number": "2679"
   }
 }
