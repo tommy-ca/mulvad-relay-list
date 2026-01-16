@@ -267,7 +267,7 @@ us-chi-wg-308,us-chi-wg-socks5-308,us-chi-wg-socks5-308.relays.mullvad.net:1080,
 us-chi-wg-309,us-chi-wg-socks5-309,us-chi-wg-socks5-309.relays.mullvad.net:1080,"Chicago, IL",USA,Tzulo,173.249.252.2,2607:9000:100:41::f001
 us-chi-wg-310,us-chi-wg-socks5-310,us-chi-wg-socks5-310.relays.mullvad.net:1080,"Chicago, IL",USA,Tzulo,173.249.252.127,2607:9000:100:42::f001
 us-chi-wg-311,us-chi-wg-socks5-311,us-chi-wg-socks5-311.relays.mullvad.net:1080,"Chicago, IL",USA,Tzulo,173.249.253.2,2607:9000:100:43::f001
-us-chi-wg-312,us-chi-wg-socks5-312,us-chi-wg-socks5-312.relays.mullvad.net:1080,"Chicago, IL",USA,Tzulo,173.249.253.127,2607:9000:100:44::1
+us-chi-wg-312,us-chi-wg-socks5-312,us-chi-wg-socks5-312.relays.mullvad.net:1080,"Chicago, IL",USA,Tzulo,173.249.253.127,2607:9000:100:44::f001
 us-chi-wg-313,us-chi-wg-socks5-313,us-chi-wg-socks5-313.relays.mullvad.net:1080,"Chicago, IL",USA,Tzulo,173.249.254.2,2607:9000:100:45::f001
 us-chi-wg-314,us-chi-wg-socks5-314,us-chi-wg-socks5-314.relays.mullvad.net:1080,"Chicago, IL",USA,Tzulo,173.249.254.127,2607:9000:100:46::f001
 us-chi-wg-315,us-chi-wg-socks5-315,us-chi-wg-socks5-315.relays.mullvad.net:1080,"Chicago, IL",USA,Tzulo,173.249.255.2,2607:9000:100:47::f001

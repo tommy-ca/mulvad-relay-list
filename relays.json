@@ -4564,7 +4564,7 @@
     "country": "USA",
     "provider": "Tzulo",
     "ipv4": "173.249.253.127",
-    "ipv6": "2607:9000:100:44::1",
+    "ipv6": "2607:9000:100:44::f001",
     "weight": 100,
     "owned": false,
     "active": true,
