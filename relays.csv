@@ -45,6 +45,14 @@ ca-mtr-wg-003,ca-mtr-wg-socks5-003,ca-mtr-wg-socks5-003.relays.mullvad.net:1080,
 ca-mtr-wg-004,ca-mtr-wg-socks5-004,ca-mtr-wg-socks5-004.relays.mullvad.net:1080,Montreal,Canada,M247,188.241.176.194,2a0d:5600:9:16::f001
 ca-mtr-wg-201,ca-mtr-wg-socks5-201,ca-mtr-wg-socks5-201.relays.mullvad.net:1080,Montreal,Canada,DataPacket,62.93.167.130,2a02:6ea0:a03:2::f001
 ca-mtr-wg-202,ca-mtr-wg-socks5-202,ca-mtr-wg-socks5-202.relays.mullvad.net:1080,Montreal,Canada,DataPacket,62.93.167.160,2a02:6ea0:a03::f001
+ca-mtr-wg-301,ca-mtr-wg-socks5-301,ca-mtr-wg-socks5-301.relays.mullvad.net:1080,Montreal,Canada,Tzulo,23.234.120.2,2607:9000:f00:2::f001
+ca-mtr-wg-302,ca-mtr-wg-socks5-302,ca-mtr-wg-socks5-302.relays.mullvad.net:1080,Montreal,Canada,Tzulo,23.234.120.127,2607:9000:f00:3::f001
+ca-mtr-wg-303,ca-mtr-wg-socks5-303,ca-mtr-wg-socks5-303.relays.mullvad.net:1080,Montreal,Canada,Tzulo,23.234.121.2,2607:9000:f00:4::f01f
+ca-mtr-wg-304,ca-mtr-wg-socks5-304,ca-mtr-wg-socks5-304.relays.mullvad.net:1080,Montreal,Canada,Tzulo,23.234.121.127,2607:9000:f00:5::f001
+ca-mtr-wg-305,ca-mtr-wg-socks5-305,ca-mtr-wg-socks5-305.relays.mullvad.net:1080,Montreal,Canada,Tzulo,23.234.122.2,2607:9000:f00:6::f001
+ca-mtr-wg-306,ca-mtr-wg-socks5-306,ca-mtr-wg-socks5-306.relays.mullvad.net:1080,Montreal,Canada,Tzulo,23.234.122.127,2607:9000:f00:7::f001
+ca-mtr-wg-307,ca-mtr-wg-socks5-307,ca-mtr-wg-socks5-307.relays.mullvad.net:1080,Montreal,Canada,Tzulo,23.234.123.2,2607:9000:f00:8::f001
+ca-mtr-wg-308,ca-mtr-wg-socks5-308,ca-mtr-wg-socks5-308.relays.mullvad.net:1080,Montreal,Canada,Tzulo,23.234.123.127,2607:9000:f00:9::f001
 ca-tor-wg-001,ca-tor-wg-socks5-001,ca-tor-wg-socks5-001.relays.mullvad.net:1080,Toronto,Canada,DataPacket,178.249.214.2,2a02:6ea0:de08:1::f001
 ca-tor-wg-002,ca-tor-wg-socks5-002,ca-tor-wg-socks5-002.relays.mullvad.net:1080,Toronto,Canada,DataPacket,178.249.214.15,2a02:6ea0:de08:2::a29f
 ca-tor-wg-201,ca-tor-wg-socks5-201,ca-tor-wg-socks5-201.relays.mullvad.net:1080,Toronto,Canada,Tzulo,23.234.84.2,2607:9000:600:31::f001
