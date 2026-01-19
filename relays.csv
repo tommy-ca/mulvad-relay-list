@@ -290,6 +290,14 @@ us-dal-wg-601,us-dal-wg-socks5-601,us-dal-wg-socks5-601.relays.mullvad.net:1080,
 us-dal-wg-602,us-dal-wg-socks5-602,us-dal-wg-socks5-602.relays.mullvad.net:1080,"Dallas, TX",USA,HostRoyale,103.102.246.127,2a01:4740:2::f101
 us-dal-wg-603,us-dal-wg-socks5-603,us-dal-wg-socks5-603.relays.mullvad.net:1080,"Dallas, TX",USA,HostRoyale,103.102.247.3,2a01:4740:2::f201
 us-dal-wg-604,us-dal-wg-socks5-604,us-dal-wg-socks5-604.relays.mullvad.net:1080,"Dallas, TX",USA,HostRoyale,103.102.247.127,2a01:4740:2::f301
+us-dal-wg-701,us-dal-wg-socks5-701,us-dal-wg-socks5-701.relays.mullvad.net:1080,"Dallas, TX",USA,Tzulo,23.234.104.2,2607:9000:b00:31::f001
+us-dal-wg-702,us-dal-wg-socks5-702,us-dal-wg-socks5-702.relays.mullvad.net:1080,"Dallas, TX",USA,Tzulo,23.234.104.127,2607:9000:b00:32::f001
+us-dal-wg-703,us-dal-wg-socks5-703,us-dal-wg-socks5-703.relays.mullvad.net:1080,"Dallas, TX",USA,Tzulo,23.234.105.2,2607:9000:b00:33::f001
+us-dal-wg-704,us-dal-wg-socks5-704,us-dal-wg-socks5-704.relays.mullvad.net:1080,"Dallas, TX",USA,Tzulo,23.234.105.127,2607:9000:b00:34::f001
+us-dal-wg-705,us-dal-wg-socks5-705,us-dal-wg-socks5-705.relays.mullvad.net:1080,"Dallas, TX",USA,Tzulo,23.234.106.2,2607:9000:b00:35::f001
+us-dal-wg-706,us-dal-wg-socks5-706,us-dal-wg-socks5-706.relays.mullvad.net:1080,"Dallas, TX",USA,Tzulo,23.234.106.127,2607:9000:b00:36::f001
+us-dal-wg-707,us-dal-wg-socks5-707,us-dal-wg-socks5-707.relays.mullvad.net:1080,"Dallas, TX",USA,Tzulo,23.234.107.2,2607:9000:b00:37::f001
+us-dal-wg-708,us-dal-wg-socks5-708,us-dal-wg-socks5-708.relays.mullvad.net:1080,"Dallas, TX",USA,Tzulo,23.234.107.127,2607:9000:b00:38::f001
 us-den-wg-101,us-den-wg-socks5-101,us-den-wg-socks5-101.relays.mullvad.net:1080,"Denver, CO",USA,DataPacket,37.19.210.1,2a02:6ea0:d70a::b57f
 us-den-wg-102,us-den-wg-socks5-102,us-den-wg-socks5-102.relays.mullvad.net:1080,"Denver, CO",USA,DataPacket,37.19.210.14,2a02:6ea0:d70a:1::b58f
 us-den-wg-103,us-den-wg-socks5-103,us-den-wg-socks5-103.relays.mullvad.net:1080,"Denver, CO",USA,DataPacket,37.19.210.27,2a02:6ea0:d70a:2::b59f
