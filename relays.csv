@@ -185,6 +185,7 @@ si-lju-wg-002,si-lju-wg-socks5-002,si-lju-wg-socks5-002.relays.mullvad.net:1080,
 za-jnb-wg-001,za-jnb-wg-socks5-001,za-jnb-wg-socks5-001.relays.mullvad.net:1080,Johannesburg,South Africa,DataPacket,154.47.30.130,2a02:6ea0:f206::f001
 za-jnb-wg-002,za-jnb-wg-socks5-002,za-jnb-wg-socks5-002.relays.mullvad.net:1080,Johannesburg,South Africa,DataPacket,154.47.30.143,2a02:6ea0:f207::f001
 es-bcn-wg-001,es-bcn-wg-socks5-001,es-bcn-wg-socks5-001.relays.mullvad.net:1080,Barcelona,Spain,HostRoyale,185.188.61.195,2a06:3040:2:210::f001
+es-bcn-wg-002,es-bcn-wg-socks5-002,es-bcn-wg-socks5-002.relays.mullvad.net:1080,Barcelona,Spain,HostRoyale,185.188.61.225,2a06:3040:2:210::f101
 es-bcn-wg-101,es-bcn-wg-socks5-101,es-bcn-wg-socks5-101.relays.mullvad.net:1080,Barcelona,Spain,M247,185.253.99.30,2001:ac8:17:20::f001
 es-bcn-wg-102,es-bcn-wg-socks5-102,es-bcn-wg-socks5-102.relays.mullvad.net:1080,Barcelona,Spain,M247,185.253.99.98,2001:ac8:17:20::f101
 es-mad-wg-101,es-mad-wg-socks5-101,es-mad-wg-socks5-101.relays.mullvad.net:1080,Madrid,Spain,DataPacket,45.134.213.194,2a02:6ea0:c318:1::a06f
