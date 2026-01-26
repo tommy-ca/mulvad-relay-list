@@ -6902,23 +6902,6 @@
     "display_label": "San Jose, CA, USA (DataPacket)"
   },
   {
-    "hostname": "us-sjc-wg-501",
-    "socks5_hostname": "us-sjc-wg-socks5-501",
-    "socks5_endpoint": "us-sjc-wg-socks5-501.relays.mullvad.net:1080",
-    "location_id": "us-sjc",
-    "city": "San Jose, CA",
-    "country": "USA",
-    "provider": "Tzulo",
-    "ipv4": "23.234.92.3",
-    "ipv6": "2607:9000:800:31::f001",
-    "weight": 100,
-    "owned": false,
-    "active": true,
-    "include_in_country": true,
-    "source": "mullvad",
-    "display_label": "San Jose, CA, USA (Tzulo)"
-  },
-  {
     "hostname": "us-sjc-wg-502",
     "socks5_hostname": "us-sjc-wg-socks5-502",
     "socks5_endpoint": "us-sjc-wg-socks5-502.relays.mullvad.net:1080",
