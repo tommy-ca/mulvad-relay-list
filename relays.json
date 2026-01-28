@@ -7191,6 +7191,23 @@
     "display_label": "Seattle, WA, USA (Tzulo)"
   },
   {
+    "hostname": "us-sea-wg-408",
+    "socks5_hostname": "us-sea-wg-socks5-408",
+    "socks5_endpoint": "us-sea-wg-socks5-408.relays.mullvad.net:1080",
+    "location_id": "us-sea",
+    "city": "Seattle, WA",
+    "country": "USA",
+    "provider": "Tzulo",
+    "ipv4": "23.234.83.127",
+    "ipv6": "2607:9000:5000:38::f001",
+    "weight": 100,
+    "owned": false,
+    "active": true,
+    "include_in_country": true,
+    "source": "mullvad",
+    "display_label": "Seattle, WA, USA (Tzulo)"
+  },
+  {
     "hostname": "us-uyk-wg-201",
     "socks5_hostname": "us-uyk-wg-socks5-201",
     "socks5_endpoint": "us-uyk-wg-socks5-201.relays.mullvad.net:1080",
