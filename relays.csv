@@ -326,7 +326,6 @@ us-mkc-wg-102,us-mkc-wg-socks5-102,us-mkc-wg-socks5-102.relays.mullvad.net:1080,
 us-mkc-wg-103,us-mkc-wg-socks5-103,us-mkc-wg-socks5-103.relays.mullvad.net:1080,"Kansas City, MO",USA,hostuniversal,155.2.191.103,2602:fed2:7e0a::f201
 us-mkc-wg-104,us-mkc-wg-socks5-104,us-mkc-wg-socks5-104.relays.mullvad.net:1080,"Kansas City, MO",USA,hostuniversal,155.2.191.153,2602:fed2:7e0a::f301
 us-mkc-wg-105,us-mkc-wg-socks5-105,us-mkc-wg-socks5-105.relays.mullvad.net:1080,"Kansas City, MO",USA,hostuniversal,155.2.191.203,2602:fed2:7e0a::f401
-us-lax-wg-203,us-lax-wg-socks5-203,us-lax-wg-socks5-203.relays.mullvad.net:1080,"Los Angeles, CA",USA,DataPacket,169.150.203.28,2a02:6ea0:c859:3::a03f
 us-lax-wg-407,us-lax-wg-socks5-407,us-lax-wg-socks5-407.relays.mullvad.net:1080,"Los Angeles, CA",USA,M247,146.70.172.66,2a0d:5600:8:38::f001
 us-lax-wg-408,us-lax-wg-socks5-408,us-lax-wg-socks5-408.relays.mullvad.net:1080,"Los Angeles, CA",USA,M247,146.70.172.130,2a0d:5600:8:39::f001
 us-lax-wg-409,us-lax-wg-socks5-409,us-lax-wg-socks5-409.relays.mullvad.net:1080,"Los Angeles, CA",USA,M247,146.70.172.194,2a0d:5600:8:3a::f001
