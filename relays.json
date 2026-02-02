@@ -2652,6 +2652,23 @@
     "display_label": "Auckland, New Zealand (hostuniversal)"
   },
   {
+    "hostname": "nz-akl-wg-303",
+    "socks5_hostname": "nz-akl-wg-socks5-303",
+    "socks5_endpoint": "nz-akl-wg-socks5-303.relays.mullvad.net:1080",
+    "location_id": "nz-akl",
+    "city": "Auckland",
+    "country": "New Zealand",
+    "provider": "hostuniversal",
+    "ipv4": "103.75.11.98",
+    "ipv6": "2404:f780:5:def::f201",
+    "weight": 100,
+    "owned": false,
+    "active": true,
+    "include_in_country": true,
+    "source": "mullvad",
+    "display_label": "Auckland, New Zealand (hostuniversal)"
+  },
+  {
     "hostname": "ng-los-wg-001",
     "socks5_hostname": "ng-los-wg-socks5-001",
     "socks5_endpoint": "ng-los-wg-socks5-001.relays.mullvad.net:1080",
