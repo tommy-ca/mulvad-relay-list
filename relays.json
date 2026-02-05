@@ -2091,6 +2091,23 @@
     "display_label": "Dublin, Ireland (M247)"
   },
   {
+    "hostname": "ie-dub-wg-102",
+    "socks5_hostname": "ie-dub-wg-socks5-102",
+    "socks5_endpoint": "ie-dub-wg-socks5-102.relays.mullvad.net:1080",
+    "location_id": "ie-dub",
+    "city": "Dublin",
+    "country": "Ireland",
+    "provider": "M247",
+    "ipv4": "146.70.189.130",
+    "ipv6": "2001:ac8:88:108::f001",
+    "weight": 100,
+    "owned": false,
+    "active": true,
+    "include_in_country": true,
+    "source": "mullvad",
+    "display_label": "Dublin, Ireland (M247)"
+  },
+  {
     "hostname": "ie-dub-wg-103",
     "socks5_hostname": "ie-dub-wg-socks5-103",
     "socks5_endpoint": "ie-dub-wg-socks5-103.relays.mullvad.net:1080",
