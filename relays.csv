@@ -3,6 +3,7 @@ al-tia-wg-003,al-tia-wg-socks5-003,al-tia-wg-socks5-003.relays.mullvad.net:1080,
 al-tia-wg-004,al-tia-wg-socks5-004,al-tia-wg-socks5-004.relays.mullvad.net:1080,Tirana,Albania,iRegister,103.124.165.191,2a04:27c0:0:d::f001
 ar-bue-wg-001,ar-bue-wg-socks5-001,ar-bue-wg-socks5-001.relays.mullvad.net:1080,Buenos Aires,Argentina,DataPacket,149.22.83.2,2a02:6ea0:f002:1::f001
 ar-bue-wg-002,ar-bue-wg-socks5-002,ar-bue-wg-socks5-002.relays.mullvad.net:1080,Buenos Aires,Argentina,DataPacket,149.22.83.31,2a02:6ea0:f002:2::f001
+au-adl-wg-301,au-adl-wg-socks5-301,au-adl-wg-socks5-301.relays.mullvad.net:1080,Adelaide,Australia,hostuniversal,103.214.20.50,2404:f780:0:deb::c1f
 au-adl-wg-302,au-adl-wg-socks5-302,au-adl-wg-socks5-302.relays.mullvad.net:1080,Adelaide,Australia,hostuniversal,103.214.20.130,2404:f780:0:dec::c2f
 au-adl-wg-303,au-adl-wg-socks5-303,au-adl-wg-socks5-303.relays.mullvad.net:1080,Adelaide,Australia,hostuniversal,103.214.20.162,2404:f780:0:def::f201
 au-bne-wg-301,au-bne-wg-socks5-301,au-bne-wg-socks5-301.relays.mullvad.net:1080,Brisbane,Australia,hostuniversal,103.216.220.18,2404:f780:4:deb::f001
@@ -232,6 +233,7 @@ gb-mnc-wg-008,gb-mnc-wg-socks5-008,gb-mnc-wg-socks5-008.relays.mullvad.net:1080,
 gb-mnc-wg-009,gb-mnc-wg-socks5-009,gb-mnc-wg-socks5-009.relays.mullvad.net:1080,Manchester,UK,M247,146.70.132.98,2001:ac8:8b:25::f001
 ua-iev-wg-001,ua-iev-wg-socks5-001,ua-iev-wg-socks5-001.relays.mullvad.net:1080,Kyiv,Ukraine,DataPacket,149.102.240.79,2a02:6ea0:e109:2::a01f
 ua-iev-wg-002,ua-iev-wg-socks5-002,ua-iev-wg-socks5-002.relays.mullvad.net:1080,Kyiv,Ukraine,DataPacket,149.102.240.66,2a02:6ea0:e109:1::a02f
+us-qas-wg-001,us-qas-wg-socks5-001,us-qas-wg-socks5-001.relays.mullvad.net:1080,"Ashburn, VA",USA,Tzulo,198.54.135.34,2607:9000:9000:12::b46f
 us-qas-wg-101,us-qas-wg-socks5-101,us-qas-wg-socks5-101.relays.mullvad.net:1080,"Ashburn, VA",USA,DataPacket,185.156.46.130,2a02:6ea0:e206:1::a01f
 us-qas-wg-102,us-qas-wg-socks5-102,us-qas-wg-socks5-102.relays.mullvad.net:1080,"Ashburn, VA",USA,DataPacket,185.156.46.143,2a02:6ea0:e206:2::a02f
 us-qas-wg-103,us-qas-wg-socks5-103,us-qas-wg-socks5-103.relays.mullvad.net:1080,"Ashburn, VA",USA,DataPacket,185.156.46.156,2a02:6ea0:e206:3::a03f
@@ -392,6 +394,7 @@ us-rag-wg-204,us-rag-wg-socks5-204,us-rag-wg-socks5-204.relays.mullvad.net:1080,
 us-rag-wg-205,us-rag-wg-socks5-205,us-rag-wg-socks5-205.relays.mullvad.net:1080,"Raleigh, NC",USA,Tzulo,23.234.78.2,2607:9000:4000:35::f001
 us-rag-wg-206,us-rag-wg-socks5-206,us-rag-wg-socks5-206.relays.mullvad.net:1080,"Raleigh, NC",USA,Tzulo,23.234.78.127,2607:9000:4000:36::f001
 us-rag-wg-207,us-rag-wg-socks5-207,us-rag-wg-socks5-207.relays.mullvad.net:1080,"Raleigh, NC",USA,Tzulo,23.234.79.2,2607:9000:4000:37::f001
+us-rag-wg-208,us-rag-wg-socks5-208,us-rag-wg-socks5-208.relays.mullvad.net:1080,"Raleigh, NC",USA,Tzulo,23.234.79.127,2607:9000:4000:38::f001
 us-slc-wg-201,us-slc-wg-socks5-201,us-slc-wg-socks5-201.relays.mullvad.net:1080,"Salt Lake City, UT",USA,100TB,69.4.234.9,2607:fc98:0:8a::f301
 us-slc-wg-202,us-slc-wg-socks5-202,us-slc-wg-socks5-202.relays.mullvad.net:1080,"Salt Lake City, UT",USA,100TB,69.4.234.149,2607:fc98:0:8a::f401
 us-slc-wg-203,us-slc-wg-socks5-203,us-slc-wg-socks5-203.relays.mullvad.net:1080,"Salt Lake City, UT",USA,100TB,69.4.234.131,2607:fc98:0:8a::f501
