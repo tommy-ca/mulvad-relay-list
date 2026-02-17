@@ -8,8 +8,9 @@ socks5://au-adl-wg-socks5-303.relays.mullvad.net:1080
 socks5://au-bne-wg-socks5-301.relays.mullvad.net:1080
 socks5://au-bne-wg-socks5-302.relays.mullvad.net:1080
 socks5://au-bne-wg-socks5-303.relays.mullvad.net:1080
-socks5://au-mel-wg-socks5-302.relays.mullvad.net:1080
 socks5://au-mel-wg-socks5-401.relays.mullvad.net:1080
+socks5://au-mel-wg-socks5-402.relays.mullvad.net:1080
+socks5://au-mel-wg-socks5-403.relays.mullvad.net:1080
 socks5://au-per-wg-socks5-301.relays.mullvad.net:1080
 socks5://au-per-wg-socks5-302.relays.mullvad.net:1080
 socks5://au-syd-wg-socks5-001.relays.mullvad.net:1080

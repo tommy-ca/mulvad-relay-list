@@ -9,8 +9,9 @@ au-adl-wg-303,au-adl-wg-socks5-303,au-adl-wg-socks5-303.relays.mullvad.net:1080,
 au-bne-wg-301,au-bne-wg-socks5-301,au-bne-wg-socks5-301.relays.mullvad.net:1080,Brisbane,Australia,hostuniversal,103.216.220.18,2404:f780:4:deb::f001
 au-bne-wg-302,au-bne-wg-socks5-302,au-bne-wg-socks5-302.relays.mullvad.net:1080,Brisbane,Australia,hostuniversal,103.216.220.34,2404:f780:4:dec::a02f
 au-bne-wg-303,au-bne-wg-socks5-303,au-bne-wg-socks5-303.relays.mullvad.net:1080,Brisbane,Australia,hostuniversal,103.216.220.66,2404:f780:4:def::f201
-au-mel-wg-302,au-mel-wg-socks5-302,au-mel-wg-socks5-302.relays.mullvad.net:1080,Melbourne,Australia,hostuniversal,103.108.229.66,2406:d501:f:dec::a02f
 au-mel-wg-401,au-mel-wg-socks5-401,au-mel-wg-socks5-401.relays.mullvad.net:1080,Melbourne,Australia,hostuniversal,163.47.16.146,2406:d501:f:dfa::f001
+au-mel-wg-402,au-mel-wg-socks5-402,au-mel-wg-socks5-402.relays.mullvad.net:1080,Melbourne,Australia,hostuniversal,163.47.16.150,2406:d501:f:dfb::f001
+au-mel-wg-403,au-mel-wg-socks5-403,au-mel-wg-socks5-403.relays.mullvad.net:1080,Melbourne,Australia,hostuniversal,163.47.16.154,2406:d501:f:dfc::f001
 au-per-wg-301,au-per-wg-socks5-301,au-per-wg-socks5-301.relays.mullvad.net:1080,Perth,Australia,hostuniversal,103.108.231.50,2404:f780:8:deb::a01f
 au-per-wg-302,au-per-wg-socks5-302,au-per-wg-socks5-302.relays.mullvad.net:1080,Perth,Australia,hostuniversal,103.108.231.66,2404:f780:8:dec::f001
 au-syd-wg-001,au-syd-wg-socks5-001,au-syd-wg-socks5-001.relays.mullvad.net:1080,Sydney,Australia,M247,146.70.200.2,2001:ac8:84:5::f001
