@@ -9,6 +9,7 @@ au-adl-wg-303,au-adl-wg-socks5-303,au-adl-wg-socks5-303.relays.mullvad.net:1080,
 au-bne-wg-301,au-bne-wg-socks5-301,au-bne-wg-socks5-301.relays.mullvad.net:1080,Brisbane,Australia,hostuniversal,103.216.220.18,2404:f780:4:deb::f001
 au-bne-wg-302,au-bne-wg-socks5-302,au-bne-wg-socks5-302.relays.mullvad.net:1080,Brisbane,Australia,hostuniversal,103.216.220.34,2404:f780:4:dec::a02f
 au-bne-wg-303,au-bne-wg-socks5-303,au-bne-wg-socks5-303.relays.mullvad.net:1080,Brisbane,Australia,hostuniversal,103.216.220.66,2404:f780:4:def::f201
+au-mel-wg-302,au-mel-wg-socks5-302,au-mel-wg-socks5-302.relays.mullvad.net:1080,Melbourne,Australia,hostuniversal,103.108.229.66,2406:d501:f:dec::a02f
 au-mel-wg-401,au-mel-wg-socks5-401,au-mel-wg-socks5-401.relays.mullvad.net:1080,Melbourne,Australia,hostuniversal,163.47.16.146,2406:d501:f:dfa::f001
 au-mel-wg-402,au-mel-wg-socks5-402,au-mel-wg-socks5-402.relays.mullvad.net:1080,Melbourne,Australia,hostuniversal,163.47.16.150,2406:d501:f:dfb::f001
 au-mel-wg-403,au-mel-wg-socks5-403,au-mel-wg-socks5-403.relays.mullvad.net:1080,Melbourne,Australia,hostuniversal,163.47.16.154,2406:d501:f:dfc::f001
@@ -225,6 +226,10 @@ th-bkk-wg-001,th-bkk-wg-socks5-001,th-bkk-wg-socks5-001.relays.mullvad.net:1080,
 th-bkk-wg-002,th-bkk-wg-socks5-002,th-bkk-wg-socks5-002.relays.mullvad.net:1080,Bangkok,Thailand,Zenlayer,156.59.50.226,2602:ffe4:c09:109::f101
 tr-ist-wg-001,tr-ist-wg-socks5-001,tr-ist-wg-socks5-001.relays.mullvad.net:1080,Istanbul,Turkey,DataPacket,149.102.229.129,2a02:6ea0:e813::f001
 tr-ist-wg-002,tr-ist-wg-socks5-002,tr-ist-wg-socks5-002.relays.mullvad.net:1080,Istanbul,Turkey,DataPacket,149.102.229.158,2a02:6ea0:e813:1::f001
+gb-lon-wg-201,gb-lon-wg-socks5-201,gb-lon-wg-socks5-201.relays.mullvad.net:1080,London,UK,xtom,185.248.85.3,2a0b:89c1:3::a33f
+gb-lon-wg-202,gb-lon-wg-socks5-202,gb-lon-wg-socks5-202.relays.mullvad.net:1080,London,UK,xtom,185.248.85.18,2a0b:89c1:3::a34f
+gb-lon-wg-203,gb-lon-wg-socks5-203,gb-lon-wg-socks5-203.relays.mullvad.net:1080,London,UK,xtom,185.248.85.33,2a0b:89c1:3::a35f
+gb-lon-wg-204,gb-lon-wg-socks5-204,gb-lon-wg-socks5-204.relays.mullvad.net:1080,London,UK,xtom,185.248.85.48,2a0b:89c1:3::a36f
 gb-lon-wg-301,gb-lon-wg-socks5-301,gb-lon-wg-socks5-301.relays.mullvad.net:1080,London,UK,M247,146.70.119.66,2001:ac8:31:f007::a39f
 gb-lon-wg-302,gb-lon-wg-socks5-302,gb-lon-wg-socks5-302.relays.mullvad.net:1080,London,UK,M247,146.70.119.2,2001:ac8:31:f005::a37f
 gb-lon-wg-304,gb-lon-wg-socks5-304,gb-lon-wg-socks5-304.relays.mullvad.net:1080,London,UK,M247,146.70.119.162,2001:ac8:31:f00a::f001
