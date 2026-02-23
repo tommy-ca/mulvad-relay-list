@@ -9,7 +9,6 @@ au-adl-wg-303,au-adl-wg-socks5-303,au-adl-wg-socks5-303.relays.mullvad.net:1080,
 au-bne-wg-301,au-bne-wg-socks5-301,au-bne-wg-socks5-301.relays.mullvad.net:1080,Brisbane,Australia,hostuniversal,103.216.220.18,2404:f780:4:deb::f001
 au-bne-wg-302,au-bne-wg-socks5-302,au-bne-wg-socks5-302.relays.mullvad.net:1080,Brisbane,Australia,hostuniversal,103.216.220.34,2404:f780:4:dec::a02f
 au-bne-wg-303,au-bne-wg-socks5-303,au-bne-wg-socks5-303.relays.mullvad.net:1080,Brisbane,Australia,hostuniversal,103.216.220.66,2404:f780:4:def::f201
-au-mel-wg-302,au-mel-wg-socks5-302,au-mel-wg-socks5-302.relays.mullvad.net:1080,Melbourne,Australia,hostuniversal,103.108.229.66,2406:d501:f:dec::a02f
 au-mel-wg-401,au-mel-wg-socks5-401,au-mel-wg-socks5-401.relays.mullvad.net:1080,Melbourne,Australia,hostuniversal,163.47.16.146,2406:d501:f:dfa::f001
 au-mel-wg-402,au-mel-wg-socks5-402,au-mel-wg-socks5-402.relays.mullvad.net:1080,Melbourne,Australia,hostuniversal,163.47.16.150,2406:d501:f:dfb::f001
 au-mel-wg-403,au-mel-wg-socks5-403,au-mel-wg-socks5-403.relays.mullvad.net:1080,Melbourne,Australia,hostuniversal,163.47.16.154,2406:d501:f:dfc::f001
@@ -375,10 +374,6 @@ us-nyc-wg-606,us-nyc-wg-socks5-606,us-nyc-wg-socks5-606.relays.mullvad.net:1080,
 us-nyc-wg-701,us-nyc-wg-socks5-701,us-nyc-wg-socks5-701.relays.mullvad.net:1080,"New York, NY",USA,xtom,23.162.8.3,2602:fa1f:1::f001
 us-nyc-wg-702,us-nyc-wg-socks5-702,us-nyc-wg-socks5-702.relays.mullvad.net:1080,"New York, NY",USA,xtom,23.162.8.67,2602:fa1f:1::f033
 us-nyc-wg-703,us-nyc-wg-socks5-703,us-nyc-wg-socks5-703.relays.mullvad.net:1080,"New York, NY",USA,xtom,23.162.8.130,2602:fa1f:1:3::f001
-us-nyc-wg-801,us-nyc-wg-socks5-801,us-nyc-wg-socks5-801.relays.mullvad.net:1080,"New York, NY",USA,Tzulo,23.234.100.3,2607:9000:a000:31::f001
-us-nyc-wg-802,us-nyc-wg-socks5-802,us-nyc-wg-socks5-802.relays.mullvad.net:1080,"New York, NY",USA,Tzulo,23.234.100.127,2607:9000:a000:32::f001
-us-nyc-wg-803,us-nyc-wg-socks5-803,us-nyc-wg-socks5-803.relays.mullvad.net:1080,"New York, NY",USA,Tzulo,23.234.101.3,2607:9000:a000:33::f001
-us-nyc-wg-804,us-nyc-wg-socks5-804,us-nyc-wg-socks5-804.relays.mullvad.net:1080,"New York, NY",USA,Tzulo,23.234.101.127,2607:9000:a000:34::f001
 us-nyc-wg-805,us-nyc-wg-socks5-805,us-nyc-wg-socks5-805.relays.mullvad.net:1080,"New York, NY",USA,Tzulo,23.234.102.3,2607:9000:a000:35::f001
 us-nyc-wg-806,us-nyc-wg-socks5-806,us-nyc-wg-socks5-806.relays.mullvad.net:1080,"New York, NY",USA,Tzulo,23.234.102.127,2607:9000:a000:36::f001
 us-nyc-wg-807,us-nyc-wg-socks5-807,us-nyc-wg-socks5-807.relays.mullvad.net:1080,"New York, NY",USA,Tzulo,23.234.103.3,2607:9000:a000:37::f001
