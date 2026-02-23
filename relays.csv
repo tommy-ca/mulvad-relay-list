@@ -265,7 +265,6 @@ us-atl-wg-406,us-atl-wg-socks5-406,us-atl-wg-socks5-406.relays.mullvad.net:1080,
 us-atl-wg-407,us-atl-wg-socks5-407,us-atl-wg-socks5-407.relays.mullvad.net:1080,"Atlanta, GA",USA,Tzulo,23.234.111.3,2607:9000:c00:37::f001
 us-atl-wg-408,us-atl-wg-socks5-408,us-atl-wg-socks5-408.relays.mullvad.net:1080,"Atlanta, GA",USA,Tzulo,23.234.111.127,2607:9000:c00:38::f001
 us-bos-wg-001,us-bos-wg-socks5-001,us-bos-wg-socks5-001.relays.mullvad.net:1080,"Boston, MA",USA,HostRoyale,43.225.189.131,2a06:3040:12:610::a01f
-us-bos-wg-002,us-bos-wg-socks5-002,us-bos-wg-socks5-002.relays.mullvad.net:1080,"Boston, MA",USA,HostRoyale,43.225.189.162,2a06:3040:12:610::a02f
 us-bos-wg-101,us-bos-wg-socks5-101,us-bos-wg-socks5-101.relays.mullvad.net:1080,"Boston, MA",USA,DataPacket,149.40.50.98,2a02:6ea0:f901::a01f
 us-bos-wg-102,us-bos-wg-socks5-102,us-bos-wg-socks5-102.relays.mullvad.net:1080,"Boston, MA",USA,DataPacket,149.40.50.112,2a02:6ea0:f901:1::a02f
 us-chi-wg-201,us-chi-wg-socks5-201,us-chi-wg-socks5-201.relays.mullvad.net:1080,"Chicago, IL",USA,DataPacket,87.249.134.1,2a02:6ea0:c61f::b63f
@@ -364,7 +363,6 @@ us-nyc-wg-302,us-nyc-wg-socks5-302,us-nyc-wg-socks5-302.relays.mullvad.net:1080,
 us-nyc-wg-303,us-nyc-wg-socks5-303,us-nyc-wg-socks5-303.relays.mullvad.net:1080,"New York, NY",USA,DataPacket,143.244.47.91,2a02:6ea0:c43f:2::b52f
 us-nyc-wg-501,us-nyc-wg-socks5-501,us-nyc-wg-socks5-501.relays.mullvad.net:1080,"New York, NY",USA,M247,146.70.165.2,2a0d:5600:24:2b6::f001
 us-nyc-wg-502,us-nyc-wg-socks5-502,us-nyc-wg-socks5-502.relays.mullvad.net:1080,"New York, NY",USA,M247,146.70.165.130,2a0d:5600:24:2b8::f001
-us-nyc-wg-503,us-nyc-wg-socks5-503,us-nyc-wg-socks5-503.relays.mullvad.net:1080,"New York, NY",USA,M247,146.70.165.194,2a0d:5600:24:2b9::f001
 us-nyc-wg-504,us-nyc-wg-socks5-504,us-nyc-wg-socks5-504.relays.mullvad.net:1080,"New York, NY",USA,M247,146.70.166.130,2a0d:5600:24:2c2::f001
 us-nyc-wg-505,us-nyc-wg-socks5-505,us-nyc-wg-socks5-505.relays.mullvad.net:1080,"New York, NY",USA,M247,146.70.166.194,2a0d:5600:24:2c3::f001
 us-nyc-wg-506,us-nyc-wg-socks5-506,us-nyc-wg-socks5-506.relays.mullvad.net:1080,"New York, NY",USA,M247,146.70.165.66,2a0d:5600:24:2b7::f001
