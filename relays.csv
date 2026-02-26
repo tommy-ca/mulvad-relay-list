@@ -235,7 +235,6 @@ gb-mnc-wg-008,gb-mnc-wg-socks5-008,gb-mnc-wg-socks5-008.relays.mullvad.net:1080,
 gb-mnc-wg-009,gb-mnc-wg-socks5-009,gb-mnc-wg-socks5-009.relays.mullvad.net:1080,Manchester,UK,M247,146.70.132.98,2001:ac8:8b:25::f001
 ua-iev-wg-001,ua-iev-wg-socks5-001,ua-iev-wg-socks5-001.relays.mullvad.net:1080,Kyiv,Ukraine,DataPacket,149.102.240.79,2a02:6ea0:e109:2::a01f
 ua-iev-wg-002,ua-iev-wg-socks5-002,ua-iev-wg-socks5-002.relays.mullvad.net:1080,Kyiv,Ukraine,DataPacket,149.102.240.66,2a02:6ea0:e109:1::a02f
-us-qas-wg-001,us-qas-wg-socks5-001,us-qas-wg-socks5-001.relays.mullvad.net:1080,"Ashburn, VA",USA,Tzulo,198.54.135.34,2607:9000:9000:12::b46f
 us-qas-wg-101,us-qas-wg-socks5-101,us-qas-wg-socks5-101.relays.mullvad.net:1080,"Ashburn, VA",USA,DataPacket,185.156.46.130,2a02:6ea0:e206:1::a01f
 us-qas-wg-102,us-qas-wg-socks5-102,us-qas-wg-socks5-102.relays.mullvad.net:1080,"Ashburn, VA",USA,DataPacket,185.156.46.143,2a02:6ea0:e206:2::a02f
 us-qas-wg-103,us-qas-wg-socks5-103,us-qas-wg-socks5-103.relays.mullvad.net:1080,"Ashburn, VA",USA,DataPacket,185.156.46.156,2a02:6ea0:e206:3::a03f
@@ -256,10 +255,6 @@ us-atl-wg-303,us-atl-wg-socks5-303,us-atl-wg-socks5-303.relays.mullvad.net:1080,
 us-atl-wg-304,us-atl-wg-socks5-304,us-atl-wg-socks5-304.relays.mullvad.net:1080,"Atlanta, GA",USA,100TB,67.213.209.119,2606:2e00:8000:4::f301
 us-atl-wg-305,us-atl-wg-socks5-305,us-atl-wg-socks5-305.relays.mullvad.net:1080,"Atlanta, GA",USA,100TB,67.213.209.120,2606:2e00:8000:4::f401
 us-atl-wg-306,us-atl-wg-socks5-306,us-atl-wg-socks5-306.relays.mullvad.net:1080,"Atlanta, GA",USA,100TB,67.213.209.121,2606:2e00:8000:4::f501
-us-atl-wg-401,us-atl-wg-socks5-401,us-atl-wg-socks5-401.relays.mullvad.net:1080,"Atlanta, GA",USA,Tzulo,23.234.108.3,2607:9000:c00:31::f001
-us-atl-wg-402,us-atl-wg-socks5-402,us-atl-wg-socks5-402.relays.mullvad.net:1080,"Atlanta, GA",USA,Tzulo,23.234.108.127,2607:9000:c00:32::f001
-us-atl-wg-403,us-atl-wg-socks5-403,us-atl-wg-socks5-403.relays.mullvad.net:1080,"Atlanta, GA",USA,Tzulo,23.234.109.3,2607:9000:c00:33::f001
-us-atl-wg-404,us-atl-wg-socks5-404,us-atl-wg-socks5-404.relays.mullvad.net:1080,"Atlanta, GA",USA,Tzulo,23.234.109.127,2607:9000:c00:34::f001
 us-atl-wg-405,us-atl-wg-socks5-405,us-atl-wg-socks5-405.relays.mullvad.net:1080,"Atlanta, GA",USA,Tzulo,23.234.110.3,2607:9000:c00:35::f001
 us-atl-wg-406,us-atl-wg-socks5-406,us-atl-wg-socks5-406.relays.mullvad.net:1080,"Atlanta, GA",USA,Tzulo,23.234.110.127,2607:9000:c00:36::f001
 us-atl-wg-407,us-atl-wg-socks5-407,us-atl-wg-socks5-407.relays.mullvad.net:1080,"Atlanta, GA",USA,Tzulo,23.234.111.3,2607:9000:c00:37::f001
@@ -269,14 +264,7 @@ us-bos-wg-101,us-bos-wg-socks5-101,us-bos-wg-socks5-101.relays.mullvad.net:1080,
 us-bos-wg-102,us-bos-wg-socks5-102,us-bos-wg-socks5-102.relays.mullvad.net:1080,"Boston, MA",USA,DataPacket,149.40.50.112,2a02:6ea0:f901:1::a02f
 us-chi-wg-201,us-chi-wg-socks5-201,us-chi-wg-socks5-201.relays.mullvad.net:1080,"Chicago, IL",USA,DataPacket,87.249.134.1,2a02:6ea0:c61f::b63f
 us-chi-wg-203,us-chi-wg-socks5-203,us-chi-wg-socks5-203.relays.mullvad.net:1080,"Chicago, IL",USA,DataPacket,87.249.134.27,2a02:6ea0:c61f:2::f001
-us-chi-wg-301,us-chi-wg-socks5-301,us-chi-wg-socks5-301.relays.mullvad.net:1080,"Chicago, IL",USA,Tzulo,68.235.46.2,2607:9000:0:101::f001
 us-chi-wg-302,us-chi-wg-socks5-302,us-chi-wg-socks5-302.relays.mullvad.net:1080,"Chicago, IL",USA,Tzulo,68.235.46.33,2607:9000:0:102::f001
-us-chi-wg-303,us-chi-wg-socks5-303,us-chi-wg-socks5-303.relays.mullvad.net:1080,"Chicago, IL",USA,Tzulo,68.235.46.64,2607:9000:0:103::f001
-us-chi-wg-304,us-chi-wg-socks5-304,us-chi-wg-socks5-304.relays.mullvad.net:1080,"Chicago, IL",USA,Tzulo,68.235.46.95,2607:9000:0:104::f001
-us-chi-wg-305,us-chi-wg-socks5-305,us-chi-wg-socks5-305.relays.mullvad.net:1080,"Chicago, IL",USA,Tzulo,68.235.46.126,2607:9000:0:105::f001
-us-chi-wg-306,us-chi-wg-socks5-306,us-chi-wg-socks5-306.relays.mullvad.net:1080,"Chicago, IL",USA,Tzulo,68.235.46.157,2607:9000:0:106::f001
-us-chi-wg-307,us-chi-wg-socks5-307,us-chi-wg-socks5-307.relays.mullvad.net:1080,"Chicago, IL",USA,Tzulo,68.235.46.188,2607:9000:0:107::f001
-us-chi-wg-308,us-chi-wg-socks5-308,us-chi-wg-socks5-308.relays.mullvad.net:1080,"Chicago, IL",USA,Tzulo,68.235.46.209,2607:9000:0:108::f001
 us-chi-wg-309,us-chi-wg-socks5-309,us-chi-wg-socks5-309.relays.mullvad.net:1080,"Chicago, IL",USA,Tzulo,173.249.252.2,2607:9000:100:41::f001
 us-chi-wg-310,us-chi-wg-socks5-310,us-chi-wg-socks5-310.relays.mullvad.net:1080,"Chicago, IL",USA,Tzulo,173.249.252.127,2607:9000:100:42::f001
 us-chi-wg-311,us-chi-wg-socks5-311,us-chi-wg-socks5-311.relays.mullvad.net:1080,"Chicago, IL",USA,Tzulo,173.249.253.2,2607:9000:100:43::f001
@@ -334,6 +322,11 @@ us-mkc-wg-105,us-mkc-wg-socks5-105,us-mkc-wg-socks5-105.relays.mullvad.net:1080,
 us-lax-wg-001,us-lax-wg-socks5-001,us-lax-wg-socks5-001.relays.mullvad.net:1080,"Los Angeles, CA",USA,Tzulo,23.234.72.2,2607:9000:300:31::f001
 us-lax-wg-002,us-lax-wg-socks5-002,us-lax-wg-socks5-002.relays.mullvad.net:1080,"Los Angeles, CA",USA,Tzulo,23.234.72.127,2607:9000:300:32::f001
 us-lax-wg-003,us-lax-wg-socks5-003,us-lax-wg-socks5-003.relays.mullvad.net:1080,"Los Angeles, CA",USA,Tzulo,23.234.73.2,2607:9000:300:33::f001
+us-lax-wg-004,us-lax-wg-socks5-004,us-lax-wg-socks5-004.relays.mullvad.net:1080,"Los Angeles, CA",USA,Tzulo,23.234.73.127,2607:9000:300:34::f001
+us-lax-wg-005,us-lax-wg-socks5-005,us-lax-wg-socks5-005.relays.mullvad.net:1080,"Los Angeles, CA",USA,Tzulo,23.234.74.2,2607:9000:300:35::f001
+us-lax-wg-006,us-lax-wg-socks5-006,us-lax-wg-socks5-006.relays.mullvad.net:1080,"Los Angeles, CA",USA,Tzulo,23.234.74.127,2607:9000:300:36::f001
+us-lax-wg-007,us-lax-wg-socks5-007,us-lax-wg-socks5-007.relays.mullvad.net:1080,"Los Angeles, CA",USA,Tzulo,23.234.75.2,2607:9000:300:37::f001
+us-lax-wg-008,us-lax-wg-socks5-008,us-lax-wg-socks5-008.relays.mullvad.net:1080,"Los Angeles, CA",USA,Tzulo,23.234.75.127,2607:9000:300:38::f001
 us-lax-wg-203,us-lax-wg-socks5-203,us-lax-wg-socks5-203.relays.mullvad.net:1080,"Los Angeles, CA",USA,DataPacket,169.150.203.28,2a02:6ea0:c859:3::a03f
 us-lax-wg-407,us-lax-wg-socks5-407,us-lax-wg-socks5-407.relays.mullvad.net:1080,"Los Angeles, CA",USA,M247,146.70.172.66,2a0d:5600:8:38::f001
 us-lax-wg-408,us-lax-wg-socks5-408,us-lax-wg-socks5-408.relays.mullvad.net:1080,"Los Angeles, CA",USA,M247,146.70.172.130,2a0d:5600:8:39::f001
