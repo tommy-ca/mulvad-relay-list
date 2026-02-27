@@ -315,6 +315,12 @@ us-hou-wg-003,us-hou-wg-socks5-003,us-hou-wg-socks5-003.relays.mullvad.net:1080,
 us-hou-wg-004,us-hou-wg-socks5-004,us-hou-wg-socks5-004.relays.mullvad.net:1080,"Houston, TX",USA,DataPacket,37.19.221.169,2a02:6ea0:e001:3::b56f
 us-mkc-wg-001,us-mkc-wg-socks5-001,us-mkc-wg-socks5-001.relays.mullvad.net:1080,"Kansas City, MO",USA,Tzulo,23.234.116.3,2607:9000:e00:2::f001
 us-mkc-wg-002,us-mkc-wg-socks5-002,us-mkc-wg-socks5-002.relays.mullvad.net:1080,"Kansas City, MO",USA,Tzulo,23.234.116.127,2607:9000:e00:3::f001
+us-mkc-wg-003,us-mkc-wg-socks5-003,us-mkc-wg-socks5-003.relays.mullvad.net:1080,"Kansas City, MO",USA,Tzulo,23.234.117.3,2607:9000:e00:4::f001
+us-mkc-wg-004,us-mkc-wg-socks5-004,us-mkc-wg-socks5-004.relays.mullvad.net:1080,"Kansas City, MO",USA,Tzulo,23.234.117.127,2607:9000:e00:5::f001
+us-mkc-wg-005,us-mkc-wg-socks5-005,us-mkc-wg-socks5-005.relays.mullvad.net:1080,"Kansas City, MO",USA,Tzulo,23.234.118.3,2607:9000:e00:6::f001
+us-mkc-wg-006,us-mkc-wg-socks5-006,us-mkc-wg-socks5-006.relays.mullvad.net:1080,"Kansas City, MO",USA,Tzulo,23.234.118.127,2607:9000:e00:7::f001
+us-mkc-wg-007,us-mkc-wg-socks5-007,us-mkc-wg-socks5-007.relays.mullvad.net:1080,"Kansas City, MO",USA,Tzulo,23.234.119.3,2607:9000:e00:8::f001
+us-mkc-wg-008,us-mkc-wg-socks5-008,us-mkc-wg-socks5-008.relays.mullvad.net:1080,"Kansas City, MO",USA,Tzulo,23.234.119.127,2607:9000:e00:9::f001
 us-mkc-wg-101,us-mkc-wg-socks5-101,us-mkc-wg-socks5-101.relays.mullvad.net:1080,"Kansas City, MO",USA,hostuniversal,155.2.191.3,2602:fed2:7e0a::f001
 us-mkc-wg-102,us-mkc-wg-socks5-102,us-mkc-wg-socks5-102.relays.mullvad.net:1080,"Kansas City, MO",USA,hostuniversal,155.2.191.53,2602:fed2:7e0a::f101
 us-mkc-wg-103,us-mkc-wg-socks5-103,us-mkc-wg-socks5-103.relays.mullvad.net:1080,"Kansas City, MO",USA,hostuniversal,155.2.191.103,2602:fed2:7e0a::f201
