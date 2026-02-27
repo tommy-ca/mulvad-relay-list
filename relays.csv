@@ -303,8 +303,8 @@ us-den-wg-102,us-den-wg-socks5-102,us-den-wg-socks5-102.relays.mullvad.net:1080,
 us-den-wg-103,us-den-wg-socks5-103,us-den-wg-socks5-103.relays.mullvad.net:1080,"Denver, CO",USA,DataPacket,37.19.210.27,2a02:6ea0:d70a:2::b59f
 us-den-wg-201,us-den-wg-socks5-201,us-den-wg-socks5-201.relays.mullvad.net:1080,"Denver, CO",USA,Tzulo,23.234.68.2,2607:9000:2000:41::f001
 us-den-wg-202,us-den-wg-socks5-202,us-den-wg-socks5-202.relays.mullvad.net:1080,"Denver, CO",USA,Tzulo,23.234.68.127,2607:9000:2000:42::f001
-us-den-wg-207,us-den-wg-socks5-207,us-den-wg-socks5-207.relays.mullvad.net:1080,"Denver, CO",USA,Tzulo,23.234.71.2,2607:9000:2000:47::f001
-us-den-wg-208,us-den-wg-socks5-208,us-den-wg-socks5-208.relays.mullvad.net:1080,"Denver, CO",USA,Tzulo,23.234.71.127,2607:9000:2000:48::f001
+us-den-wg-203,us-den-wg-socks5-203,us-den-wg-socks5-203.relays.mullvad.net:1080,"Denver, CO",USA,Tzulo,23.234.69.2,2607:9000:2000:43::f001
+us-den-wg-204,us-den-wg-socks5-204,us-den-wg-socks5-204.relays.mullvad.net:1080,"Denver, CO",USA,Tzulo,23.234.69.127,2607:9000:2000:44::f001
 us-hou-wg-001,us-hou-wg-socks5-001,us-hou-wg-socks5-001.relays.mullvad.net:1080,"Houston, TX",USA,DataPacket,37.19.221.130,2a02:6ea0:e001::f001
 us-hou-wg-002,us-hou-wg-socks5-002,us-hou-wg-socks5-002.relays.mullvad.net:1080,"Houston, TX",USA,DataPacket,37.19.221.143,2a02:6ea0:e001:1::f001
 us-hou-wg-003,us-hou-wg-socks5-003,us-hou-wg-socks5-003.relays.mullvad.net:1080,"Houston, TX",USA,DataPacket,37.19.221.156,2a02:6ea0:e001:2::b55f
