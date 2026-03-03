@@ -404,13 +404,6 @@ us-slc-wg-201,us-slc-wg-socks5-201,us-slc-wg-socks5-201.relays.mullvad.net:1080,
 us-slc-wg-202,us-slc-wg-socks5-202,us-slc-wg-socks5-202.relays.mullvad.net:1080,"Salt Lake City, UT",USA,100TB,69.4.234.149,2607:fc98:0:8a::f401
 us-slc-wg-203,us-slc-wg-socks5-203,us-slc-wg-socks5-203.relays.mullvad.net:1080,"Salt Lake City, UT",USA,100TB,69.4.234.131,2607:fc98:0:8a::f501
 us-slc-wg-204,us-slc-wg-socks5-204,us-slc-wg-socks5-204.relays.mullvad.net:1080,"Salt Lake City, UT",USA,100TB,69.4.234.10,2607:fc98:0:8a::f601
-us-slc-wg-301,us-slc-wg-socks5-301,us-slc-wg-socks5-301.relays.mullvad.net:1080,"Salt Lake City, UT",USA,Tzulo,23.234.112.3,2607:9000:d00:2::f001
-us-slc-wg-302,us-slc-wg-socks5-302,us-slc-wg-socks5-302.relays.mullvad.net:1080,"Salt Lake City, UT",USA,Tzulo,23.234.112.127,2607:9000:d00:3::f001
-us-slc-wg-303,us-slc-wg-socks5-303,us-slc-wg-socks5-303.relays.mullvad.net:1080,"Salt Lake City, UT",USA,Tzulo,23.234.113.3,2607:9000:d00:4::f001
-us-slc-wg-304,us-slc-wg-socks5-304,us-slc-wg-socks5-304.relays.mullvad.net:1080,"Salt Lake City, UT",USA,Tzulo,23.234.113.127,2607:9000:d00:5::f001
-us-slc-wg-305,us-slc-wg-socks5-305,us-slc-wg-socks5-305.relays.mullvad.net:1080,"Salt Lake City, UT",USA,Tzulo,23.234.114.3,2607:9000:d00:6::f001
-us-slc-wg-306,us-slc-wg-socks5-306,us-slc-wg-socks5-306.relays.mullvad.net:1080,"Salt Lake City, UT",USA,Tzulo,23.234.114.127,2607:9000:d00:7::f001
-us-slc-wg-307,us-slc-wg-socks5-307,us-slc-wg-socks5-307.relays.mullvad.net:1080,"Salt Lake City, UT",USA,Tzulo,23.234.115.3,2607:9000:d00:8::f001
 us-slc-wg-308,us-slc-wg-socks5-308,us-slc-wg-socks5-308.relays.mullvad.net:1080,"Salt Lake City, UT",USA,Tzulo,23.234.115.127,2607:9000:d00:9::f001
 us-sjc-wg-302,us-sjc-wg-socks5-302,us-sjc-wg-socks5-302.relays.mullvad.net:1080,"San Jose, CA",USA,xtom,142.147.89.210,2604:e8c0:7::f001
 us-sjc-wg-303,us-sjc-wg-socks5-303,us-sjc-wg-socks5-303.relays.mullvad.net:1080,"San Jose, CA",USA,xtom,142.147.89.225,2604:e8c0:7::b68f
