@@ -386,8 +386,7 @@ us-rag-wg-202,us-rag-wg-socks5-202,us-rag-wg-socks5-202.relays.mullvad.net:1080,
 us-rag-wg-203,us-rag-wg-socks5-203,us-rag-wg-socks5-203.relays.mullvad.net:1080,"Raleigh, NC",USA,Tzulo,23.234.77.2,2607:9000:4000:33::f001
 us-rag-wg-204,us-rag-wg-socks5-204,us-rag-wg-socks5-204.relays.mullvad.net:1080,"Raleigh, NC",USA,Tzulo,23.234.77.127,2607:9000:4000:34::f001
 us-rag-wg-205,us-rag-wg-socks5-205,us-rag-wg-socks5-205.relays.mullvad.net:1080,"Raleigh, NC",USA,Tzulo,23.234.78.2,2607:9000:4000:35::f001
-us-rag-wg-206,us-rag-wg-socks5-206,us-rag-wg-socks5-206.relays.mullvad.net:1080,"Raleigh, NC",USA,Tzulo,23.234.78.127,2607:9000:4000:36::f001
-us-rag-wg-207,us-rag-wg-socks5-207,us-rag-wg-socks5-207.relays.mullvad.net:1080,"Raleigh, NC",USA,Tzulo,23.234.79.2,2607:9000:4000:37::f001
+us-rag-wg-208,us-rag-wg-socks5-208,us-rag-wg-socks5-208.relays.mullvad.net:1080,"Raleigh, NC",USA,Tzulo,23.234.79.127,2607:9000:4000:38::f001
 us-slc-wg-201,us-slc-wg-socks5-201,us-slc-wg-socks5-201.relays.mullvad.net:1080,"Salt Lake City, UT",USA,100TB,69.4.234.9,2607:fc98:0:8a::f301
 us-slc-wg-202,us-slc-wg-socks5-202,us-slc-wg-socks5-202.relays.mullvad.net:1080,"Salt Lake City, UT",USA,100TB,69.4.234.149,2607:fc98:0:8a::f401
 us-slc-wg-203,us-slc-wg-socks5-203,us-slc-wg-socks5-203.relays.mullvad.net:1080,"Salt Lake City, UT",USA,100TB,69.4.234.131,2607:fc98:0:8a::f501
@@ -405,12 +404,7 @@ us-sjc-wg-401,us-sjc-wg-socks5-401,us-sjc-wg-socks5-401.relays.mullvad.net:1080,
 us-sjc-wg-402,us-sjc-wg-socks5-402,us-sjc-wg-socks5-402.relays.mullvad.net:1080,"San Jose, CA",USA,DataPacket,79.127.217.47,2a02:6ea0:e611:1::f001
 us-sjc-wg-501,us-sjc-wg-socks5-501,us-sjc-wg-socks5-501.relays.mullvad.net:1080,"San Jose, CA",USA,Tzulo,23.234.92.3,2607:9000:800:31::f001
 us-sjc-wg-502,us-sjc-wg-socks5-502,us-sjc-wg-socks5-502.relays.mullvad.net:1080,"San Jose, CA",USA,Tzulo,23.234.92.127,2607:9000:800:32::f001
-us-sjc-wg-503,us-sjc-wg-socks5-503,us-sjc-wg-socks5-503.relays.mullvad.net:1080,"San Jose, CA",USA,Tzulo,23.234.93.3,2607:9000:800:33::f001
-us-sjc-wg-504,us-sjc-wg-socks5-504,us-sjc-wg-socks5-504.relays.mullvad.net:1080,"San Jose, CA",USA,Tzulo,23.234.93.127,2607:9000:800:34::f001
 us-sjc-wg-505,us-sjc-wg-socks5-505,us-sjc-wg-socks5-505.relays.mullvad.net:1080,"San Jose, CA",USA,Tzulo,23.234.94.3,2607:9000:800:35::f001
-us-sjc-wg-506,us-sjc-wg-socks5-506,us-sjc-wg-socks5-506.relays.mullvad.net:1080,"San Jose, CA",USA,Tzulo,23.234.94.127,2607:9000:800:36::f001
-us-sjc-wg-507,us-sjc-wg-socks5-507,us-sjc-wg-socks5-507.relays.mullvad.net:1080,"San Jose, CA",USA,Tzulo,23.234.95.3,2607:9000:800:37::f001
-us-sjc-wg-508,us-sjc-wg-socks5-508,us-sjc-wg-socks5-508.relays.mullvad.net:1080,"San Jose, CA",USA,Tzulo,23.234.95.127,2607:9000:800:38::f001
 us-sea-wg-001,us-sea-wg-socks5-001,us-sea-wg-socks5-001.relays.mullvad.net:1080,"Seattle, WA",USA,DataPacket,138.199.43.91,2a02:6ea0:d80b:3::b75f
 us-sea-wg-002,us-sea-wg-socks5-002,us-sea-wg-socks5-002.relays.mullvad.net:1080,"Seattle, WA",USA,DataPacket,138.199.43.78,2a02:6ea0:d80b:2::f001
 us-sea-wg-003,us-sea-wg-socks5-003,us-sea-wg-socks5-003.relays.mullvad.net:1080,"Seattle, WA",USA,DataPacket,138.199.43.65,2a02:6ea0:d80b:1::b73f
