@@ -184,8 +184,6 @@ sg-sin-wg-101,sg-sin-wg-socks5-101,sg-sin-wg-socks5-101.relays.mullvad.net:1080,
 sg-sin-wg-102,sg-sin-wg-socks5-102,sg-sin-wg-socks5-102.relays.mullvad.net:1080,Singapore,Singapore,M247,146.70.199.130,2a0d:5600:d:43::a02f
 sk-bts-wg-001,sk-bts-wg-socks5-001,sk-bts-wg-socks5-001.relays.mullvad.net:1080,Bratislava,Slovakia,DataPacket,138.199.34.129,2a02:6ea0:2901:1::f001
 sk-bts-wg-002,sk-bts-wg-socks5-002,sk-bts-wg-socks5-002.relays.mullvad.net:1080,Bratislava,Slovakia,DataPacket,138.199.34.143,2a02:6ea0:2901::a02f
-si-lju-wg-001,si-lju-wg-socks5-001,si-lju-wg-socks5-001.relays.mullvad.net:1080,Ljubljana,Slovenia,HostRoyale,93.115.0.3,2a06:3040:7:210::f001
-si-lju-wg-002,si-lju-wg-socks5-002,si-lju-wg-socks5-002.relays.mullvad.net:1080,Ljubljana,Slovenia,HostRoyale,93.115.0.33,2a06:3040:7:210::f101
 za-jnb-wg-001,za-jnb-wg-socks5-001,za-jnb-wg-socks5-001.relays.mullvad.net:1080,Johannesburg,South Africa,DataPacket,154.47.30.130,2a02:6ea0:f206::f001
 za-jnb-wg-002,za-jnb-wg-socks5-002,za-jnb-wg-socks5-002.relays.mullvad.net:1080,Johannesburg,South Africa,DataPacket,154.47.30.143,2a02:6ea0:f207::f001
 es-bcn-wg-001,es-bcn-wg-socks5-001,es-bcn-wg-socks5-001.relays.mullvad.net:1080,Barcelona,Spain,HostRoyale,185.188.61.195,2a06:3040:2:210::f001
