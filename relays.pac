@@ -366,7 +366,6 @@ function FindProxyForURL(url, host) {
         "SOCKS5 us-nyc-wg-socks5-801.relays.mullvad.net:1080",
         "SOCKS5 us-nyc-wg-socks5-802.relays.mullvad.net:1080",
         "SOCKS5 us-nyc-wg-socks5-803.relays.mullvad.net:1080",
-        "SOCKS5 us-nyc-wg-socks5-804.relays.mullvad.net:1080",
         "SOCKS5 us-nyc-wg-socks5-805.relays.mullvad.net:1080",
         "SOCKS5 us-nyc-wg-socks5-806.relays.mullvad.net:1080",
         "SOCKS5 us-nyc-wg-socks5-807.relays.mullvad.net:1080",

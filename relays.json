@@ -6205,23 +6205,6 @@
     "display_label": "New York, NY, USA (Tzulo)"
   },
   {
-    "hostname": "us-nyc-wg-804",
-    "socks5_hostname": "us-nyc-wg-socks5-804",
-    "socks5_endpoint": "us-nyc-wg-socks5-804.relays.mullvad.net:1080",
-    "location_id": "us-nyc",
-    "city": "New York, NY",
-    "country": "USA",
-    "provider": "Tzulo",
-    "ipv4": "23.234.101.127",
-    "ipv6": "2607:9000:a000:34::f001",
-    "weight": 100,
-    "owned": false,
-    "active": true,
-    "include_in_country": true,
-    "source": "mullvad",
-    "display_label": "New York, NY, USA (Tzulo)"
-  },
-  {
     "hostname": "us-nyc-wg-805",
     "socks5_hostname": "us-nyc-wg-socks5-805",
     "socks5_endpoint": "us-nyc-wg-socks5-805.relays.mullvad.net:1080",

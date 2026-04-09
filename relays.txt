@@ -363,7 +363,6 @@ socks5://us-nyc-wg-socks5-703.relays.mullvad.net:1080
 socks5://us-nyc-wg-socks5-801.relays.mullvad.net:1080
 socks5://us-nyc-wg-socks5-802.relays.mullvad.net:1080
 socks5://us-nyc-wg-socks5-803.relays.mullvad.net:1080
-socks5://us-nyc-wg-socks5-804.relays.mullvad.net:1080
 socks5://us-nyc-wg-socks5-805.relays.mullvad.net:1080
 socks5://us-nyc-wg-socks5-806.relays.mullvad.net:1080
 socks5://us-nyc-wg-socks5-807.relays.mullvad.net:1080
