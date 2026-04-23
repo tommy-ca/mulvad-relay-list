@@ -187,6 +187,23 @@
     "display_label": "Melbourne, Australia (hostuniversal)"
   },
   {
+    "hostname": "au-mel-wg-402",
+    "socks5_hostname": "au-mel-wg-socks5-402",
+    "socks5_endpoint": "au-mel-wg-socks5-402.relays.mullvad.net:1080",
+    "location_id": "au-mel",
+    "city": "Melbourne",
+    "country": "Australia",
+    "provider": "hostuniversal",
+    "ipv4": "163.47.16.150",
+    "ipv6": "2406:d501:f:dfb::f001",
+    "weight": 100,
+    "owned": false,
+    "active": true,
+    "include_in_country": true,
+    "source": "mullvad",
+    "display_label": "Melbourne, Australia (hostuniversal)"
+  },
+  {
     "hostname": "au-mel-wg-403",
     "socks5_hostname": "au-mel-wg-socks5-403",
     "socks5_endpoint": "au-mel-wg-socks5-403.relays.mullvad.net:1080",
