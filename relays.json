@@ -2601,23 +2601,6 @@
     "display_label": "Amsterdam, Netherlands (xtom)"
   },
   {
-    "hostname": "nl-ams-wg-201",
-    "socks5_hostname": "nl-ams-wg-socks5-201",
-    "socks5_endpoint": "nl-ams-wg-socks5-201.relays.mullvad.net:1080",
-    "location_id": "nl-ams",
-    "city": "Amsterdam",
-    "country": "Netherlands",
-    "provider": "DataPacket",
-    "ipv4": "169.150.196.2",
-    "ipv6": "2a02:6ea0:c034:1::a30f",
-    "weight": 100,
-    "owned": false,
-    "active": true,
-    "include_in_country": true,
-    "source": "mullvad",
-    "display_label": "Amsterdam, Netherlands (DataPacket)"
-  },
-  {
     "hostname": "nl-ams-wg-202",
     "socks5_hostname": "nl-ams-wg-socks5-202",
     "socks5_endpoint": "nl-ams-wg-socks5-202.relays.mullvad.net:1080",
