@@ -5440,6 +5440,23 @@
     "display_label": "Los Angeles, CA, USA (DataPacket)"
   },
   {
+    "hostname": "us-lax-wg-407",
+    "socks5_hostname": "us-lax-wg-socks5-407",
+    "socks5_endpoint": "us-lax-wg-socks5-407.relays.mullvad.net:1080",
+    "location_id": "us-lax",
+    "city": "Los Angeles, CA",
+    "country": "USA",
+    "provider": "M247",
+    "ipv4": "146.70.172.66",
+    "ipv6": "2a0d:5600:8:38::f001",
+    "weight": 100,
+    "owned": false,
+    "active": true,
+    "include_in_country": true,
+    "source": "mullvad",
+    "display_label": "Los Angeles, CA, USA (M247)"
+  },
+  {
     "hostname": "us-lax-wg-408",
     "socks5_hostname": "us-lax-wg-socks5-408",
     "socks5_endpoint": "us-lax-wg-socks5-408.relays.mullvad.net:1080",

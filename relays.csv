@@ -319,6 +319,7 @@ us-lax-wg-006,us-lax-wg-socks5-006,us-lax-wg-socks5-006.relays.mullvad.net:1080,
 us-lax-wg-007,us-lax-wg-socks5-007,us-lax-wg-socks5-007.relays.mullvad.net:1080,"Los Angeles, CA",USA,Tzulo,23.234.75.2,2607:9000:300:37::f001
 us-lax-wg-008,us-lax-wg-socks5-008,us-lax-wg-socks5-008.relays.mullvad.net:1080,"Los Angeles, CA",USA,Tzulo,23.234.75.127,2607:9000:300:38::f001
 us-lax-wg-203,us-lax-wg-socks5-203,us-lax-wg-socks5-203.relays.mullvad.net:1080,"Los Angeles, CA",USA,DataPacket,169.150.203.28,2a02:6ea0:c859:3::a03f
+us-lax-wg-407,us-lax-wg-socks5-407,us-lax-wg-socks5-407.relays.mullvad.net:1080,"Los Angeles, CA",USA,M247,146.70.172.66,2a0d:5600:8:38::f001
 us-lax-wg-408,us-lax-wg-socks5-408,us-lax-wg-socks5-408.relays.mullvad.net:1080,"Los Angeles, CA",USA,M247,146.70.172.130,2a0d:5600:8:39::f001
 us-lax-wg-409,us-lax-wg-socks5-409,us-lax-wg-socks5-409.relays.mullvad.net:1080,"Los Angeles, CA",USA,M247,146.70.172.194,2a0d:5600:8:3a::f001
 us-lax-wg-601,us-lax-wg-socks5-601,us-lax-wg-socks5-601.relays.mullvad.net:1080,"Los Angeles, CA",USA,xtom,23.162.40.3,2602:fa19::f001
