@@ -85,6 +85,7 @@ cz-prg-wg-201,cz-prg-wg-socks5-201,cz-prg-wg-socks5-201.relays.mullvad.net:1080,
 cz-prg-wg-202,cz-prg-wg-socks5-202,cz-prg-wg-socks5-202.relays.mullvad.net:1080,Prague,Czech Republic,DataPacket,178.249.209.175,2a02:6ea0:c201:1::f101
 dk-cph-wg-401,dk-cph-wg-socks5-401,dk-cph-wg-socks5-401.relays.mullvad.net:1080,Copenhagen,Denmark,M247,146.70.197.194,2001:ac8:37:97::f001
 dk-cph-wg-402,dk-cph-wg-socks5-402,dk-cph-wg-socks5-402.relays.mullvad.net:1080,Copenhagen,Denmark,M247,146.70.197.130,2001:ac8:37:96::f001
+ee-tll-wg-001,ee-tll-wg-socks5-001,ee-tll-wg-socks5-001.relays.mullvad.net:1080,Tallinn,Estonia,xtom,194.127.167.67,2a07:d880:2::a01f
 ee-tll-wg-002,ee-tll-wg-socks5-002,ee-tll-wg-socks5-002.relays.mullvad.net:1080,Tallinn,Estonia,xtom,194.127.167.87,2a07:d880:2::a02f
 ee-tll-wg-003,ee-tll-wg-socks5-003,ee-tll-wg-socks5-003.relays.mullvad.net:1080,Tallinn,Estonia,xtom,194.127.167.107,2a07:d880:2::a03f
 fr-bod-wg-001,fr-bod-wg-socks5-001,fr-bod-wg-socks5-001.relays.mullvad.net:1080,Bordeaux,France,HostRoyale,45.134.79.67,2a06:3040:4:610::f001
