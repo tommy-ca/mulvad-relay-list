@@ -3451,23 +3451,6 @@
     "display_label": "Zurich, Switzerland (DataPacket)"
   },
   {
-    "hostname": "ch-zrh-wg-403",
-    "socks5_hostname": "ch-zrh-wg-socks5-403",
-    "socks5_endpoint": "ch-zrh-wg-socks5-403.relays.mullvad.net:1080",
-    "location_id": "ch-zrh",
-    "city": "Zurich",
-    "country": "Switzerland",
-    "provider": "DataPacket",
-    "ipv4": "138.199.6.220",
-    "ipv6": "2a02:6ea0:d406:3::a20f",
-    "weight": 80,
-    "owned": false,
-    "active": true,
-    "include_in_country": true,
-    "source": "mullvad",
-    "display_label": "Zurich, Switzerland (DataPacket)"
-  },
-  {
     "hostname": "ch-zrh-wg-404",
     "socks5_hostname": "ch-zrh-wg-socks5-404",
     "socks5_endpoint": "ch-zrh-wg-socks5-404.relays.mullvad.net:1080",
