@@ -2363,23 +2363,6 @@
     "display_label": "Osaka, Japan (xtom)"
   },
   {
-    "hostname": "jp-tyo-wg-001",
-    "socks5_hostname": "jp-tyo-wg-socks5-001",
-    "socks5_endpoint": "jp-tyo-wg-socks5-001.relays.mullvad.net:1080",
-    "location_id": "jp-tyo",
-    "city": "Tokyo",
-    "country": "Japan",
-    "provider": "DataPacket",
-    "ipv4": "138.199.21.239",
-    "ipv6": "2a02:6ea0:d31c::a15f",
-    "weight": 200,
-    "owned": false,
-    "active": true,
-    "include_in_country": true,
-    "source": "mullvad",
-    "display_label": "Tokyo, Japan (DataPacket)"
-  },
-  {
     "hostname": "jp-tyo-wg-002",
     "socks5_hostname": "jp-tyo-wg-socks5-002",
     "socks5_endpoint": "jp-tyo-wg-socks5-002.relays.mullvad.net:1080",
