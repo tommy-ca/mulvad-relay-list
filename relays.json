@@ -476,6 +476,23 @@
     "display_label": "Vienna, Austria (M247)"
   },
   {
+    "hostname": "at-vie-wg-003",
+    "socks5_hostname": "at-vie-wg-socks5-003",
+    "socks5_endpoint": "at-vie-wg-socks5-003.relays.mullvad.net:1080",
+    "location_id": "at-vie",
+    "city": "Vienna",
+    "country": "Austria",
+    "provider": "M247",
+    "ipv4": "135.136.51.130",
+    "ipv6": "2001:ac8:29:b5::f001",
+    "weight": 100,
+    "owned": false,
+    "active": true,
+    "include_in_country": true,
+    "source": "mullvad",
+    "display_label": "Vienna, Austria (M247)"
+  },
+  {
     "hostname": "at-vie-wg-101",
     "socks5_hostname": "at-vie-wg-socks5-101",
     "socks5_endpoint": "at-vie-wg-socks5-101.relays.mullvad.net:1080",
