@@ -4607,23 +4607,6 @@
     "display_label": "Dallas, TX, USA (HostRoyale)"
   },
   {
-    "hostname": "us-dal-wg-602",
-    "socks5_hostname": "us-dal-wg-socks5-602",
-    "socks5_endpoint": "us-dal-wg-socks5-602.relays.mullvad.net:1080",
-    "location_id": "us-dal",
-    "city": "Dallas, TX",
-    "country": "USA",
-    "provider": "HostRoyale",
-    "ipv4": "103.102.246.127",
-    "ipv6": "2a01:4740:2::f101",
-    "weight": 100,
-    "owned": false,
-    "active": true,
-    "include_in_country": true,
-    "source": "mullvad",
-    "display_label": "Dallas, TX, USA (HostRoyale)"
-  },
-  {
     "hostname": "us-dal-wg-603",
     "socks5_hostname": "us-dal-wg-socks5-603",
     "socks5_endpoint": "us-dal-wg-socks5-603.relays.mullvad.net:1080",
