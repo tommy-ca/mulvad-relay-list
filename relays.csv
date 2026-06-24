@@ -212,9 +212,6 @@ gb-lon-wg-201,gb-lon-wg-socks5-201,gb-lon-wg-socks5-201.relays.mullvad.net:1080,
 gb-lon-wg-202,gb-lon-wg-socks5-202,gb-lon-wg-socks5-202.relays.mullvad.net:1080,London,UK,xtom,185.248.85.18,2a0b:89c1:3::a34f
 gb-lon-wg-203,gb-lon-wg-socks5-203,gb-lon-wg-socks5-203.relays.mullvad.net:1080,London,UK,xtom,185.248.85.33,2a0b:89c1:3::a35f
 gb-lon-wg-204,gb-lon-wg-socks5-204,gb-lon-wg-socks5-204.relays.mullvad.net:1080,London,UK,xtom,185.248.85.48,2a0b:89c1:3::a36f
-gb-lon-wg-301,gb-lon-wg-socks5-301,gb-lon-wg-socks5-301.relays.mullvad.net:1080,London,UK,M247,146.70.119.66,2001:ac8:31:f007::a39f
-gb-lon-wg-302,gb-lon-wg-socks5-302,gb-lon-wg-socks5-302.relays.mullvad.net:1080,London,UK,M247,146.70.119.2,2001:ac8:31:f005::a37f
-gb-lon-wg-304,gb-lon-wg-socks5-304,gb-lon-wg-socks5-304.relays.mullvad.net:1080,London,UK,M247,146.70.119.162,2001:ac8:31:f00a::f001
 ua-iev-wg-001,ua-iev-wg-socks5-001,ua-iev-wg-socks5-001.relays.mullvad.net:1080,Kyiv,Ukraine,DataPacket,149.102.240.79,2a02:6ea0:e109:2::a01f
 ua-iev-wg-002,ua-iev-wg-socks5-002,ua-iev-wg-socks5-002.relays.mullvad.net:1080,Kyiv,Ukraine,DataPacket,149.102.240.66,2a02:6ea0:e109:1::a02f
 us-qas-wg-101,us-qas-wg-socks5-101,us-qas-wg-socks5-101.relays.mullvad.net:1080,"Ashburn, VA",USA,DataPacket,185.156.46.130,2a02:6ea0:e206:1::a01f
@@ -382,6 +379,8 @@ us-slc-wg-305,us-slc-wg-socks5-305,us-slc-wg-socks5-305.relays.mullvad.net:1080,
 us-slc-wg-306,us-slc-wg-socks5-306,us-slc-wg-socks5-306.relays.mullvad.net:1080,"Salt Lake City, UT",USA,Tzulo,23.234.114.127,2607:9000:d00:7::f001
 us-slc-wg-307,us-slc-wg-socks5-307,us-slc-wg-socks5-307.relays.mullvad.net:1080,"Salt Lake City, UT",USA,Tzulo,23.234.115.3,2607:9000:d00:8::f001
 us-slc-wg-308,us-slc-wg-socks5-308,us-slc-wg-socks5-308.relays.mullvad.net:1080,"Salt Lake City, UT",USA,Tzulo,23.234.115.127,2607:9000:d00:9::f001
+us-sfo-wg-001,us-sfo-wg-socks5-001,us-sfo-wg-socks5-001.relays.mullvad.net:1080,"San Francisco, CA",USA,HostRoyale,45.153.102.3,2a06:3040:9:610::f101
+us-sfo-wg-002,us-sfo-wg-socks5-002,us-sfo-wg-socks5-002.relays.mullvad.net:1080,"San Francisco, CA",USA,HostRoyale,194.126.179.3,2a06:3040:9:610::f201
 us-sjc-wg-302,us-sjc-wg-socks5-302,us-sjc-wg-socks5-302.relays.mullvad.net:1080,"San Jose, CA",USA,xtom,142.147.89.210,2604:e8c0:7::f001
 us-sjc-wg-303,us-sjc-wg-socks5-303,us-sjc-wg-socks5-303.relays.mullvad.net:1080,"San Jose, CA",USA,xtom,142.147.89.225,2604:e8c0:7::b68f
 us-sjc-wg-401,us-sjc-wg-socks5-401,us-sjc-wg-socks5-401.relays.mullvad.net:1080,"San Jose, CA",USA,DataPacket,79.127.217.34,2a02:6ea0:e611::f001
