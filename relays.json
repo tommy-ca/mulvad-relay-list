@@ -5661,6 +5661,23 @@
     "display_label": "Miami, FL, USA (DataPacket)"
   },
   {
+    "hostname": "us-mia-wg-002",
+    "socks5_hostname": "us-mia-wg-socks5-002",
+    "socks5_endpoint": "us-mia-wg-socks5-002.relays.mullvad.net:1080",
+    "location_id": "us-mia",
+    "city": "Miami, FL",
+    "country": "USA",
+    "provider": "DataPacket",
+    "ipv4": "45.134.142.206",
+    "ipv6": "2a02:6ea0:cc1f:1::b61f",
+    "weight": 200,
+    "owned": false,
+    "active": true,
+    "include_in_country": true,
+    "source": "mullvad",
+    "display_label": "Miami, FL, USA (DataPacket)"
+  },
+  {
     "hostname": "us-mia-wg-003",
     "socks5_hostname": "us-mia-wg-socks5-003",
     "socks5_endpoint": "us-mia-wg-socks5-003.relays.mullvad.net:1080",
