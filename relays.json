@@ -2669,6 +2669,23 @@
     "display_label": "Auckland, New Zealand (hostuniversal)"
   },
   {
+    "hostname": "ng-los-wg-001",
+    "socks5_hostname": "ng-los-wg-socks5-001",
+    "socks5_endpoint": "ng-los-wg-socks5-001.relays.mullvad.net:1080",
+    "location_id": "ng-los",
+    "city": "Lagos",
+    "country": "Nigeria",
+    "provider": "DataPacket",
+    "ipv4": "79.127.149.130",
+    "ipv6": "2a02:6ea0:5400:1::f001",
+    "weight": 100,
+    "owned": false,
+    "active": true,
+    "include_in_country": true,
+    "source": "mullvad",
+    "display_label": "Lagos, Nigeria (DataPacket)"
+  },
+  {
     "hostname": "ng-los-wg-002",
     "socks5_hostname": "ng-los-wg-socks5-002",
     "socks5_endpoint": "ng-los-wg-socks5-002.relays.mullvad.net:1080",

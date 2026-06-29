@@ -156,6 +156,7 @@ nl-ams-wg-203,nl-ams-wg-socks5-203,nl-ams-wg-socks5-203.relays.mullvad.net:1080,
 nz-akl-wg-301,nz-akl-wg-socks5-301,nz-akl-wg-socks5-301.relays.mullvad.net:1080,Auckland,New Zealand,hostuniversal,103.75.11.50,2404:f780:5:deb::f001
 nz-akl-wg-302,nz-akl-wg-socks5-302,nz-akl-wg-socks5-302.relays.mullvad.net:1080,Auckland,New Zealand,hostuniversal,103.75.11.66,2404:f780:5:dec::c02f
 nz-akl-wg-303,nz-akl-wg-socks5-303,nz-akl-wg-socks5-303.relays.mullvad.net:1080,Auckland,New Zealand,hostuniversal,103.75.11.98,2404:f780:5:def::f201
+ng-los-wg-001,ng-los-wg-socks5-001,ng-los-wg-socks5-001.relays.mullvad.net:1080,Lagos,Nigeria,DataPacket,79.127.149.130,2a02:6ea0:5400:1::f001
 ng-los-wg-002,ng-los-wg-socks5-002,ng-los-wg-socks5-002.relays.mullvad.net:1080,Lagos,Nigeria,DataPacket,79.127.149.159,2a02:6ea0:5400:2::f001
 pe-lim-wg-001,pe-lim-wg-socks5-001,pe-lim-wg-socks5-001.relays.mullvad.net:1080,Lima,Peru,DataPacket,95.173.223.130,2a02:6ea0:5500:1::f001
 pe-lim-wg-002,pe-lim-wg-socks5-002,pe-lim-wg-socks5-002.relays.mullvad.net:1080,Lima,Peru,DataPacket,95.173.223.159,2a02:6ea0:5500:2::f001
