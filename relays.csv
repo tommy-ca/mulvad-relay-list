@@ -210,6 +210,9 @@ gb-lon-wg-201,gb-lon-wg-socks5-201,gb-lon-wg-socks5-201.relays.mullvad.net:1080,
 gb-lon-wg-202,gb-lon-wg-socks5-202,gb-lon-wg-socks5-202.relays.mullvad.net:1080,London,UK,xtom,185.248.85.18,2a0b:89c1:3::a34f
 gb-lon-wg-203,gb-lon-wg-socks5-203,gb-lon-wg-socks5-203.relays.mullvad.net:1080,London,UK,xtom,185.248.85.33,2a0b:89c1:3::a35f
 gb-lon-wg-204,gb-lon-wg-socks5-204,gb-lon-wg-socks5-204.relays.mullvad.net:1080,London,UK,xtom,185.248.85.48,2a0b:89c1:3::a36f
+gb-lon-wg-305,gb-lon-wg-socks5-305,gb-lon-wg-socks5-305.relays.mullvad.net:1080,London,UK,M247,146.70.119.2,2a04:9dc0:18:70::f001
+gb-lon-wg-306,gb-lon-wg-socks5-306,gb-lon-wg-socks5-306.relays.mullvad.net:1080,London,UK,M247,146.70.119.130,2a04:9dc0:18:71::f001
+gb-lon-wg-308,gb-lon-wg-socks5-308,gb-lon-wg-socks5-308.relays.mullvad.net:1080,London,UK,M247,135.136.58.130,2a04:9dc0:18:73::f001
 ua-iev-wg-001,ua-iev-wg-socks5-001,ua-iev-wg-socks5-001.relays.mullvad.net:1080,Kyiv,Ukraine,DataPacket,149.102.240.79,2a02:6ea0:e109:2::a01f
 ua-iev-wg-002,ua-iev-wg-socks5-002,ua-iev-wg-socks5-002.relays.mullvad.net:1080,Kyiv,Ukraine,DataPacket,149.102.240.66,2a02:6ea0:e109:1::a02f
 us-qas-wg-101,us-qas-wg-socks5-101,us-qas-wg-socks5-101.relays.mullvad.net:1080,"Ashburn, VA",USA,DataPacket,185.156.46.130,2a02:6ea0:e206:1::a01f
