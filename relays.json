@@ -3638,6 +3638,23 @@
     "display_label": "London, UK (M247)"
   },
   {
+    "hostname": "gb-mnc-wg-004",
+    "socks5_hostname": "gb-mnc-wg-socks5-004",
+    "socks5_endpoint": "gb-mnc-wg-socks5-004.relays.mullvad.net:1080",
+    "location_id": "gb-mnc",
+    "city": "Manchester",
+    "country": "UK",
+    "provider": "M247",
+    "ipv4": "135.136.21.2",
+    "ipv6": "2001:ac8:8b:107::f001",
+    "weight": 100,
+    "owned": false,
+    "active": true,
+    "include_in_country": true,
+    "source": "mullvad",
+    "display_label": "Manchester, UK (M247)"
+  },
+  {
     "hostname": "ua-iev-wg-001",
     "socks5_hostname": "ua-iev-wg-socks5-001",
     "socks5_endpoint": "ua-iev-wg-socks5-001.relays.mullvad.net:1080",
