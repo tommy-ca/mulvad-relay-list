@@ -1887,6 +1887,23 @@
     "display_label": "Hong Kong, Hong Kong (xtom)"
   },
   {
+    "hostname": "hk-hkg-wg-203",
+    "socks5_hostname": "hk-hkg-wg-socks5-203",
+    "socks5_endpoint": "hk-hkg-wg-socks5-203.relays.mullvad.net:1080",
+    "location_id": "hk-hkg",
+    "city": "Hong Kong",
+    "country": "Hong Kong",
+    "provider": "xtom",
+    "ipv4": "103.125.233.33",
+    "ipv6": "2403:2c81:1000::f301",
+    "weight": 100,
+    "owned": false,
+    "active": true,
+    "include_in_country": true,
+    "source": "mullvad",
+    "display_label": "Hong Kong, Hong Kong (xtom)"
+  },
+  {
     "hostname": "hk-hkg-wg-301",
     "socks5_hostname": "hk-hkg-wg-socks5-301",
     "socks5_endpoint": "hk-hkg-wg-socks5-301.relays.mullvad.net:1080",
@@ -3636,6 +3653,23 @@
     "include_in_country": true,
     "source": "mullvad",
     "display_label": "London, UK (M247)"
+  },
+  {
+    "hostname": "gb-mnc-wg-003",
+    "socks5_hostname": "gb-mnc-wg-socks5-003",
+    "socks5_endpoint": "gb-mnc-wg-socks5-003.relays.mullvad.net:1080",
+    "location_id": "gb-mnc",
+    "city": "Manchester",
+    "country": "UK",
+    "provider": "M247",
+    "ipv4": "135.136.22.130",
+    "ipv6": "2001:ac8:8b:106::f001",
+    "weight": 100,
+    "owned": false,
+    "active": true,
+    "include_in_country": true,
+    "source": "mullvad",
+    "display_label": "Manchester, UK (M247)"
   },
   {
     "hostname": "gb-mnc-wg-004",
