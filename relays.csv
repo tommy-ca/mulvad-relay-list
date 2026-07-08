@@ -139,9 +139,9 @@ jp-osa-wg-003,jp-osa-wg-socks5-003,jp-osa-wg-socks5-003.relays.mullvad.net:1080,
 jp-osa-wg-004,jp-osa-wg-socks5-004,jp-osa-wg-socks5-004.relays.mullvad.net:1080,Osaka,Japan,xtom,194.114.136.96,2403:fbc0:7000::f301
 jp-tyo-wg-001,jp-tyo-wg-socks5-001,jp-tyo-wg-socks5-001.relays.mullvad.net:1080,Tokyo,Japan,DataPacket,138.199.21.239,2a02:6ea0:d31c::a15f
 jp-tyo-wg-002,jp-tyo-wg-socks5-002,jp-tyo-wg-socks5-002.relays.mullvad.net:1080,Tokyo,Japan,DataPacket,138.199.21.226,2a02:6ea0:d31b::a14f
-jp-tyo-wg-201,jp-tyo-wg-socks5-201,jp-tyo-wg-socks5-201.relays.mullvad.net:1080,Tokyo,Japan,M247,146.70.138.194,2001:ac8:40:11::b01f
-jp-tyo-wg-202,jp-tyo-wg-socks5-202,jp-tyo-wg-socks5-202.relays.mullvad.net:1080,Tokyo,Japan,M247,146.70.201.2,2001:ac8:40:13::b02f
-jp-tyo-wg-203,jp-tyo-wg-socks5-203,jp-tyo-wg-socks5-203.relays.mullvad.net:1080,Tokyo,Japan,M247,146.70.201.66,2001:ac8:40:14::b03f
+jp-tyo-wg-201,jp-tyo-wg-socks5-201,jp-tyo-wg-socks5-201.relays.mullvad.net:1080,Tokyo,Japan,M247,146.70.201.2,2001:ac8:40:13::f001
+jp-tyo-wg-202,jp-tyo-wg-socks5-202,jp-tyo-wg-socks5-202.relays.mullvad.net:1080,Tokyo,Japan,M247,146.70.201.130,2001:ac8:40:14::f001
+jp-tyo-wg-203,jp-tyo-wg-socks5-203,jp-tyo-wg-socks5-203.relays.mullvad.net:1080,Tokyo,Japan,M247,135.136.55.2,2001:ac8:40:1d::f001
 my-kul-wg-001,my-kul-wg-socks5-001,my-kul-wg-socks5-001.relays.mullvad.net:1080,Kuala Lumpur,Malaysia,Zenlayer,98.98.47.130,2602:ffe4:c20:112::f001
 my-kul-wg-002,my-kul-wg-socks5-002,my-kul-wg-socks5-002.relays.mullvad.net:1080,Kuala Lumpur,Malaysia,Zenlayer,162.128.129.98,2602:ffe4:c20:112::f101
 mx-qro-wg-001,mx-qro-wg-socks5-001,mx-qro-wg-socks5-001.relays.mullvad.net:1080,Queretaro,Mexico,DataPacket,149.88.22.129,2a02:6ea0:f803::f001
@@ -338,6 +338,9 @@ us-txc-wg-002,us-txc-wg-socks5-002,us-txc-wg-socks5-002.relays.mullvad.net:1080,
 us-mia-wg-001,us-mia-wg-socks5-001,us-mia-wg-socks5-001.relays.mullvad.net:1080,"Miami, FL",USA,DataPacket,45.134.142.219,2a02:6ea0:cc1f:2::b62f
 us-mia-wg-002,us-mia-wg-socks5-002,us-mia-wg-socks5-002.relays.mullvad.net:1080,"Miami, FL",USA,DataPacket,45.134.142.206,2a02:6ea0:cc1f:1::b61f
 us-mia-wg-003,us-mia-wg-socks5-003,us-mia-wg-socks5-003.relays.mullvad.net:1080,"Miami, FL",USA,DataPacket,45.134.142.193,2a02:6ea0:cc1f::f001
+us-mia-wg-101,us-mia-wg-socks5-101,us-mia-wg-socks5-101.relays.mullvad.net:1080,"Miami, FL",USA,M247,146.70.187.2,2001:ac8:40:11::f001
+us-mia-wg-102,us-mia-wg-socks5-102,us-mia-wg-socks5-102.relays.mullvad.net:1080,"Miami, FL",USA,M247,146.70.187.130,2a0d:5600:6:105::f001
+us-mia-wg-103,us-mia-wg-socks5-103,us-mia-wg-socks5-103.relays.mullvad.net:1080,"Miami, FL",USA,M247,135.136.36.2,2a0d:5600:6:106::f001
 us-nyc-wg-301,us-nyc-wg-socks5-301,us-nyc-wg-socks5-301.relays.mullvad.net:1080,"New York, NY",USA,DataPacket,143.244.47.65,2a02:6ea0:c43f::f001
 us-nyc-wg-302,us-nyc-wg-socks5-302,us-nyc-wg-socks5-302.relays.mullvad.net:1080,"New York, NY",USA,DataPacket,143.244.47.78,2a02:6ea0:c43f:1::f001
 us-nyc-wg-303,us-nyc-wg-socks5-303,us-nyc-wg-socks5-303.relays.mullvad.net:1080,"New York, NY",USA,DataPacket,143.244.47.91,2a02:6ea0:c43f:2::b52f
