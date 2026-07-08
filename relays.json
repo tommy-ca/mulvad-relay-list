@@ -1309,23 +1309,6 @@
     "display_label": "Zagreb, Croatia (DataPacket)"
   },
   {
-    "hostname": "cy-nic-wg-001",
-    "socks5_hostname": "cy-nic-wg-socks5-001",
-    "socks5_endpoint": "cy-nic-wg-socks5-001.relays.mullvad.net:1080",
-    "location_id": "cy-nic",
-    "city": "Nicosia",
-    "country": "Cyprus",
-    "provider": "HostRoyale",
-    "ipv4": "195.47.194.131",
-    "ipv6": "2a06:3040:f:601::f001",
-    "weight": 100,
-    "owned": false,
-    "active": true,
-    "include_in_country": true,
-    "source": "mullvad",
-    "display_label": "Nicosia, Cyprus (HostRoyale)"
-  },
-  {
     "hostname": "cy-nic-wg-002",
     "socks5_hostname": "cy-nic-wg-socks5-002",
     "socks5_endpoint": "cy-nic-wg-socks5-002.relays.mullvad.net:1080",
