@@ -198,8 +198,8 @@ es-mad-wg-201,es-mad-wg-socks5-201,es-mad-wg-socks5-201.relays.mullvad.net:1080,
 es-mad-wg-202,es-mad-wg-socks5-202,es-mad-wg-socks5-202.relays.mullvad.net:1080,Madrid,Spain,M247,146.70.128.226,2001:ac8:23:86::a02f
 es-vlc-wg-001,es-vlc-wg-socks5-001,es-vlc-wg-socks5-001.relays.mullvad.net:1080,Valencia,Spain,HostRoyale,193.19.207.195,2a06:3040:3:210::f001
 es-vlc-wg-002,es-vlc-wg-socks5-002,es-vlc-wg-socks5-002.relays.mullvad.net:1080,Valencia,Spain,HostRoyale,193.19.207.225,2a06:3040:3:210::f101
-ch-zrh-wg-201,ch-zrh-wg-socks5-201,ch-zrh-wg-socks5-201.relays.mullvad.net:1080,Zurich,Switzerland,PrivateLayer,179.43.189.66,2a02:29b8:dc01:1832::a1f
-ch-zrh-wg-202,ch-zrh-wg-socks5-202,ch-zrh-wg-socks5-202.relays.mullvad.net:1080,Zurich,Switzerland,PrivateLayer,46.19.136.226,2a02:29b8:dc01:1831::f002
+ch-zrh-wg-201,ch-zrh-wg-socks5-201,ch-zrh-wg-socks5-201.relays.mullvad.net:1080,Zurich,Switzerland,PrivateLayer,179.43.189.66,2a02:29b8:dc01:1832::f001
+ch-zrh-wg-202,ch-zrh-wg-socks5-202,ch-zrh-wg-socks5-202.relays.mullvad.net:1080,Zurich,Switzerland,PrivateLayer,46.19.136.226,2a02:29b8:dc01:1831::f101
 ch-zrh-wg-401,ch-zrh-wg-socks5-401,ch-zrh-wg-socks5-401.relays.mullvad.net:1080,Zurich,Switzerland,DataPacket,138.199.6.194,2a02:6ea0:d406:1::a18f
 ch-zrh-wg-402,ch-zrh-wg-socks5-402,ch-zrh-wg-socks5-402.relays.mullvad.net:1080,Zurich,Switzerland,DataPacket,138.199.6.207,2a02:6ea0:d406:2::a19f
 ch-zrh-wg-404,ch-zrh-wg-socks5-404,ch-zrh-wg-socks5-404.relays.mullvad.net:1080,Zurich,Switzerland,DataPacket,138.199.6.233,2a02:6ea0:d406:4::a21f
