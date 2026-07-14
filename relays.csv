@@ -155,6 +155,9 @@ nl-ams-wg-103,nl-ams-wg-socks5-103,nl-ams-wg-socks5-103.relays.mullvad.net:1080,
 nl-ams-wg-201,nl-ams-wg-socks5-201,nl-ams-wg-socks5-201.relays.mullvad.net:1080,Amsterdam,Netherlands,DataPacket,169.150.196.2,2a02:6ea0:c034:1::a30f
 nl-ams-wg-202,nl-ams-wg-socks5-202,nl-ams-wg-socks5-202.relays.mullvad.net:1080,Amsterdam,Netherlands,DataPacket,169.150.196.15,2a02:6ea0:c034:2::a31f
 nl-ams-wg-203,nl-ams-wg-socks5-203,nl-ams-wg-socks5-203.relays.mullvad.net:1080,Amsterdam,Netherlands,DataPacket,169.150.196.28,2a02:6ea0:c034:3::a32f
+nl-ams-wg-301,nl-ams-wg-socks5-301,nl-ams-wg-socks5-301.relays.mullvad.net:1080,Amsterdam,Netherlands,xtom,185.184.222.3,2a07:d883:700:1::f001
+nl-ams-wg-302,nl-ams-wg-socks5-302,nl-ams-wg-socks5-302.relays.mullvad.net:1080,Amsterdam,Netherlands,xtom,185.184.222.166,2a07:d883:700:2::f001
+nl-ams-wg-303,nl-ams-wg-socks5-303,nl-ams-wg-socks5-303.relays.mullvad.net:1080,Amsterdam,Netherlands,xtom,185.184.222.209,2a07:d883:700:3::f001
 nz-akl-wg-301,nz-akl-wg-socks5-301,nz-akl-wg-socks5-301.relays.mullvad.net:1080,Auckland,New Zealand,hostuniversal,103.75.11.50,2404:f780:5:deb::f001
 nz-akl-wg-302,nz-akl-wg-socks5-302,nz-akl-wg-socks5-302.relays.mullvad.net:1080,Auckland,New Zealand,hostuniversal,103.75.11.66,2404:f780:5:dec::c02f
 nz-akl-wg-303,nz-akl-wg-socks5-303,nz-akl-wg-socks5-303.relays.mullvad.net:1080,Auckland,New Zealand,hostuniversal,103.75.11.98,2404:f780:5:def::f201
