@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-15T05:03:40.898048+00:00",
+  "generated_at": "2026-07-16T05:05:53.656047+00:00",
   "relay_count": 418,
   "filters": {},
   "verification": {
@@ -8,7 +8,7 @@
   "artifacts": {
     "json": {
       "path": "build/mullvad_relays.json",
-      "sha256": "09cd290f7009c3a1c778a75518e2d52743e1e58ee485fe4d8a0de7aab2fcabfc",
+      "sha256": "99ac7b272ec9fadd217a9db69695ef31555d2e89433c30da0d325fa968a84a77",
       "size_bytes": 208331
     },
     "text": {
@@ -23,13 +23,13 @@
     },
     "csv": {
       "path": "build/mullvad_relays.csv",
-      "sha256": "ba5a3e4f3705edafefbeea23c12acb5d08f2ccad23546d49fe73df7090787815",
+      "sha256": "0402aa07176a4d5f3166d8b9c7bf3e7632a20d8107956db48e96cf3f3bb53c1e",
       "size_bytes": 59727
     }
   },
   "metadata": {
     "trigger": "schedule",
-    "run_id": "29390476419",
-    "run_number": "6363"
+    "run_id": "29472984644",
+    "run_number": "6385"
   }
 }
