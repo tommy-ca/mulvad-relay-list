@@ -3672,23 +3672,6 @@
     "display_label": "London, UK (M247)"
   },
   {
-    "hostname": "gb-lon-wg-306",
-    "socks5_hostname": "gb-lon-wg-socks5-306",
-    "socks5_endpoint": "gb-lon-wg-socks5-306.relays.mullvad.net:1080",
-    "location_id": "gb-lon",
-    "city": "London",
-    "country": "UK",
-    "provider": "M247",
-    "ipv4": "146.70.119.130",
-    "ipv6": "2a04:9dc0:18:71::f001",
-    "weight": 100,
-    "owned": false,
-    "active": true,
-    "include_in_country": true,
-    "source": "mullvad",
-    "display_label": "London, UK (M247)"
-  },
-  {
     "hostname": "gb-lon-wg-308",
     "socks5_hostname": "gb-lon-wg-socks5-308",
     "socks5_endpoint": "gb-lon-wg-socks5-308.relays.mullvad.net:1080",
