@@ -97,7 +97,6 @@ fr-par-wg-103,fr-par-wg-socks5-103,fr-par-wg-socks5-103.relays.mullvad.net:1080,
 fr-par-wg-301,fr-par-wg-socks5-301,fr-par-wg-socks5-301.relays.mullvad.net:1080,Paris,France,DataPacket,95.173.222.2,2a02:6ea0:1901:2::f001
 fr-par-wg-302,fr-par-wg-socks5-302,fr-par-wg-socks5-302.relays.mullvad.net:1080,Paris,France,DataPacket,95.173.222.31,2a02:6ea0:1901:3::f001
 de-ber-wg-101,de-ber-wg-socks5-101,de-ber-wg-socks5-101.relays.mullvad.net:1080,Berlin,Germany,DataPacket,152.233.51.3,2a02:6ea0:5e03:3::f001
-de-ber-wg-102,de-ber-wg-socks5-102,de-ber-wg-socks5-102.relays.mullvad.net:1080,Berlin,Germany,DataPacket,152.233.51.33,2a02:6ea0:5e03:4::f001
 de-ber-wg-103,de-ber-wg-socks5-103,de-ber-wg-socks5-103.relays.mullvad.net:1080,Berlin,Germany,DataPacket,152.233.51.63,2a02:6ea0:5e03:5::f001
 de-dus-wg-001,de-dus-wg-socks5-001,de-dus-wg-socks5-001.relays.mullvad.net:1080,Dusseldorf,Germany,xtom,185.254.75.3,2a03:d9c0:3000::a20f
 de-dus-wg-002,de-dus-wg-socks5-002,de-dus-wg-socks5-002.relays.mullvad.net:1080,Dusseldorf,Germany,xtom,185.254.75.4,2a03:d9c0:3000::a21f
@@ -322,6 +321,12 @@ us-lax-wg-006,us-lax-wg-socks5-006,us-lax-wg-socks5-006.relays.mullvad.net:1080,
 us-lax-wg-007,us-lax-wg-socks5-007,us-lax-wg-socks5-007.relays.mullvad.net:1080,"Los Angeles, CA",USA,Tzulo,23.234.75.2,2607:9000:300:37::f001
 us-lax-wg-008,us-lax-wg-socks5-008,us-lax-wg-socks5-008.relays.mullvad.net:1080,"Los Angeles, CA",USA,Tzulo,23.234.75.127,2607:9000:300:38::f001
 us-lax-wg-203,us-lax-wg-socks5-203,us-lax-wg-socks5-203.relays.mullvad.net:1080,"Los Angeles, CA",USA,DataPacket,169.150.203.28,2a02:6ea0:c859:3::a03f
+us-lax-wg-401,us-lax-wg-socks5-401,us-lax-wg-socks5-401.relays.mullvad.net:1080,"Los Angeles, CA",USA,M247,146.70.173.2,2a0d:5600:8:4::f001
+us-lax-wg-402,us-lax-wg-socks5-402,us-lax-wg-socks5-402.relays.mullvad.net:1080,"Los Angeles, CA",USA,M247,146.70.173.130,2a0d:5600:8:6::f001
+us-lax-wg-403,us-lax-wg-socks5-403,us-lax-wg-socks5-403.relays.mullvad.net:1080,"Los Angeles, CA",USA,M247,146.70.172.2,2a0d:5600:8:d::f001
+us-lax-wg-404,us-lax-wg-socks5-404,us-lax-wg-socks5-404.relays.mullvad.net:1080,"Los Angeles, CA",USA,M247,146.70.172.130,2a0d:5600:8:2f::f001
+us-lax-wg-405,us-lax-wg-socks5-405,us-lax-wg-socks5-405.relays.mullvad.net:1080,"Los Angeles, CA",USA,M247,89.45.4.130,2a0d:5600:8:37::f001
+us-lax-wg-406,us-lax-wg-socks5-406,us-lax-wg-socks5-406.relays.mullvad.net:1080,"Los Angeles, CA",USA,M247,146.70.174.2,2a0d:5600:8:38::f001
 us-lax-wg-601,us-lax-wg-socks5-601,us-lax-wg-socks5-601.relays.mullvad.net:1080,"Los Angeles, CA",USA,xtom,23.162.40.3,2602:fa19::f001
 us-lax-wg-602,us-lax-wg-socks5-602,us-lax-wg-socks5-602.relays.mullvad.net:1080,"Los Angeles, CA",USA,xtom,23.162.40.127,2602:fa19::f101
 us-lax-wg-603,us-lax-wg-socks5-603,us-lax-wg-socks5-603.relays.mullvad.net:1080,"Los Angeles, CA",USA,xtom,23.159.216.3,2602:fa47::f001
