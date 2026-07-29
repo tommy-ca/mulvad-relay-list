@@ -6137,23 +6137,6 @@
     "display_label": "New York, NY, USA (M247)"
   },
   {
-    "hostname": "us-nyc-wg-702",
-    "socks5_hostname": "us-nyc-wg-socks5-702",
-    "socks5_endpoint": "us-nyc-wg-socks5-702.relays.mullvad.net:1080",
-    "location_id": "us-nyc",
-    "city": "New York, NY",
-    "country": "USA",
-    "provider": "xtom",
-    "ipv4": "23.162.8.67",
-    "ipv6": "2602:fa1f:1::f033",
-    "weight": 100,
-    "owned": false,
-    "active": true,
-    "include_in_country": true,
-    "source": "mullvad",
-    "display_label": "New York, NY, USA (xtom)"
-  },
-  {
     "hostname": "us-nyc-wg-801",
     "socks5_hostname": "us-nyc-wg-socks5-801",
     "socks5_endpoint": "us-nyc-wg-socks5-801.relays.mullvad.net:1080",
