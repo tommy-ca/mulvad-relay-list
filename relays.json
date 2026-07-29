@@ -1666,6 +1666,23 @@
     "display_label": "Berlin, Germany (DataPacket)"
   },
   {
+    "hostname": "de-ber-wg-102",
+    "socks5_hostname": "de-ber-wg-socks5-102",
+    "socks5_endpoint": "de-ber-wg-socks5-102.relays.mullvad.net:1080",
+    "location_id": "de-ber",
+    "city": "Berlin",
+    "country": "Germany",
+    "provider": "DataPacket",
+    "ipv4": "152.233.51.33",
+    "ipv6": "2a02:6ea0:5e03:4::f001",
+    "weight": 100,
+    "owned": false,
+    "active": true,
+    "include_in_country": true,
+    "source": "mullvad",
+    "display_label": "Berlin, Germany (DataPacket)"
+  },
+  {
     "hostname": "de-ber-wg-103",
     "socks5_hostname": "de-ber-wg-socks5-103",
     "socks5_endpoint": "de-ber-wg-socks5-103.relays.mullvad.net:1080",
