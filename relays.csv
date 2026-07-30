@@ -93,6 +93,7 @@ fr-bod-wg-002,fr-bod-wg-socks5-002,fr-bod-wg-socks5-002.relays.mullvad.net:1080,
 fr-mrs-wg-001,fr-mrs-wg-socks5-001,fr-mrs-wg-socks5-001.relays.mullvad.net:1080,Marseille,France,DataPacket,138.199.15.162,2a02:6ea0:dc05::a15f
 fr-mrs-wg-002,fr-mrs-wg-socks5-002,fr-mrs-wg-socks5-002.relays.mullvad.net:1080,Marseille,France,DataPacket,138.199.15.146,2a02:6ea0:dc06::a16f
 fr-par-wg-101,fr-par-wg-socks5-101,fr-par-wg-socks5-101.relays.mullvad.net:1080,Paris,France,M247,146.70.184.2,2001:ac8:25:3a::f001
+fr-par-wg-102,fr-par-wg-socks5-102,fr-par-wg-socks5-102.relays.mullvad.net:1080,Paris,France,M247,146.70.184.130,2001:ac8:25:3b::f001
 fr-par-wg-103,fr-par-wg-socks5-103,fr-par-wg-socks5-103.relays.mullvad.net:1080,Paris,France,M247,185.244.213.2,2001:ac8:25:3c::f001
 fr-par-wg-301,fr-par-wg-socks5-301,fr-par-wg-socks5-301.relays.mullvad.net:1080,Paris,France,DataPacket,95.173.222.2,2a02:6ea0:1901:2::f001
 fr-par-wg-302,fr-par-wg-socks5-302,fr-par-wg-socks5-302.relays.mullvad.net:1080,Paris,France,DataPacket,95.173.222.31,2a02:6ea0:1901:3::f001
@@ -216,6 +217,7 @@ gb-lon-wg-202,gb-lon-wg-socks5-202,gb-lon-wg-socks5-202.relays.mullvad.net:1080,
 gb-lon-wg-203,gb-lon-wg-socks5-203,gb-lon-wg-socks5-203.relays.mullvad.net:1080,London,UK,xtom,185.248.85.33,2a0b:89c1:3::a35f
 gb-lon-wg-204,gb-lon-wg-socks5-204,gb-lon-wg-socks5-204.relays.mullvad.net:1080,London,UK,xtom,185.248.85.48,2a0b:89c1:3::a36f
 gb-lon-wg-305,gb-lon-wg-socks5-305,gb-lon-wg-socks5-305.relays.mullvad.net:1080,London,UK,M247,146.70.119.2,2a04:9dc0:18:70::f001
+gb-lon-wg-306,gb-lon-wg-socks5-306,gb-lon-wg-socks5-306.relays.mullvad.net:1080,London,UK,M247,146.70.119.130,2a04:9dc0:18:71::f001
 gb-lon-wg-308,gb-lon-wg-socks5-308,gb-lon-wg-socks5-308.relays.mullvad.net:1080,London,UK,M247,135.136.58.130,2a04:9dc0:18:73::f001
 gb-mnc-wg-003,gb-mnc-wg-socks5-003,gb-mnc-wg-socks5-003.relays.mullvad.net:1080,Manchester,UK,M247,135.136.22.130,2001:ac8:8b:106::f001
 gb-mnc-wg-004,gb-mnc-wg-socks5-004,gb-mnc-wg-socks5-004.relays.mullvad.net:1080,Manchester,UK,M247,135.136.21.2,2001:ac8:8b:107::f001
