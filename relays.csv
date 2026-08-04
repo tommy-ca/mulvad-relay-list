@@ -158,6 +158,8 @@ nl-ams-wg-103,nl-ams-wg-socks5-103,nl-ams-wg-socks5-103.relays.mullvad.net:1080,
 nl-ams-wg-201,nl-ams-wg-socks5-201,nl-ams-wg-socks5-201.relays.mullvad.net:1080,Amsterdam,Netherlands,DataPacket,169.150.196.2,2a02:6ea0:c034:1::a30f
 nl-ams-wg-202,nl-ams-wg-socks5-202,nl-ams-wg-socks5-202.relays.mullvad.net:1080,Amsterdam,Netherlands,DataPacket,169.150.196.15,2a02:6ea0:c034:2::a31f
 nl-ams-wg-203,nl-ams-wg-socks5-203,nl-ams-wg-socks5-203.relays.mullvad.net:1080,Amsterdam,Netherlands,DataPacket,169.150.196.28,2a02:6ea0:c034:3::a32f
+nl-ams-wg-401,nl-ams-wg-socks5-401,nl-ams-wg-socks5-401.relays.mullvad.net:1080,Amsterdam,Netherlands,HostRoyale,109.104.134.3,2a06:3040:31:601::f001
+nl-ams-wg-402,nl-ams-wg-socks5-402,nl-ams-wg-socks5-402.relays.mullvad.net:1080,Amsterdam,Netherlands,HostRoyale,62.101.160.3,2a06:3040:31:601::f101
 nz-akl-wg-301,nz-akl-wg-socks5-301,nz-akl-wg-socks5-301.relays.mullvad.net:1080,Auckland,New Zealand,hostuniversal,103.75.11.50,2404:f780:5:deb::f001
 nz-akl-wg-302,nz-akl-wg-socks5-302,nz-akl-wg-socks5-302.relays.mullvad.net:1080,Auckland,New Zealand,hostuniversal,103.75.11.66,2404:f780:5:dec::c02f
 nz-akl-wg-303,nz-akl-wg-socks5-303,nz-akl-wg-socks5-303.relays.mullvad.net:1080,Auckland,New Zealand,hostuniversal,103.75.11.98,2404:f780:5:def::f201
@@ -176,8 +178,8 @@ pt-lis-wg-201,pt-lis-wg-socks5-201,pt-lis-wg-socks5-201.relays.mullvad.net:1080,
 pt-lis-wg-202,pt-lis-wg-socks5-202,pt-lis-wg-socks5-202.relays.mullvad.net:1080,Lisbon,Portugal,DataPacket,149.88.20.193,2a02:6ea0:fb01:2::f002
 pt-lis-wg-301,pt-lis-wg-socks5-301,pt-lis-wg-socks5-301.relays.mullvad.net:1080,Lisbon,Portugal,HostRoyale,185.92.210.195,2a06:3040:0:1410::f001
 pt-lis-wg-302,pt-lis-wg-socks5-302,pt-lis-wg-socks5-302.relays.mullvad.net:1080,Lisbon,Portugal,HostRoyale,185.92.210.225,2a06:3040:0:1410::f101
-ro-buh-wg-011,ro-buh-wg-socks5-011,ro-buh-wg-socks5-011.relays.mullvad.net:1080,Bucharest,Romania,M247,37.120.246.130,2a04:9dc0:0:136::f001
 ro-buh-wg-012,ro-buh-wg-socks5-012,ro-buh-wg-socks5-012.relays.mullvad.net:1080,Bucharest,Romania,M247,135.136.63.2,2a04:9dc0:0:135::f001
+ro-buh-wg-013,ro-buh-wg-socks5-013,ro-buh-wg-socks5-013.relays.mullvad.net:1080,Bucharest,Romania,M247,135.136.63.130,2a04:9dc0:0:134::f001
 rs-beg-wg-101,rs-beg-wg-socks5-101,rs-beg-wg-socks5-101.relays.mullvad.net:1080,Belgrade,Serbia,M247,146.70.193.2,2001:ac8:7d:37::a01f
 rs-beg-wg-102,rs-beg-wg-socks5-102,rs-beg-wg-socks5-102.relays.mullvad.net:1080,Belgrade,Serbia,M247,146.70.193.66,2001:ac8:7d:38::a02f
 sg-sin-wg-001,sg-sin-wg-socks5-001,sg-sin-wg-socks5-001.relays.mullvad.net:1080,Singapore,Singapore,DataPacket,138.199.60.2,2a02:6ea0:d13e:1::a09f
