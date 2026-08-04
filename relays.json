@@ -2712,7 +2712,7 @@
     "provider": "HostRoyale",
     "ipv4": "109.104.134.3",
     "ipv6": "2a06:3040:31:601::f001",
-    "weight": 0,
+    "weight": 100,
     "owned": false,
     "active": true,
     "include_in_country": true,
