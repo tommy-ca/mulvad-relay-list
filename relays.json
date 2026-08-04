@@ -3043,6 +3043,23 @@
     "display_label": "Lisbon, Portugal (HostRoyale)"
   },
   {
+    "hostname": "ro-buh-wg-011",
+    "socks5_hostname": "ro-buh-wg-socks5-011",
+    "socks5_endpoint": "ro-buh-wg-socks5-011.relays.mullvad.net:1080",
+    "location_id": "ro-buh",
+    "city": "Bucharest",
+    "country": "Romania",
+    "provider": "M247",
+    "ipv4": "37.120.246.130",
+    "ipv6": "2a04:9dc0:0:136::f001",
+    "weight": 0,
+    "owned": false,
+    "active": true,
+    "include_in_country": true,
+    "source": "mullvad",
+    "display_label": "Bucharest, Romania (M247)"
+  },
+  {
     "hostname": "ro-buh-wg-012",
     "socks5_hostname": "ro-buh-wg-socks5-012",
     "socks5_endpoint": "ro-buh-wg-socks5-012.relays.mullvad.net:1080",
