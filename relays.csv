@@ -184,6 +184,7 @@ rs-beg-wg-101,rs-beg-wg-socks5-101,rs-beg-wg-socks5-101.relays.mullvad.net:1080,
 rs-beg-wg-102,rs-beg-wg-socks5-102,rs-beg-wg-socks5-102.relays.mullvad.net:1080,Belgrade,Serbia,M247,146.70.193.66,2001:ac8:7d:38::a02f
 sg-sin-wg-001,sg-sin-wg-socks5-001,sg-sin-wg-socks5-001.relays.mullvad.net:1080,Singapore,Singapore,DataPacket,138.199.60.2,2a02:6ea0:d13e:1::a09f
 sg-sin-wg-002,sg-sin-wg-socks5-002,sg-sin-wg-socks5-002.relays.mullvad.net:1080,Singapore,Singapore,DataPacket,138.199.60.15,2a02:6ea0:d13e:2::a10f
+sg-sin-wg-003,sg-sin-wg-socks5-003,sg-sin-wg-socks5-003.relays.mullvad.net:1080,Singapore,Singapore,DataPacket,138.199.60.28,2a02:6ea0:d13e:3::a11f
 sg-sin-wg-101,sg-sin-wg-socks5-101,sg-sin-wg-socks5-101.relays.mullvad.net:1080,Singapore,Singapore,M247,146.70.199.194,2a0d:5600:d:44::a01f
 sg-sin-wg-102,sg-sin-wg-socks5-102,sg-sin-wg-socks5-102.relays.mullvad.net:1080,Singapore,Singapore,M247,146.70.199.130,2a0d:5600:d:43::a02f
 sk-bts-wg-001,sk-bts-wg-socks5-001,sk-bts-wg-socks5-001.relays.mullvad.net:1080,Bratislava,Slovakia,DataPacket,138.199.34.129,2a02:6ea0:2901:1::f001
@@ -348,7 +349,6 @@ us-txc-wg-002,us-txc-wg-socks5-002,us-txc-wg-socks5-002.relays.mullvad.net:1080,
 us-mia-wg-001,us-mia-wg-socks5-001,us-mia-wg-socks5-001.relays.mullvad.net:1080,"Miami, FL",USA,DataPacket,45.134.142.219,2a02:6ea0:cc1f:2::b62f
 us-mia-wg-002,us-mia-wg-socks5-002,us-mia-wg-socks5-002.relays.mullvad.net:1080,"Miami, FL",USA,DataPacket,45.134.142.206,2a02:6ea0:cc1f:1::b61f
 us-mia-wg-003,us-mia-wg-socks5-003,us-mia-wg-socks5-003.relays.mullvad.net:1080,"Miami, FL",USA,DataPacket,45.134.142.193,2a02:6ea0:cc1f::f001
-us-mia-wg-101,us-mia-wg-socks5-101,us-mia-wg-socks5-101.relays.mullvad.net:1080,"Miami, FL",USA,M247,146.70.187.2,2001:ac8:40:11::f001
 us-mia-wg-102,us-mia-wg-socks5-102,us-mia-wg-socks5-102.relays.mullvad.net:1080,"Miami, FL",USA,M247,146.70.187.130,2a0d:5600:6:105::f001
 us-mia-wg-103,us-mia-wg-socks5-103,us-mia-wg-socks5-103.relays.mullvad.net:1080,"Miami, FL",USA,M247,135.136.36.2,2a0d:5600:6:106::f001
 us-nyc-wg-301,us-nyc-wg-socks5-301,us-nyc-wg-socks5-301.relays.mullvad.net:1080,"New York, NY",USA,DataPacket,143.244.47.65,2a02:6ea0:c43f::f001
