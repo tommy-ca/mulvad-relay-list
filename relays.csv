@@ -199,6 +199,7 @@ es-bcn-wg-101,es-bcn-wg-socks5-101,es-bcn-wg-socks5-101.relays.mullvad.net:1080,
 es-bcn-wg-102,es-bcn-wg-socks5-102,es-bcn-wg-socks5-102.relays.mullvad.net:1080,Barcelona,Spain,M247,185.253.99.98,2001:ac8:17:20::f101
 es-mad-wg-101,es-mad-wg-socks5-101,es-mad-wg-socks5-101.relays.mullvad.net:1080,Madrid,Spain,DataPacket,45.134.213.194,2a02:6ea0:c318:1::a06f
 es-mad-wg-102,es-mad-wg-socks5-102,es-mad-wg-socks5-102.relays.mullvad.net:1080,Madrid,Spain,DataPacket,45.134.213.207,2a02:6ea0:c318:2::a07f
+es-mad-wg-203,es-mad-wg-socks5-203,es-mad-wg-socks5-203.relays.mullvad.net:1080,Madrid,Spain,M247,146.70.74.98,2001:ac8:23:84::f001
 es-mad-wg-204,es-mad-wg-socks5-204,es-mad-wg-socks5-204.relays.mullvad.net:1080,Madrid,Spain,M247,135.136.16.130,2001:ac8:23:85::f001
 es-mad-wg-205,es-mad-wg-socks5-205,es-mad-wg-socks5-205.relays.mullvad.net:1080,Madrid,Spain,M247,135.136.4.130,2001:ac8:23:86::f001
 es-vlc-wg-001,es-vlc-wg-socks5-001,es-vlc-wg-socks5-001.relays.mullvad.net:1080,Valencia,Spain,HostRoyale,193.19.207.195,2a06:3040:3:210::f001
