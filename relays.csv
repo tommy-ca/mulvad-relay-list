@@ -100,7 +100,6 @@ fr-par-wg-302,fr-par-wg-socks5-302,fr-par-wg-socks5-302.relays.mullvad.net:1080,
 de-ber-wg-101,de-ber-wg-socks5-101,de-ber-wg-socks5-101.relays.mullvad.net:1080,Berlin,Germany,DataPacket,152.233.51.3,2a02:6ea0:5e03:3::f001
 de-ber-wg-102,de-ber-wg-socks5-102,de-ber-wg-socks5-102.relays.mullvad.net:1080,Berlin,Germany,DataPacket,152.233.51.33,2a02:6ea0:5e03:4::f001
 de-ber-wg-103,de-ber-wg-socks5-103,de-ber-wg-socks5-103.relays.mullvad.net:1080,Berlin,Germany,DataPacket,152.233.51.63,2a02:6ea0:5e03:5::f001
-de-dus-wg-001,de-dus-wg-socks5-001,de-dus-wg-socks5-001.relays.mullvad.net:1080,Dusseldorf,Germany,xtom,185.254.75.3,2a03:d9c0:3000::a20f
 de-dus-wg-002,de-dus-wg-socks5-002,de-dus-wg-socks5-002.relays.mullvad.net:1080,Dusseldorf,Germany,xtom,185.254.75.4,2a03:d9c0:3000::a21f
 de-dus-wg-003,de-dus-wg-socks5-003,de-dus-wg-socks5-003.relays.mullvad.net:1080,Dusseldorf,Germany,xtom,185.254.75.5,2a03:d9c0:3000::a22f
 de-fra-wg-101,de-fra-wg-socks5-101,de-fra-wg-socks5-101.relays.mullvad.net:1080,Frankfurt,Germany,M247,146.70.117.2,2001:ac8:20:270:1::f001
