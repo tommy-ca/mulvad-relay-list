@@ -2,6 +2,7 @@
 function FindProxyForURL(url, host) {
     var proxies = [
         "SOCKS5 al-tia-wg-socks5-001.relays.mullvad.net:1080",
+        "SOCKS5 al-tia-wg-socks5-002.relays.mullvad.net:1080",
         "SOCKS5 al-tia-wg-socks5-003.relays.mullvad.net:1080",
         "SOCKS5 al-tia-wg-socks5-004.relays.mullvad.net:1080",
         "SOCKS5 ar-bue-wg-socks5-001.relays.mullvad.net:1080",
