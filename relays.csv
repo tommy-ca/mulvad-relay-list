@@ -205,6 +205,7 @@ ch-zrh-wg-202,ch-zrh-wg-socks5-202,ch-zrh-wg-socks5-202.relays.mullvad.net:1080,
 ch-zrh-wg-401,ch-zrh-wg-socks5-401,ch-zrh-wg-socks5-401.relays.mullvad.net:1080,Zurich,Switzerland,DataPacket,138.199.6.194,2a02:6ea0:d406:1::a18f
 ch-zrh-wg-402,ch-zrh-wg-socks5-402,ch-zrh-wg-socks5-402.relays.mullvad.net:1080,Zurich,Switzerland,DataPacket,138.199.6.207,2a02:6ea0:d406:2::a19f
 ch-zrh-wg-404,ch-zrh-wg-socks5-404,ch-zrh-wg-socks5-404.relays.mullvad.net:1080,Zurich,Switzerland,DataPacket,138.199.6.233,2a02:6ea0:d406:4::a21f
+ch-zrh-wg-501,ch-zrh-wg-socks5-501,ch-zrh-wg-socks5-501.relays.mullvad.net:1080,Zurich,Switzerland,M247,146.70.134.2,2001:ac8:28:aa::f001
 ch-zrh-wg-502,ch-zrh-wg-socks5-502,ch-zrh-wg-socks5-502.relays.mullvad.net:1080,Zurich,Switzerland,M247,135.136.18.194,2001:ac8:28:ab::f001
 ch-zrh-wg-503,ch-zrh-wg-socks5-503,ch-zrh-wg-socks5-503.relays.mullvad.net:1080,Zurich,Switzerland,M247,77.243.184.2,2001:ac8:28:ac::f001
 ch-zrh-wg-504,ch-zrh-wg-socks5-504,ch-zrh-wg-socks5-504.relays.mullvad.net:1080,Zurich,Switzerland,M247,77.243.184.130,2001:ac8:28:ad::f001
