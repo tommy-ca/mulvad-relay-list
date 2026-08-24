@@ -663,23 +663,6 @@
     "display_label": "Sao Paulo, Brazil (DataPacket)"
   },
   {
-    "hostname": "br-sao-wg-302",
-    "socks5_hostname": "br-sao-wg-socks5-302",
-    "socks5_endpoint": "br-sao-wg-socks5-302.relays.mullvad.net:1080",
-    "location_id": "br-sao",
-    "city": "Sao Paulo",
-    "country": "Brazil",
-    "provider": "HostRoyale",
-    "ipv4": "103.139.178.63",
-    "ipv6": "2a06:3040:10:610::f101",
-    "weight": 100,
-    "owned": false,
-    "active": true,
-    "include_in_country": true,
-    "source": "mullvad",
-    "display_label": "Sao Paulo, Brazil (HostRoyale)"
-  },
-  {
     "hostname": "br-sao-wg-303",
     "socks5_hostname": "br-sao-wg-socks5-303",
     "socks5_endpoint": "br-sao-wg-socks5-303.relays.mullvad.net:1080",

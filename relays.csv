@@ -38,7 +38,6 @@ br-for-wg-001,br-for-wg-socks5-001,br-for-wg-socks5-001.relays.mullvad.net:1080,
 br-for-wg-002,br-for-wg-socks5-002,br-for-wg-socks5-002.relays.mullvad.net:1080,Fortaleza,Brazil,Zenlayer,98.98.12.182,2604:980:e007:100::f101
 br-sao-wg-201,br-sao-wg-socks5-201,br-sao-wg-socks5-201.relays.mullvad.net:1080,Sao Paulo,Brazil,DataPacket,169.150.198.66,2a02:6ea0:d00e:1::a01f
 br-sao-wg-202,br-sao-wg-socks5-202,br-sao-wg-socks5-202.relays.mullvad.net:1080,Sao Paulo,Brazil,DataPacket,169.150.198.79,2a02:6ea0:d00e:2::a02f
-br-sao-wg-302,br-sao-wg-socks5-302,br-sao-wg-socks5-302.relays.mullvad.net:1080,Sao Paulo,Brazil,HostRoyale,103.139.178.63,2a06:3040:10:610::f101
 br-sao-wg-303,br-sao-wg-socks5-303,br-sao-wg-socks5-303.relays.mullvad.net:1080,Sao Paulo,Brazil,HostRoyale,103.139.178.123,2a06:3040:10:610::f201
 br-sao-wg-304,br-sao-wg-socks5-304,br-sao-wg-socks5-304.relays.mullvad.net:1080,Sao Paulo,Brazil,HostRoyale,103.139.178.183,2a06:3040:10:610::f301
 bg-sof-wg-001,bg-sof-wg-socks5-001,bg-sof-wg-socks5-001.relays.mullvad.net:1080,Sofia,Bulgaria,M247,146.70.188.130,2001:ac8:30:56::f001

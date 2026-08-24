@@ -37,7 +37,6 @@ socks5://br-for-wg-socks5-001.relays.mullvad.net:1080
 socks5://br-for-wg-socks5-002.relays.mullvad.net:1080
 socks5://br-sao-wg-socks5-201.relays.mullvad.net:1080
 socks5://br-sao-wg-socks5-202.relays.mullvad.net:1080
-socks5://br-sao-wg-socks5-302.relays.mullvad.net:1080
 socks5://br-sao-wg-socks5-303.relays.mullvad.net:1080
 socks5://br-sao-wg-socks5-304.relays.mullvad.net:1080
 socks5://bg-sof-wg-socks5-001.relays.mullvad.net:1080
