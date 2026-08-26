@@ -7038,23 +7038,6 @@
     "display_label": "Seattle, WA, USA (Tzulo)"
   },
   {
-    "hostname": "us-uyk-wg-201",
-    "socks5_hostname": "us-uyk-wg-socks5-201",
-    "socks5_endpoint": "us-uyk-wg-socks5-201.relays.mullvad.net:1080",
-    "location_id": "us-uyk",
-    "city": "Secaucus, NJ",
-    "country": "USA",
-    "provider": "HostRoyale",
-    "ipv4": "104.36.50.3",
-    "ipv6": "2a06:3040:22:620::f001",
-    "weight": 100,
-    "owned": false,
-    "active": true,
-    "include_in_country": true,
-    "source": "mullvad",
-    "display_label": "Secaucus, NJ, USA (HostRoyale)"
-  },
-  {
     "hostname": "us-uyk-wg-202",
     "socks5_hostname": "us-uyk-wg-socks5-202",
     "socks5_endpoint": "us-uyk-wg-socks5-202.relays.mullvad.net:1080",
