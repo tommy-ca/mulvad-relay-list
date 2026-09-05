@@ -30,6 +30,15 @@ Automate Mullvad relay proxy pipeline executions via GitHub Actions so scheduled
 3. THEN the release notes SHALL include an entry linking back to the originating workflow run using the artifact bundle URL emitted by `proxy-pipeline`.
 4. IF artifact upload, branch publication, or release creation fails at any step THEN GitHub Actions automation SHALL fail the workflow and emit actionable error logs in the summary.
 
+### Requirement 5: Integrity and Durable Distribution
+**Objective:** As a security-conscious consumer, I want published relay artifacts to be verifiably fresh and tamper-evident, and to remain downloadable from stable endpoints beyond workflow artifact retention windows.
+
+#### Acceptance Criteria
+1. WHEN publishing succeeds on `main` THEN GitHub Actions automation SHALL attach the JSON, text, PAC, CSV, manifest, and checksum bundle as release assets on a rolling `hourly-latest` release so downloads persist past artifact TTLs.
+2. WHEN artifacts are produced THEN GitHub Actions automation SHALL generate SHA256 checksums (and optionally signatures) for every published file and verify them before committing or uploading.
+3. WHEN multiple successful runs exist THEN GitHub Actions automation SHALL publish only the newest run by comparing run identity (e.g., `github.run_number`/attempt) before pushing to the publication branch or updating the release.
+4. WHEN publication completes THEN GitHub Actions automation SHALL make the same artifact set available via at least one CDN-friendly channel (e.g., GitHub Pages) and optionally as an OCI artifact in ghcr for digest-based pulls.
+
 ### Requirement 4: Observability and Guardrails
 **Objective:** As an operations analyst, I want clear visibility into workflow executions so issues surface quickly and can be triaged.
 

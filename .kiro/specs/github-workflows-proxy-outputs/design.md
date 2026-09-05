@@ -14,6 +14,7 @@ This design introduces GitHub Actions automation that executes the Mullvad relay
 | R2 Multi-Format Artifact Generation | Sections “Artifact Production”, “CSV Export Helper”, “Verification Execution”. |
 | R3 Distribution and Retention | Sections “Artifact Publication” and “Retention Policy”. |
 | R4 Observability and Guardrails | Sections “Logging & Summaries”, “Secret Validation”, “Risk Controls”. |
+| R5 Integrity and Durable Distribution | Sections “Release Assets & CDN/Registry Distribution”, “Integrity & Checksums”, “Recency Guard & Publication Arbitration”. |
 
 ## Workflow Topology
 Two jobs within a single workflow definition coordinate pipeline execution and publication.
@@ -77,6 +78,25 @@ Manual dispatch sanitizes inputs and logs chosen parameters to satisfy observabi
 - Publication branch `proxy-artifacts` retains latest successful outputs; only last commit kept (`git push origin HEAD:proxy-artifacts --force-with-lease`).
 - Artifacts remain available via raw GitHub URLs and by downloading workflow artifacts with seven-day retention.
 - Workflow summary includes branch commit SHA and artifact URLs to meet R3.1 and R3.2.
+
+### Release Assets & CDN/Registry Distribution
+- After successful `main` runs, attach JSON, text, PAC, CSV, manifest, and checksum bundle to the rolling `hourly-latest` release so downloads outlive workflow artifact retention.
+- Deploy the same files to GitHub Pages via `upload-pages-artifact@v4` + `deploy-pages@v4`, giving CDN-style HTTPS endpoints suited for PAC consumption. Cache-control kept short (e.g., 5–15 minutes) because data rotates hourly.
+- Push an OCI artifact (tar bundle with artifacts + manifest + checksums) to `ghcr.io/<org>/mullvad-relays:<run_tag>` using ORAS for digest-addressable pulls and future Notation signatures.
+
+### Integrity & Checksums
+- Generate `SHA256SUMS` (and optionally a detached GPG/notation signature) covering all published files.
+- Verify checksums before branch commit and before release upload; fail publication if mismatched.
+- Include checksum file as part of both release assets and publication branch.
+
+### Recency Guard & Publication Arbitration
+- Record the winning `run_number`/`run_attempt` in a marker file on the `proxy-artifacts` branch (or release body). Publish job fetches and compares; only proceeds when the current run is newer than the marker.
+- Keep `concurrency` on build job and set `max-parallel: 1` on publish; combine with the recency check to prevent stale reruns from overwriting fresher artifacts.
+- If guard fails, log “stale run skipped” and exit success without pushing.
+
+### Default Verification Policy
+- Scheduled runs enable verification by default with a bounded sample size (e.g., `--limit 5`) and fail the pipeline on any error; dispatch can still toggle verification off when explicitly requested.
+- Surface verifier summary (pass/fail counts, sample size, target endpoints) in both job summary and release body.
 
 ## Logging & Summaries
 - Each major pipeline stage logs start/end timestamps (`echo "::group::Stage"` usage for grouping). Summary step writes markdown bullet list covering: relay count, filters, verification outcome, artifact links.
