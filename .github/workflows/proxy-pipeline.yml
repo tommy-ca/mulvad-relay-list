@@ -295,6 +295,8 @@ jobs:
             echo "Artifact files not found after download" >&2
             exit 1
           fi
+          # Verify against original mullvad_relays.* names before renaming to relays.*
+          (cd "$artifact_dir" && sha256sum -c SHA256SUMS)
           cp "$artifact_dir/mullvad_relays.json" relays.json
           cp "$artifact_dir/mullvad_relays.txt" relays.txt
           cp "$artifact_dir/mullvad_relays.pac" relays.pac
@@ -302,8 +304,6 @@ jobs:
           cp "$artifact_dir/manifest.json" manifest.json
           cp "$artifact_dir/SHA256SUMS" SHA256SUMS
           cp "$artifact_dir/relay-artifacts.tar.gz" relay-artifacts.tar.gz
-
-          sha256sum -c SHA256SUMS
 
           jq -n --arg rn "${{ github.run_number }}" --arg ra "${{ github.run_attempt }}" --arg rid "${{ github.run_id }}" --arg ts "$(date -u +%FT%TZ)" '{run_number: ($rn|tonumber), run_attempt: ($ra|tonumber), run_id: $rid, published_at: $ts}' > run_info.json
           git add relays.json relays.txt relays.pac relays.csv manifest.json
