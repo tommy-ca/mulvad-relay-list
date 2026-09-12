@@ -1,6 +1,8 @@
 # mulvad-verify-levers
 
-Living capability after Wave-5 Apply. Tip floor ≥ `115837ee` (#3 soft-fail CLOSED).
+## Purpose
+
+Living capability for Mullvad SOCKS verify honesty levers after Wave-5 Apply. Tip floor ≥ `115837ee` (#3 soft-fail CLOSED). Documents Timeout≠PASS, soft vs hard verify modes, lever-first VERIFY, and OpenSpec intent-driven bootstrap — without reminting closed #3 soft-fail product logic.
 
 ## Requirements
 
