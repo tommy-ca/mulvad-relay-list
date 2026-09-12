@@ -36,24 +36,24 @@ Depends: §1 green
 - [x] 2.2 Ledger: Wave-4 VALID propose-only; Apply HOLD until Todd/Horizon go
 - [x] 2.3 **STOP** — no `openspec apply`; no AGENTS/skill product edit from propose executor; do not merge as apply; do not remint #3
 
-## Parallel band B — Apply (Wave-5; Todd/Horizon go) — HOLD
+## Parallel band B — Apply (Wave-5; Todd/Horizon go) — APPLY GO
 
 Depends: Todd/Horizon go + §1 green
 
-- [ ] B.1 Update `AGENTS.md` verify section: soft vs hard modes + Mullvad tunnel/overlay prerequisite + named levers (`scripts/verify_proxies.py`, `uv run pytest`) — **P-parallel**
-- [ ] B.2 Optional: thin `.agents/skills/verify-mulvad-proxies` pointing at same levers + honesty bar (cite not clone fleet skills) — **P-parallel**
-- [ ] B.3 Optional: machine-scannable soft-fail marker polish if needed (tip already prints `SOFT-FAIL`) — **do not remint #3 workflow soft-fail logic unless proved falsifier**
-- [ ] B.4 Confirm `uv run pytest` still green; no invent LIVE_PASS from GHA
-- [ ] B.5 Merge capability delta into tip `openspec/specs/mulvad-verify-levers/`; keep `openspec/config.yaml` intent-driven
-- [ ] B.6 `openspec validate mulvad-verify-levers --type change --strict` (and `--all --strict` as needed) green after merge
-- [ ] B.7 Poteto handoff docs/cites: arena/interrogate/swarm → pstack + gbp long-horizon-swarm / WORKFLOW (cite not clone)
-- [ ] B.8 **Prove bars Static/Metadata/Runtime (claim VERIFIED only if all hold):**
-  - [ ] P1 tip has `openspec/config.yaml` with `schema: intent-driven`
-  - [ ] P2 AGENTS (and optional skill) describe soft vs hard + overlay prerequisite
-  - [ ] P3 lever-first VERIFY cites script and/or pytest; no prose-only LIVE_PASS
-  - [ ] P4 schedule soft-fail still prints `SOFT-FAIL`; dispatch hard without soft env; no #3 remint unless falsifier
-  - [ ] P5 tip ≥ `115837ee`; dual orch not violated; no self-hosted Mullvad without Todd
-  - [ ] NOT predicates: remint #3; invent LIVE_PASS; dual orch; propose PR claimed as apply
+- [x] B.1 Update `AGENTS.md` verify section: soft vs hard modes + Mullvad tunnel/overlay prerequisite + named levers (`scripts/verify_proxies.py`, `uv run pytest`) — **P-parallel**
+- [x] B.2 Optional: thin `.agents/skills/verify-mulvad-proxies` pointing at same levers + honesty bar (cite not clone fleet skills) — **P-parallel**
+- [x] B.3 Optional: machine-scannable soft-fail marker polish if needed (tip already prints `SOFT-FAIL`) — **do not remint #3 workflow soft-fail logic unless proved falsifier**
+- [x] B.4 Confirm `uv run pytest` still green; no invent LIVE_PASS from GHA
+- [x] B.5 Merge capability delta into tip `openspec/specs/mulvad-verify-levers/`; keep `openspec/config.yaml` intent-driven
+- [x] B.6 `openspec validate mulvad-verify-levers --type change --strict` (and `--all --strict` as needed) green after merge
+- [x] B.7 Poteto handoff docs/cites: arena/interrogate/swarm → pstack + gbp long-horizon-swarm / WORKFLOW (cite not clone)
+- [x] B.8 **Prove bars Static/Metadata/Runtime (claim VERIFIED only if all hold):**
+  - [x] P1 tip has `openspec/config.yaml` with `schema: intent-driven`
+  - [x] P2 AGENTS (and optional skill) describe soft vs hard + overlay prerequisite
+  - [x] P3 lever-first VERIFY cites script and/or pytest; no prose-only LIVE_PASS
+  - [x] P4 schedule soft-fail still prints `SOFT-FAIL`; dispatch hard without soft env; no #3 remint unless falsifier
+  - [x] P5 tip ≥ `115837ee`; dual orch not violated; no self-hosted Mullvad without Todd
+  - [x] NOT predicates: remint #3; invent LIVE_PASS; dual orch; propose PR claimed as apply
 
 ## 3. Archive — serial gate
 

@@ -13,6 +13,26 @@ uv run python scripts/verify_proxies.py --json build/mullvad_relays.json --limit
 ```
 Use `--http-url`/`--ws-url` to aim the verifier at custom targets (e.g., Binance `https://api.binance.com/api/v3/ping`).
 
+## Proxy verify levers (honesty bar)
+
+Named levers only — refuse prose-only LIVE_PASS / invent green from timeouts:
+
+```bash
+uv run pytest                                              # fixtures; ≠ GHA overlay reachability
+uv run python scripts/verify_proxies.py --json build/mullvad_relays.json --limit 5
+```
+
+**Modes**
+
+| Mode | When | On probe fail |
+|------|------|----------------|
+| Soft-fail | `GITHUB_EVENT_NAME=schedule` or `MULVAD_VERIFY_SOFT_FAIL` truthy | Prints `SOFT-FAIL:…` (overlay/tunnel); exit 0 so publish can proceed — **not** probe success |
+| Hard-fail | Dispatch/`verify=true` or local without soft env | Non-zero exit (tip: 2); Timeout/connect-fail ≠ PASS |
+
+**Prerequisite:** Mullvad SOCKS overlays resolve to RFC1918 `10.124.x` (or in-tunnel `10.64.0.1`) — reachable only on a Mullvad WireGuard tunnel. Public GitHub Actions cannot probe them. Tip ≥ `115837ee` (#3) already implements schedule soft-fail; do not remint unless a proved falsifier.
+
+Thin skill: `.agents/skills/verify-mulvad-proxies`. Poteto arena/interrogate/swarm: **cite** pstack + `tommy-ca/grok-build-plugins` long-horizon-swarm / `WORKFLOW.md` — cite not clone.
+
 ## Coding Style & Naming Conventions
 Use 4-space indentation, type hints, and dataclasses when they clarify payloads. Keep transforms in `transform.py`, deterministic helpers in `randomizer.py`, CLI glue in `build_relay_list.py`. Follow `snake_case` for functions, `PascalCase` for classes, uppercase for constants, and order imports stdlib → third-party → local. Keep docstrings tight and only comment on non-obvious logic.
 
