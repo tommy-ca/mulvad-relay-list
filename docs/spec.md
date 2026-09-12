@@ -84,7 +84,7 @@
    - Example output artifacts (JSON/TXT/PAC) checked into `examples/` for reference.
 
 ## 6. Open Questions & Assumptions
-- Assume Mullvad's SOCKS relay endpoint remains unauthenticated and stable. Need to revisit if API schema changes.
+- **SOCKS verify prerequisite:** Mullvad SOCKS5 (`10.64.0.1:1080` in-tunnel, or `*-wg-socks5-*.relays.mullvad.net` → RFC1918 `10.124.x` for multihop) is reachable **only when connected to Mullvad WireGuard**. Public GitHub Actions runners cannot probe these endpoints; scheduled CI verify soft-fails and must not invent green. Hard verify belongs on a Mullvad-connected / self-hosted runner (`workflow_dispatch` + verify=true).
 - Weight field semantics: treat higher weights as more desirable when doing weighted selection (per Mullvad docs).
 - IPv6 inclusion defaults to `None` if missing; outputs should gracefully handle absent fields.
 - External verification tooling: assume operators install Proxy Scraper Checker (Rust) and Mubeng (Go) via `mise` or equivalent; pipeline should only verify presence and execute, never download binaries automatically.
