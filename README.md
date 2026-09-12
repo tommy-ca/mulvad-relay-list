@@ -36,6 +36,9 @@ Country filters accept full names, two-letter ISO prefixes, or location IDs (e.g
 
 ### Proxy verification
 
+> **CI note:** Scheduled Proxy Pipeline soft-fails SOCKS probes on public GitHub Actions. Mullvad SOCKS hostnames resolve to overlay addresses (`10.124.x`) reachable only from a Mullvad WireGuard tunnel. Do not treat schedule soft-fail as probe success. Opt-in hard verify via `workflow_dispatch` with `verify=true` on a Mullvad-connected runner.
+
+
 Use the verifier to confirm SOCKS5 endpoints against custom targets (e.g., Binance public API):
 
 ```bash
