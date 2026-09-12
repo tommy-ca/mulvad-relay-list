@@ -1,0 +1,21 @@
+schema: intent-driven
+
+# mulvad-relay-list OpenSpec bootstrap (Wave-4 mulvad-verify-levers propose).
+# Honesty: Timeout≠PASS; no invent LIVE_PASS; no remint #3 soft-fail; self-hosted Mullvad OOS.
+
+rules:
+  proposal:
+    - "MUST NOT invent LIVE_PASS / fake SOCKS green from GHA timeouts"
+    - "MUST NOT remint closed #3 / mulvad-proxy-pipeline-red soft-fail logic"
+    - "Self-hosted Mullvad runner remains OOS unless Todd asks"
+  specs:
+    - "MUST use GIVEN/WHEN/THEN under #### Scenario:"
+    - "Lever-first VERIFY MUST cite scripts/verify_proxies.py and/or uv run pytest"
+    - "Timeout/connect-fail MUST NOT be treated as PASS"
+  design:
+    - "Propose-only fence; Apply HOLD until Todd/Horizon go"
+  adr:
+    - "Prefer no new durable ADR unless a major long-lived decision is introduced"
+  tasks:
+    - "Band A propose done; Band B Apply HOLD — no remint #3 workflow soft-fail unless proved falsifier"
+    - "Dual orch forbidden; orch metadata out of product trees"
