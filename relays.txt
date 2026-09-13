@@ -317,14 +317,6 @@ socks5://us-lax-wg-socks5-403.relays.mullvad.net:1080
 socks5://us-lax-wg-socks5-404.relays.mullvad.net:1080
 socks5://us-lax-wg-socks5-405.relays.mullvad.net:1080
 socks5://us-lax-wg-socks5-406.relays.mullvad.net:1080
-socks5://us-lax-wg-socks5-601.relays.mullvad.net:1080
-socks5://us-lax-wg-socks5-602.relays.mullvad.net:1080
-socks5://us-lax-wg-socks5-603.relays.mullvad.net:1080
-socks5://us-lax-wg-socks5-604.relays.mullvad.net:1080
-socks5://us-lax-wg-socks5-605.relays.mullvad.net:1080
-socks5://us-lax-wg-socks5-606.relays.mullvad.net:1080
-socks5://us-lax-wg-socks5-607.relays.mullvad.net:1080
-socks5://us-lax-wg-socks5-608.relays.mullvad.net:1080
 socks5://us-lax-wg-socks5-701.relays.mullvad.net:1080
 socks5://us-lax-wg-socks5-702.relays.mullvad.net:1080
 socks5://us-lax-wg-socks5-703.relays.mullvad.net:1080

@@ -318,14 +318,6 @@ us-lax-wg-403,us-lax-wg-socks5-403,us-lax-wg-socks5-403.relays.mullvad.net:1080,
 us-lax-wg-404,us-lax-wg-socks5-404,us-lax-wg-socks5-404.relays.mullvad.net:1080,"Los Angeles, CA",USA,M247,146.70.172.130,2a0d:5600:8:2f::f001
 us-lax-wg-405,us-lax-wg-socks5-405,us-lax-wg-socks5-405.relays.mullvad.net:1080,"Los Angeles, CA",USA,M247,89.45.4.130,2a0d:5600:8:37::f001
 us-lax-wg-406,us-lax-wg-socks5-406,us-lax-wg-socks5-406.relays.mullvad.net:1080,"Los Angeles, CA",USA,M247,146.70.174.2,2a0d:5600:8:38::f001
-us-lax-wg-601,us-lax-wg-socks5-601,us-lax-wg-socks5-601.relays.mullvad.net:1080,"Los Angeles, CA",USA,xtom,23.162.40.3,2602:fa19::f001
-us-lax-wg-602,us-lax-wg-socks5-602,us-lax-wg-socks5-602.relays.mullvad.net:1080,"Los Angeles, CA",USA,xtom,23.162.40.127,2602:fa19::f101
-us-lax-wg-603,us-lax-wg-socks5-603,us-lax-wg-socks5-603.relays.mullvad.net:1080,"Los Angeles, CA",USA,xtom,23.159.216.3,2602:fa47::f001
-us-lax-wg-604,us-lax-wg-socks5-604,us-lax-wg-socks5-604.relays.mullvad.net:1080,"Los Angeles, CA",USA,xtom,23.159.216.127,2602:fa47::f101
-us-lax-wg-605,us-lax-wg-socks5-605,us-lax-wg-socks5-605.relays.mullvad.net:1080,"Los Angeles, CA",USA,xtom,23.160.24.3,2602:fa45::f001
-us-lax-wg-606,us-lax-wg-socks5-606,us-lax-wg-socks5-606.relays.mullvad.net:1080,"Los Angeles, CA",USA,xtom,23.160.24.127,2602:fa45::f101
-us-lax-wg-607,us-lax-wg-socks5-607,us-lax-wg-socks5-607.relays.mullvad.net:1080,"Los Angeles, CA",USA,xtom,23.168.216.3,2602:f99d::f001
-us-lax-wg-608,us-lax-wg-socks5-608,us-lax-wg-socks5-608.relays.mullvad.net:1080,"Los Angeles, CA",USA,xtom,23.168.216.127,2602:f99d::f101
 us-lax-wg-701,us-lax-wg-socks5-701,us-lax-wg-socks5-701.relays.mullvad.net:1080,"Los Angeles, CA",USA,HostRoyale,103.251.26.3,2a01:4740:3::f001
 us-lax-wg-702,us-lax-wg-socks5-702,us-lax-wg-socks5-702.relays.mullvad.net:1080,"Los Angeles, CA",USA,HostRoyale,103.251.26.127,2a01:4740:3::f101
 us-lax-wg-703,us-lax-wg-socks5-703,us-lax-wg-socks5-703.relays.mullvad.net:1080,"Los Angeles, CA",USA,HostRoyale,103.251.27.3,2a01:4740:3::f201
