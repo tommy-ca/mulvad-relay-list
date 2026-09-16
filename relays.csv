@@ -171,7 +171,6 @@ rs-beg-wg-102,rs-beg-wg-socks5-102,rs-beg-wg-socks5-102.relays.mullvad.net:1080,
 sg-sin-wg-001,sg-sin-wg-socks5-001,sg-sin-wg-socks5-001.relays.mullvad.net:1080,Singapore,Singapore,DataPacket,138.199.60.2,2a02:6ea0:d13e:1::a09f
 sg-sin-wg-002,sg-sin-wg-socks5-002,sg-sin-wg-socks5-002.relays.mullvad.net:1080,Singapore,Singapore,DataPacket,138.199.60.15,2a02:6ea0:d13e:2::a10f
 sg-sin-wg-003,sg-sin-wg-socks5-003,sg-sin-wg-socks5-003.relays.mullvad.net:1080,Singapore,Singapore,DataPacket,138.199.60.28,2a02:6ea0:d13e:3::a11f
-sg-sin-wg-101,sg-sin-wg-socks5-101,sg-sin-wg-socks5-101.relays.mullvad.net:1080,Singapore,Singapore,M247,146.70.199.194,2a0d:5600:d:44::a01f
 sg-sin-wg-102,sg-sin-wg-socks5-102,sg-sin-wg-socks5-102.relays.mullvad.net:1080,Singapore,Singapore,M247,146.70.199.130,2a0d:5600:d:43::a02f
 sk-bts-wg-001,sk-bts-wg-socks5-001,sk-bts-wg-socks5-001.relays.mullvad.net:1080,Bratislava,Slovakia,DataPacket,138.199.34.129,2a02:6ea0:2901:1::f001
 sk-bts-wg-002,sk-bts-wg-socks5-002,sk-bts-wg-socks5-002.relays.mullvad.net:1080,Bratislava,Slovakia,DataPacket,138.199.34.143,2a02:6ea0:2901::a02f
