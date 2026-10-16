@@ -43,7 +43,7 @@
     "provider": "iRegister",
     "ipv4": "103.124.165.130",
     "ipv6": "2a04:27c0:0:c::f001",
-    "weight": 100,
+    "weight": 0,
     "owned": false,
     "active": true,
     "include_in_country": true,
@@ -5829,23 +5829,6 @@
     "include_in_country": true,
     "source": "mullvad",
     "display_label": "New York, NY, USA (DataPacket)"
-  },
-  {
-    "hostname": "us-nyc-wg-501",
-    "socks5_hostname": "us-nyc-wg-socks5-501",
-    "socks5_endpoint": "us-nyc-wg-socks5-501.relays.mullvad.net:1080",
-    "location_id": "us-nyc",
-    "city": "New York, NY",
-    "country": "USA",
-    "provider": "M247",
-    "ipv4": "146.70.165.2",
-    "ipv6": "2a0d:5600:24:2b6::f001",
-    "weight": 1,
-    "owned": false,
-    "active": true,
-    "include_in_country": true,
-    "source": "mullvad",
-    "display_label": "New York, NY, USA (M247)"
   },
   {
     "hostname": "us-nyc-wg-502",
