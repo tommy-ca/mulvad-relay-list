@@ -79,12 +79,10 @@ hr-zag-wg-001,hr-zag-wg-socks5-001,hr-zag-wg-socks5-001.relays.mullvad.net:1080,
 hr-zag-wg-002,hr-zag-wg-socks5-002,hr-zag-wg-socks5-002.relays.mullvad.net:1080,Zagreb,Croatia,DataPacket,154.47.29.15,2a02:6ea0:f401:2::a01f
 cy-nic-wg-001,cy-nic-wg-socks5-001,cy-nic-wg-socks5-001.relays.mullvad.net:1080,Nicosia,Cyprus,HostRoyale,195.47.194.131,2a06:3040:f:601::f001
 cy-nic-wg-002,cy-nic-wg-socks5-002,cy-nic-wg-socks5-002.relays.mullvad.net:1080,Nicosia,Cyprus,HostRoyale,195.47.194.161,2a06:3040:f:601::f101
-cz-prg-wg-101,cz-prg-wg-socks5-101,cz-prg-wg-socks5-101.relays.mullvad.net:1080,Prague,Czech Republic,M247,146.70.129.98,2001:ac8:33:c::a01f
-cz-prg-wg-102,cz-prg-wg-socks5-102,cz-prg-wg-socks5-102.relays.mullvad.net:1080,Prague,Czech Republic,M247,146.70.129.130,2001:ac8:33:d::a02f
+cz-prg-wg-101,cz-prg-wg-socks5-101,cz-prg-wg-socks5-101.relays.mullvad.net:1080,Prague,Czech Republic,M247,135.136.123.130,2001:ac8:33:e::f001
+cz-prg-wg-103,cz-prg-wg-socks5-103,cz-prg-wg-socks5-103.relays.mullvad.net:1080,Prague,Czech Republic,M247,135.136.123.2,2001:ac8:33:d::f001
 cz-prg-wg-201,cz-prg-wg-socks5-201,cz-prg-wg-socks5-201.relays.mullvad.net:1080,Prague,Czech Republic,DataPacket,178.249.209.162,2a02:6ea0:c201:1::f001
 cz-prg-wg-202,cz-prg-wg-socks5-202,cz-prg-wg-socks5-202.relays.mullvad.net:1080,Prague,Czech Republic,DataPacket,178.249.209.175,2a02:6ea0:c201:1::f101
-dk-cph-wg-401,dk-cph-wg-socks5-401,dk-cph-wg-socks5-401.relays.mullvad.net:1080,Copenhagen,Denmark,M247,146.70.197.194,2001:ac8:37:97::f001
-dk-cph-wg-402,dk-cph-wg-socks5-402,dk-cph-wg-socks5-402.relays.mullvad.net:1080,Copenhagen,Denmark,M247,146.70.197.130,2001:ac8:37:96::f001
 fr-bod-wg-001,fr-bod-wg-socks5-001,fr-bod-wg-socks5-001.relays.mullvad.net:1080,Bordeaux,France,HostRoyale,45.134.79.67,2a06:3040:4:610::f001
 fr-bod-wg-002,fr-bod-wg-socks5-002,fr-bod-wg-socks5-002.relays.mullvad.net:1080,Bordeaux,France,HostRoyale,45.134.79.97,2a06:3040:4:610::f101
 fr-mrs-wg-001,fr-mrs-wg-socks5-001,fr-mrs-wg-socks5-001.relays.mullvad.net:1080,Marseille,France,DataPacket,138.199.15.162,2a02:6ea0:dc05::a15f
