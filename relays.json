@@ -2414,23 +2414,6 @@
     "display_label": "Amsterdam, Netherlands (DataPacket)"
   },
   {
-    "hostname": "nl-ams-wg-401",
-    "socks5_hostname": "nl-ams-wg-socks5-401",
-    "socks5_endpoint": "nl-ams-wg-socks5-401.relays.mullvad.net:1080",
-    "location_id": "nl-ams",
-    "city": "Amsterdam",
-    "country": "Netherlands",
-    "provider": "HostRoyale",
-    "ipv4": "109.104.134.3",
-    "ipv6": "2a06:3040:31:601::f001",
-    "weight": 100,
-    "owned": false,
-    "active": true,
-    "include_in_country": true,
-    "source": "mullvad",
-    "display_label": "Amsterdam, Netherlands (HostRoyale)"
-  },
-  {
     "hostname": "nl-ams-wg-402",
     "socks5_hostname": "nl-ams-wg-socks5-402",
     "socks5_endpoint": "nl-ams-wg-socks5-402.relays.mullvad.net:1080",
