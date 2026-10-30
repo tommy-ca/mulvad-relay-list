@@ -3077,23 +3077,6 @@
     "display_label": "Barcelona, Spain (HostRoyale)"
   },
   {
-    "hostname": "es-bcn-wg-101",
-    "socks5_hostname": "es-bcn-wg-socks5-101",
-    "socks5_endpoint": "es-bcn-wg-socks5-101.relays.mullvad.net:1080",
-    "location_id": "es-bcn",
-    "city": "Barcelona",
-    "country": "Spain",
-    "provider": "M247",
-    "ipv4": "185.253.99.30",
-    "ipv6": "2001:ac8:17:20::f001",
-    "weight": 100,
-    "owned": false,
-    "active": true,
-    "include_in_country": true,
-    "source": "mullvad",
-    "display_label": "Barcelona, Spain (M247)"
-  },
-  {
     "hostname": "es-bcn-wg-102",
     "socks5_hostname": "es-bcn-wg-socks5-102",
     "socks5_endpoint": "es-bcn-wg-socks5-102.relays.mullvad.net:1080",
