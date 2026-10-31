@@ -78,7 +78,6 @@ co-bog-wg-002,co-bog-wg-socks5-002,co-bog-wg-socks5-002.relays.mullvad.net:1080,
 hr-zag-wg-001,hr-zag-wg-socks5-001,hr-zag-wg-socks5-001.relays.mullvad.net:1080,Zagreb,Croatia,DataPacket,154.47.29.2,2a02:6ea0:f401:1::a01f
 hr-zag-wg-002,hr-zag-wg-socks5-002,hr-zag-wg-socks5-002.relays.mullvad.net:1080,Zagreb,Croatia,DataPacket,154.47.29.15,2a02:6ea0:f401:2::a01f
 cy-nic-wg-001,cy-nic-wg-socks5-001,cy-nic-wg-socks5-001.relays.mullvad.net:1080,Nicosia,Cyprus,HostRoyale,195.47.194.131,2a06:3040:f:601::f001
-cy-nic-wg-002,cy-nic-wg-socks5-002,cy-nic-wg-socks5-002.relays.mullvad.net:1080,Nicosia,Cyprus,HostRoyale,195.47.194.161,2a06:3040:f:601::f101
 cz-prg-wg-101,cz-prg-wg-socks5-101,cz-prg-wg-socks5-101.relays.mullvad.net:1080,Prague,Czech Republic,M247,135.136.123.130,2001:ac8:33:e::f001
 cz-prg-wg-103,cz-prg-wg-socks5-103,cz-prg-wg-socks5-103.relays.mullvad.net:1080,Prague,Czech Republic,M247,135.136.123.2,2001:ac8:33:d::f001
 cz-prg-wg-201,cz-prg-wg-socks5-201,cz-prg-wg-socks5-201.relays.mullvad.net:1080,Prague,Czech Republic,DataPacket,178.249.209.162,2a02:6ea0:c201:1::f001
@@ -98,7 +97,6 @@ de-ber-wg-101,de-ber-wg-socks5-101,de-ber-wg-socks5-101.relays.mullvad.net:1080,
 de-ber-wg-102,de-ber-wg-socks5-102,de-ber-wg-socks5-102.relays.mullvad.net:1080,Berlin,Germany,DataPacket,152.233.51.33,2a02:6ea0:5e03:4::f001
 de-ber-wg-103,de-ber-wg-socks5-103,de-ber-wg-socks5-103.relays.mullvad.net:1080,Berlin,Germany,DataPacket,152.233.51.63,2a02:6ea0:5e03:5::f001
 de-fra-wg-101,de-fra-wg-socks5-101,de-fra-wg-socks5-101.relays.mullvad.net:1080,Frankfurt,Germany,M247,146.70.117.2,2001:ac8:20:269::f001
-de-fra-wg-102,de-fra-wg-socks5-102,de-fra-wg-socks5-102.relays.mullvad.net:1080,Frankfurt,Germany,M247,146.70.117.130,2001:ac8:20:270::f001
 de-fra-wg-103,de-fra-wg-socks5-103,de-fra-wg-socks5-103.relays.mullvad.net:1080,Frankfurt,Germany,M247,135.136.19.2,2001:ac8:20:271::f001
 de-fra-wg-104,de-fra-wg-socks5-104,de-fra-wg-socks5-104.relays.mullvad.net:1080,Frankfurt,Germany,M247,135.136.19.130,2001:ac8:20:272::f001
 de-fra-wg-404,de-fra-wg-socks5-404,de-fra-wg-socks5-404.relays.mullvad.net:1080,Frankfurt,Germany,DataPacket,169.150.211.175,2a02:6ea0:1714:1::f001
