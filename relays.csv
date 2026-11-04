@@ -78,6 +78,7 @@ co-bog-wg-002,co-bog-wg-socks5-002,co-bog-wg-socks5-002.relays.mullvad.net:1080,
 hr-zag-wg-001,hr-zag-wg-socks5-001,hr-zag-wg-socks5-001.relays.mullvad.net:1080,Zagreb,Croatia,DataPacket,154.47.29.2,2a02:6ea0:f401:1::a01f
 hr-zag-wg-002,hr-zag-wg-socks5-002,hr-zag-wg-socks5-002.relays.mullvad.net:1080,Zagreb,Croatia,DataPacket,154.47.29.15,2a02:6ea0:f401:2::a01f
 cy-nic-wg-001,cy-nic-wg-socks5-001,cy-nic-wg-socks5-001.relays.mullvad.net:1080,Nicosia,Cyprus,HostRoyale,195.47.194.131,2a06:3040:f:601::f001
+cy-nic-wg-002,cy-nic-wg-socks5-002,cy-nic-wg-socks5-002.relays.mullvad.net:1080,Nicosia,Cyprus,HostRoyale,195.47.194.161,2a06:3040:f:601::f101
 cz-prg-wg-101,cz-prg-wg-socks5-101,cz-prg-wg-socks5-101.relays.mullvad.net:1080,Prague,Czech Republic,M247,135.136.123.130,2001:ac8:33:e::f001
 cz-prg-wg-103,cz-prg-wg-socks5-103,cz-prg-wg-socks5-103.relays.mullvad.net:1080,Prague,Czech Republic,M247,135.136.123.2,2001:ac8:33:d::f001
 cz-prg-wg-201,cz-prg-wg-socks5-201,cz-prg-wg-socks5-201.relays.mullvad.net:1080,Prague,Czech Republic,DataPacket,178.249.209.162,2a02:6ea0:c201:1::f001
@@ -141,6 +142,7 @@ mx-qro-wg-004,mx-qro-wg-socks5-004,mx-qro-wg-socks5-004.relays.mullvad.net:1080,
 nl-ams-wg-201,nl-ams-wg-socks5-201,nl-ams-wg-socks5-201.relays.mullvad.net:1080,Amsterdam,Netherlands,DataPacket,169.150.196.2,2a02:6ea0:c034:1::a30f
 nl-ams-wg-202,nl-ams-wg-socks5-202,nl-ams-wg-socks5-202.relays.mullvad.net:1080,Amsterdam,Netherlands,DataPacket,169.150.196.15,2a02:6ea0:c034:2::a31f
 nl-ams-wg-203,nl-ams-wg-socks5-203,nl-ams-wg-socks5-203.relays.mullvad.net:1080,Amsterdam,Netherlands,DataPacket,169.150.196.28,2a02:6ea0:c034:3::a32f
+nl-ams-wg-402,nl-ams-wg-socks5-402,nl-ams-wg-socks5-402.relays.mullvad.net:1080,Amsterdam,Netherlands,HostRoyale,62.101.160.3,2a06:3040:31:601::f101
 nz-akl-wg-301,nz-akl-wg-socks5-301,nz-akl-wg-socks5-301.relays.mullvad.net:1080,Auckland,New Zealand,hostuniversal,103.75.11.50,2404:f780:5:deb::f001
 nz-akl-wg-302,nz-akl-wg-socks5-302,nz-akl-wg-socks5-302.relays.mullvad.net:1080,Auckland,New Zealand,hostuniversal,103.75.11.66,2404:f780:5:dec::c02f
 nz-akl-wg-303,nz-akl-wg-socks5-303,nz-akl-wg-socks5-303.relays.mullvad.net:1080,Auckland,New Zealand,hostuniversal,103.75.11.98,2404:f780:5:def::f201
@@ -157,6 +159,7 @@ pl-waw-wg-201,pl-waw-wg-socks5-201,pl-waw-wg-socks5-201.relays.mullvad.net:1080,
 pl-waw-wg-202,pl-waw-wg-socks5-202,pl-waw-wg-socks5-202.relays.mullvad.net:1080,Warsaw,Poland,M247,146.70.144.34,2a0d:5600:13:c47::a02f
 pt-lis-wg-201,pt-lis-wg-socks5-201,pt-lis-wg-socks5-201.relays.mullvad.net:1080,Lisbon,Portugal,DataPacket,149.88.20.206,2a02:6ea0:fb01:1::f001
 pt-lis-wg-202,pt-lis-wg-socks5-202,pt-lis-wg-socks5-202.relays.mullvad.net:1080,Lisbon,Portugal,DataPacket,149.88.20.193,2a02:6ea0:fb01:2::f002
+pt-lis-wg-301,pt-lis-wg-socks5-301,pt-lis-wg-socks5-301.relays.mullvad.net:1080,Lisbon,Portugal,HostRoyale,185.92.210.195,2a06:3040:0:1410::f001
 ro-buh-wg-011,ro-buh-wg-socks5-011,ro-buh-wg-socks5-011.relays.mullvad.net:1080,Bucharest,Romania,M247,37.120.246.130,2a04:9dc0:0:136::f001
 ro-buh-wg-012,ro-buh-wg-socks5-012,ro-buh-wg-socks5-012.relays.mullvad.net:1080,Bucharest,Romania,M247,135.136.63.2,2a04:9dc0:0:135::f001
 ro-buh-wg-013,ro-buh-wg-socks5-013,ro-buh-wg-socks5-013.relays.mullvad.net:1080,Bucharest,Romania,M247,135.136.63.130,2a04:9dc0:0:134::f001

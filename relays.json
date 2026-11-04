@@ -1343,6 +1343,23 @@
     "display_label": "Nicosia, Cyprus (HostRoyale)"
   },
   {
+    "hostname": "cy-nic-wg-002",
+    "socks5_hostname": "cy-nic-wg-socks5-002",
+    "socks5_endpoint": "cy-nic-wg-socks5-002.relays.mullvad.net:1080",
+    "location_id": "cy-nic",
+    "city": "Nicosia",
+    "country": "Cyprus",
+    "provider": "HostRoyale",
+    "ipv4": "195.47.194.161",
+    "ipv6": "2a06:3040:f:601::f101",
+    "weight": 100,
+    "owned": false,
+    "active": true,
+    "include_in_country": true,
+    "source": "mullvad",
+    "display_label": "Nicosia, Cyprus (HostRoyale)"
+  },
+  {
     "hostname": "cz-prg-wg-101",
     "socks5_hostname": "cz-prg-wg-socks5-101",
     "socks5_endpoint": "cz-prg-wg-socks5-101.relays.mullvad.net:1080",
@@ -2414,6 +2431,23 @@
     "display_label": "Amsterdam, Netherlands (DataPacket)"
   },
   {
+    "hostname": "nl-ams-wg-402",
+    "socks5_hostname": "nl-ams-wg-socks5-402",
+    "socks5_endpoint": "nl-ams-wg-socks5-402.relays.mullvad.net:1080",
+    "location_id": "nl-ams",
+    "city": "Amsterdam",
+    "country": "Netherlands",
+    "provider": "HostRoyale",
+    "ipv4": "62.101.160.3",
+    "ipv6": "2a06:3040:31:601::f101",
+    "weight": 100,
+    "owned": false,
+    "active": true,
+    "include_in_country": true,
+    "source": "mullvad",
+    "display_label": "Amsterdam, Netherlands (HostRoyale)"
+  },
+  {
     "hostname": "nz-akl-wg-301",
     "socks5_hostname": "nz-akl-wg-socks5-301",
     "socks5_endpoint": "nz-akl-wg-socks5-301.relays.mullvad.net:1080",
@@ -2684,6 +2718,23 @@
     "include_in_country": true,
     "source": "mullvad",
     "display_label": "Lisbon, Portugal (DataPacket)"
+  },
+  {
+    "hostname": "pt-lis-wg-301",
+    "socks5_hostname": "pt-lis-wg-socks5-301",
+    "socks5_endpoint": "pt-lis-wg-socks5-301.relays.mullvad.net:1080",
+    "location_id": "pt-lis",
+    "city": "Lisbon",
+    "country": "Portugal",
+    "provider": "HostRoyale",
+    "ipv4": "185.92.210.195",
+    "ipv6": "2a06:3040:0:1410::f001",
+    "weight": 100,
+    "owned": false,
+    "active": true,
+    "include_in_country": true,
+    "source": "mullvad",
+    "display_label": "Lisbon, Portugal (HostRoyale)"
   },
   {
     "hostname": "ro-buh-wg-011",
