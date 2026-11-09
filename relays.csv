@@ -42,6 +42,8 @@ br-for-wg-001,br-for-wg-socks5-001,br-for-wg-socks5-001.relays.mullvad.net:1080,
 br-for-wg-002,br-for-wg-socks5-002,br-for-wg-socks5-002.relays.mullvad.net:1080,Fortaleza,Brazil,Zenlayer,98.98.12.182,2604:980:e007:100::f101
 br-sao-wg-201,br-sao-wg-socks5-201,br-sao-wg-socks5-201.relays.mullvad.net:1080,Sao Paulo,Brazil,DataPacket,169.150.198.66,2a02:6ea0:d00e:1::a01f
 br-sao-wg-202,br-sao-wg-socks5-202,br-sao-wg-socks5-202.relays.mullvad.net:1080,Sao Paulo,Brazil,DataPacket,169.150.198.79,2a02:6ea0:d00e:2::a02f
+br-sao-wg-301,br-sao-wg-socks5-301,br-sao-wg-socks5-301.relays.mullvad.net:1080,Sao Paulo,Brazil,HostRoyale,103.139.178.3,2a06:3040:10:610::f001
+br-sao-wg-302,br-sao-wg-socks5-302,br-sao-wg-socks5-302.relays.mullvad.net:1080,Sao Paulo,Brazil,HostRoyale,103.139.178.63,2a06:3040:10:610::f101
 bg-sof-wg-001,bg-sof-wg-socks5-001,bg-sof-wg-socks5-001.relays.mullvad.net:1080,Sofia,Bulgaria,M247,146.70.188.130,2001:ac8:30:55::f001
 bg-sof-wg-002,bg-sof-wg-socks5-002,bg-sof-wg-socks5-002.relays.mullvad.net:1080,Sofia,Bulgaria,M247,135.136.38.2,2001:ac8:30:56::f001
 bg-sof-wg-003,bg-sof-wg-socks5-003,bg-sof-wg-socks5-003.relays.mullvad.net:1080,Sofia,Bulgaria,M247,146.70.188.2,2001:ac8:30:54::f001
@@ -237,6 +239,9 @@ us-atl-wg-408,us-atl-wg-socks5-408,us-atl-wg-socks5-408.relays.mullvad.net:1080,
 us-bos-wg-001,us-bos-wg-socks5-001,us-bos-wg-socks5-001.relays.mullvad.net:1080,"Boston, MA",USA,HostRoyale,43.225.189.131,2a06:3040:12:610::a01f
 us-bos-wg-101,us-bos-wg-socks5-101,us-bos-wg-socks5-101.relays.mullvad.net:1080,"Boston, MA",USA,DataPacket,149.40.50.98,2a02:6ea0:f901::a01f
 us-bos-wg-102,us-bos-wg-socks5-102,us-bos-wg-socks5-102.relays.mullvad.net:1080,"Boston, MA",USA,DataPacket,149.40.50.112,2a02:6ea0:f901:1::a02f
+us-chi-wg-101,us-chi-wg-socks5-101,us-chi-wg-socks5-101.relays.mullvad.net:1080,"Chicago, IL",USA,M247,135.136.54.2,2a0d:5600:144:30::f001
+us-chi-wg-102,us-chi-wg-socks5-102,us-chi-wg-socks5-102.relays.mullvad.net:1080,"Chicago, IL",USA,M247,135.136.54.130,2a0d:5600:144:31::f001
+us-chi-wg-103,us-chi-wg-socks5-103,us-chi-wg-socks5-103.relays.mullvad.net:1080,"Chicago, IL",USA,M247,66.234.159.130,2a0d:5600:144:32::f001
 us-chi-wg-201,us-chi-wg-socks5-201,us-chi-wg-socks5-201.relays.mullvad.net:1080,"Chicago, IL",USA,DataPacket,87.249.134.1,2a02:6ea0:c61f::b63f
 us-chi-wg-202,us-chi-wg-socks5-202,us-chi-wg-socks5-202.relays.mullvad.net:1080,"Chicago, IL",USA,DataPacket,87.249.134.14,2a02:6ea0:c61f:1::b64f
 us-chi-wg-203,us-chi-wg-socks5-203,us-chi-wg-socks5-203.relays.mullvad.net:1080,"Chicago, IL",USA,DataPacket,87.249.134.27,2a02:6ea0:c61f:2::f001
