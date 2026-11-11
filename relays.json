@@ -272,23 +272,6 @@
     "display_label": "Perth, Australia (hostuniversal)"
   },
   {
-    "hostname": "au-per-wg-002",
-    "socks5_hostname": "au-per-wg-socks5-002",
-    "socks5_endpoint": "au-per-wg-socks5-002.relays.mullvad.net:1080",
-    "location_id": "au-per",
-    "city": "Perth",
-    "country": "Australia",
-    "provider": "hostuniversal",
-    "ipv4": "158.173.123.81",
-    "ipv6": "2406:d501:f:dff::f001",
-    "weight": 100,
-    "owned": false,
-    "active": true,
-    "include_in_country": true,
-    "source": "mullvad",
-    "display_label": "Perth, Australia (hostuniversal)"
-  },
-  {
     "hostname": "au-per-wg-003",
     "socks5_hostname": "au-per-wg-socks5-003",
     "socks5_endpoint": "au-per-wg-socks5-003.relays.mullvad.net:1080",
