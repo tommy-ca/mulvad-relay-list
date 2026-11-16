@@ -19,6 +19,10 @@ au-per-wg-003,au-per-wg-socks5-003,au-per-wg-socks5-003.relays.mullvad.net:1080,
 au-syd-wg-001,au-syd-wg-socks5-001,au-syd-wg-socks5-001.relays.mullvad.net:1080,Sydney,Australia,M247,146.70.200.2,2001:ac8:84:5::f001
 au-syd-wg-002,au-syd-wg-socks5-002,au-syd-wg-socks5-002.relays.mullvad.net:1080,Sydney,Australia,M247,146.70.141.194,2001:ac8:84:6::2f
 au-syd-wg-003,au-syd-wg-socks5-003,au-syd-wg-socks5-003.relays.mullvad.net:1080,Sydney,Australia,M247,146.70.200.194,2001:ac8:84:4::3f
+au-syd-wg-101,au-syd-wg-socks5-101,au-syd-wg-socks5-101.relays.mullvad.net:1080,Sydney,Australia,xtom,103.136.147.3,2a11:3:500::f001
+au-syd-wg-102,au-syd-wg-socks5-102,au-syd-wg-socks5-102.relays.mullvad.net:1080,Sydney,Australia,xtom,103.136.147.65,2a11:3:500::f101
+au-syd-wg-103,au-syd-wg-socks5-103,au-syd-wg-socks5-103.relays.mullvad.net:1080,Sydney,Australia,xtom,103.136.147.129,2a11:3:500::f201
+au-syd-wg-104,au-syd-wg-socks5-104,au-syd-wg-socks5-104.relays.mullvad.net:1080,Sydney,Australia,xtom,103.136.147.197,2a11:3:500::f301
 au-syd-wg-301,au-syd-wg-socks5-301,au-syd-wg-socks5-301.relays.mullvad.net:1080,Sydney,Australia,HostRoyale,103.120.6.2,2a06:3040:18:210::f001
 au-syd-wg-302,au-syd-wg-socks5-302,au-syd-wg-socks5-302.relays.mullvad.net:1080,Sydney,Australia,HostRoyale,103.120.6.127,2a06:3040:18:210::f101
 au-syd-wg-303,au-syd-wg-socks5-303,au-syd-wg-socks5-303.relays.mullvad.net:1080,Sydney,Australia,HostRoyale,103.141.60.2,2a06:3040:18:210::f201
