@@ -127,6 +127,9 @@ il-tlv-wg-103,il-tlv-wg-socks5-103,il-tlv-wg-socks5-103.relays.mullvad.net:1080,
 it-mil-wg-001,it-mil-wg-socks5-001,it-mil-wg-socks5-001.relays.mullvad.net:1080,Milan,Italy,DataPacket,178.249.211.66,2a02:6ea0:d509:1::a09f
 it-mil-wg-002,it-mil-wg-socks5-002,it-mil-wg-socks5-002.relays.mullvad.net:1080,Milan,Italy,DataPacket,178.249.211.79,2a02:6ea0:d509:2::a10f
 it-mil-wg-003,it-mil-wg-socks5-003,it-mil-wg-socks5-003.relays.mullvad.net:1080,Milan,Italy,DataPacket,178.249.211.92,2a02:6ea0:d509:3::a11f
+it-mil-wg-201,it-mil-wg-socks5-201,it-mil-wg-socks5-201.relays.mullvad.net:1080,Milan,Italy,M247,146.70.225.2,2001:ac8:24:17::f001
+it-mil-wg-202,it-mil-wg-socks5-202,it-mil-wg-socks5-202.relays.mullvad.net:1080,Milan,Italy,M247,146.70.225.130,2001:ac8:24:19::f001
+it-mil-wg-203,it-mil-wg-socks5-203,it-mil-wg-socks5-203.relays.mullvad.net:1080,Milan,Italy,M247,135.136.125.2,2001:ac8:24:1a::f001
 it-pmo-wg-001,it-pmo-wg-socks5-001,it-pmo-wg-socks5-001.relays.mullvad.net:1080,Palermo,Italy,DataPacket,149.22.91.66,2a02:6ea0:4f00::f001
 it-pmo-wg-002,it-pmo-wg-socks5-002,it-pmo-wg-socks5-002.relays.mullvad.net:1080,Palermo,Italy,DataPacket,149.22.91.79,2a02:6ea0:4f00::f101
 jp-tyo-wg-001,jp-tyo-wg-socks5-001,jp-tyo-wg-socks5-001.relays.mullvad.net:1080,Tokyo,Japan,DataPacket,138.199.21.239,2a02:6ea0:d31c::a15f
