@@ -205,9 +205,14 @@ socks5://th-bkk-wg-socks5-001.relays.mullvad.net:1080
 socks5://th-bkk-wg-socks5-002.relays.mullvad.net:1080
 socks5://tr-ist-wg-socks5-001.relays.mullvad.net:1080
 socks5://tr-ist-wg-socks5-002.relays.mullvad.net:1080
+socks5://gb-glw-wg-socks5-001.relays.mullvad.net:1080
+socks5://gb-glw-wg-socks5-002.relays.mullvad.net:1080
 socks5://gb-lon-wg-socks5-305.relays.mullvad.net:1080
 socks5://gb-lon-wg-socks5-306.relays.mullvad.net:1080
 socks5://gb-lon-wg-socks5-308.relays.mullvad.net:1080
+socks5://gb-mnc-wg-socks5-001.relays.mullvad.net:1080
+socks5://gb-mnc-wg-socks5-002.relays.mullvad.net:1080
+socks5://gb-mnc-wg-socks5-202.relays.mullvad.net:1080
 socks5://ua-iev-wg-socks5-001.relays.mullvad.net:1080
 socks5://ua-iev-wg-socks5-002.relays.mullvad.net:1080
 socks5://us-qas-wg-socks5-101.relays.mullvad.net:1080
@@ -224,6 +229,8 @@ socks5://us-qas-wg-socks5-305.relays.mullvad.net:1080
 socks5://us-qas-wg-socks5-306.relays.mullvad.net:1080
 socks5://us-qas-wg-socks5-307.relays.mullvad.net:1080
 socks5://us-qas-wg-socks5-308.relays.mullvad.net:1080
+socks5://us-atl-wg-socks5-001.relays.mullvad.net:1080
+socks5://us-atl-wg-socks5-002.relays.mullvad.net:1080
 socks5://us-atl-wg-socks5-401.relays.mullvad.net:1080
 socks5://us-atl-wg-socks5-402.relays.mullvad.net:1080
 socks5://us-atl-wg-socks5-403.relays.mullvad.net:1080
@@ -313,6 +320,7 @@ socks5://us-lax-wg-socks5-005.relays.mullvad.net:1080
 socks5://us-lax-wg-socks5-006.relays.mullvad.net:1080
 socks5://us-lax-wg-socks5-007.relays.mullvad.net:1080
 socks5://us-lax-wg-socks5-008.relays.mullvad.net:1080
+socks5://us-lax-wg-socks5-202.relays.mullvad.net:1080
 socks5://us-lax-wg-socks5-203.relays.mullvad.net:1080
 socks5://us-lax-wg-socks5-401.relays.mullvad.net:1080
 socks5://us-lax-wg-socks5-402.relays.mullvad.net:1080
